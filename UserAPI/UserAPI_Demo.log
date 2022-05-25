@@ -1,0 +1,510 @@
+2022-03-21 09:53:34,546 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-03-21 09:53:34,593 INFO o.a.j.JMeter: Loading user properties from: D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\user.properties
+2022-03-21 09:53:34,599 INFO o.a.j.JMeter: Loading system properties from: D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\system.properties
+2022-03-21 09:53:34,614 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2022-03-21 09:53:34,614 INFO o.a.j.JMeter: Version 5.4.3
+2022-03-21 09:53:34,614 INFO o.a.j.JMeter: java.version=11.0.14.1
+2022-03-21 09:53:34,615 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2022-03-21 09:53:34,615 INFO o.a.j.JMeter: os.name=Windows 10
+2022-03-21 09:53:34,615 INFO o.a.j.JMeter: os.arch=amd64
+2022-03-21 09:53:34,615 INFO o.a.j.JMeter: os.version=10.0
+2022-03-21 09:53:34,615 INFO o.a.j.JMeter: file.encoding=Cp1252
+2022-03-21 09:53:34,615 INFO o.a.j.JMeter: java.awt.headless=null
+2022-03-21 09:53:34,616 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-03-21 09:53:34,616 INFO o.a.j.JMeter: Available Processors =4
+2022-03-21 09:53:34,642 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-03-21 09:53:34,642 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-03-21 09:53:34,643 INFO o.a.j.JMeter: JMeterHome=D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3
+2022-03-21 09:53:34,643 INFO o.a.j.JMeter: user.dir  =D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\UserAPI
+2022-03-21 09:53:34,644 INFO o.a.j.JMeter: PWD       =D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\UserAPI
+2022-03-21 09:53:34,645 INFO o.a.j.JMeter: IP: 10.32.28.136 Name: DESKTOP-O7G7T12 FullName: DESKTOP-O7G7T12.cardinalhealth.net
+2022-03-21 09:53:35,048 INFO o.a.j.JMeter: Setting LAF to: laf:javax.swing.plaf.metal.MetalLookAndFeel
+2022-03-21 09:53:35,455 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2022-03-21 09:53:39,667 WARN o.j.r.PluginManager: Found JAR conflict: D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\jmeter-plugins-cmn-jmeter-0.7.jar and D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\jmeter-plugins-cmn-jmeter-0.6.jar
+2022-03-21 09:53:39,847 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=windows_10-683ecc14630504ef21c34f43f46bff94-gui
+2022-03-21 09:53:40,116 INFO o.a.j.JMeter: Loading file: UserAPI_Demo.jmx
+2022-03-21 09:53:40,118 INFO o.a.j.s.FileServer: Default base='D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\UserAPI'
+2022-03-21 09:53:40,119 INFO o.a.j.s.FileServer: Set new base='D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\UserAPI'
+2022-03-21 09:53:40,492 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-03-21 09:53:40,513 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-03-21 09:53:40,516 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-03-21 09:53:40,517 INFO o.a.j.s.SaveService: Loading file: UserAPI_Demo.jmx
+2022-03-21 09:53:40,792 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2022-03-21 09:53:41,191 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-03-21 09:53:41,191 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-03-21 09:53:41,192 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-03-21 09:53:41,192 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-03-21 09:53:41,192 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2022-03-21 09:53:41,192 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2022-03-21 09:53:41,928 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-basic=2.0, blazemeter-debugger=0.6, jpgc-functions=2.1, jpgc-casutg=2.10, jpgc-dummy=0.4, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-perfmon=2.1, jpgc-plugins-manager=1.7, jpgc-tst=2.5, jmeter-core=5.4.3, jmeter-ftp=5.4.3, jmeter-http=5.4.3, jmeter-jdbc=5.4.3, jmeter-jms=5.4.3, jmeter-junit=5.4.3, jmeter-java=5.4.3, jmeter-ldap=5.4.3, jmeter-mail=5.4.3, jmeter-mongodb=5.4.3, jmeter-native=5.4.3, jmeter-tcp=5.4.3, jmeter-components=5.4.3, jpgc-standard=2.0]
+2022-03-21 09:53:42,354 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2022-03-21 09:53:42,355 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2022-03-21 09:53:42,464 INFO o.a.j.s.FileServer: Set new base='D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\UserAPI'
+2022-03-21 09:53:42,805 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2022-03-21 09:53:42,806 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2022-03-21 09:53:43,309 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2022-03-21 09:53:43,309 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2022-03-21 09:53:43,309 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2022-03-21 09:53:43,309 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2022-03-21 09:53:43,527 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-03-21 09:53:43,798 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-03-21 09:55:50,013 INFO o.a.j.s.FileServer: Set new base='D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\Search API'
+2022-03-21 10:03:40,571 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 10:03:40,574 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 10:03:40,574 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 10:03:40,680 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 10:03:40,784 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 10:03:40,784 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 10:03:40,786 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 10:03:40,786 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 10:03:40,790 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 10:03:40,791 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 10:03:40,797 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 10:03:40,801 INFO o.a.j.s.FileServer: Stored: UserAPI.csv
+2022-03-21 10:03:42,821 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-O7G7T12
+2022-03-21 10:03:42,832 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2022-03-21 10:03:42,964 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2022-03-21 10:03:42,967 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2022-03-21 10:03:42,968 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2022-03-21 10:03:42,999 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2022-03-21 10:03:43,000 INFO o.a.j.u.SSLManager: KeyStore created OK
+2022-03-21 10:03:43,000 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2022-03-21 10:03:43,434 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 10:03:43,434 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 10:03:43,437 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 10:03:43,437 INFO o.a.j.s.FileServer: Close: UserAPI.csv
+2022-03-21 10:03:43,439 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 10:04:14,446 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 10:04:14,450 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 10:04:14,463 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 10:04:14,536 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 10:04:14,536 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 10:04:14,536 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 10:04:14,538 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 10:04:14,540 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 10:04:14,541 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 10:04:14,548 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 10:04:14,549 INFO o.a.j.s.FileServer: Stored: UserAPI.csv
+2022-03-21 10:04:15,423 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 10:04:15,424 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 10:04:15,425 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 10:04:15,425 INFO o.a.j.s.FileServer: Close: UserAPI.csv
+2022-03-21 10:04:15,426 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 10:07:17,150 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 10:07:17,151 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 10:07:17,160 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 10:07:17,240 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 10:07:17,241 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 10:07:17,241 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 10:07:17,241 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 10:07:17,244 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 10:07:17,244 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 10:07:17,248 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 10:07:17,257 INFO o.a.j.s.FileServer: Stored: UserAPI.csv
+2022-03-21 10:07:18,086 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 10:07:18,086 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 10:07:18,087 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 10:07:18,087 INFO o.a.j.s.FileServer: Close: UserAPI.csv
+2022-03-21 10:07:18,095 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 11:01:08,550 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 11:01:08,556 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 11:01:08,559 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 11:01:08,649 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 11:01:08,649 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 11:01:08,649 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 11:01:08,649 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 11:01:08,653 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 11:01:08,653 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 11:01:08,656 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 11:01:08,657 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 11:01:17,738 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 11:01:17,738 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 11:01:17,739 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 11:01:17,739 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 11:01:17,740 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 11:02:10,233 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 11:02:10,237 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 11:02:10,249 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 11:02:10,339 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 11:02:10,341 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 11:02:10,341 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 11:02:10,341 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 11:02:10,345 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 11:02:10,345 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 11:02:10,346 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 11:02:10,347 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 11:02:48,954 INFO o.a.j.g.a.Start: Shutting test down
+2022-03-21 11:02:48,969 INFO o.a.j.t.JMeterThread: Stopping: Thread Group 1-1
+2022-03-21 11:02:52,922 INFO o.a.j.g.a.Start: Shutting test down
+2022-03-21 11:04:14,594 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 11:04:14,596 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 11:04:14,596 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 11:04:14,597 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 11:04:47,308 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 11:04:47,308 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 11:04:47,314 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 11:04:47,390 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 11:04:47,391 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 11:04:47,391 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 11:04:47,391 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 11:04:47,393 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 11:04:47,394 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 11:04:47,396 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 11:04:47,397 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 11:06:54,119 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 11:06:54,120 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 11:06:54,120 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 11:06:54,121 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 11:06:54,121 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 11:11:08,108 WARN o.a.j.p.h.p.ProxyControl: Existing ROOT Certificate has expired, a new one will be created, ensure you install it in browser, message: NotAfter: Tue Mar 15 19:03:55 IST 2022
+java.security.cert.CertificateExpiredException: NotAfter: Tue Mar 15 19:03:55 IST 2022
+	at sun.security.x509.CertificateValidity.valid(CertificateValidity.java:277) ~[?:?]
+	at sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:675) ~[?:?]
+	at org.apache.jmeter.protocol.http.proxy.ProxyControl.initDynamicKeyStore(ProxyControl.java:1536) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.ProxyControl.initKeyStore(ProxyControl.java:1480) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.ProxyControl.startProxy(ProxyControl.java:523) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.gui.ProxyControlGui.startProxy(ProxyControlGui.java:623) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.gui.ProxyControlGui.actionPerformed(ProxyControlGui.java:463) [ApacheJMeter_http.jar:5.4.3]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1967) [?:?]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2308) [?:?]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405) [?:?]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262) [?:?]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279) [?:?]
+	at java.awt.Component.processMouseEvent(Component.java:6635) [?:?]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3342) [?:?]
+	at java.awt.Component.processEvent(Component.java:6400) [?:?]
+	at java.awt.Container.processEvent(Container.java:2263) [?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:5011) [?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2321) [?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4843) [?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918) [?:?]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547) [?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488) [?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2307) [?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2772) [?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4843) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95) [?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:745) [?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:743) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2022-03-21 11:11:08,132 INFO o.a.j.p.h.p.ProxyControl: Creating HTTP(S) Test Script Recorder Root CA in D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks, ensure you install certificate in your Browser for recording
+2022-03-21 11:11:14,243 ERROR o.a.j.p.h.p.ProxyControl: Could not initialise key store
+java.io.IOException: Command failed, code: 1
+Picked up JAVA_TOOL_OPTIONS: -Djava.vendor="Sun Microsystems Inc."
+keytool error: java.security.cert.CertificateException: No certificate data found
+
+	at org.apache.jorphan.exec.KeyToolUtils.runNativeCommand(KeyToolUtils.java:372) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.keytool(KeyToolUtils.java:439) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.generateProxyCA(KeyToolUtils.java:256) ~[jorphan.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.ProxyControl.initDynamicKeyStore(ProxyControl.java:1575) ~[ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.ProxyControl.initKeyStore(ProxyControl.java:1480) ~[ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.ProxyControl.startProxy(ProxyControl.java:523) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.gui.ProxyControlGui.startProxy(ProxyControlGui.java:623) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.gui.ProxyControlGui.actionPerformed(ProxyControlGui.java:463) [ApacheJMeter_http.jar:5.4.3]
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1967) [?:?]
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2308) [?:?]
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405) [?:?]
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262) [?:?]
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279) [?:?]
+	at java.awt.Component.processMouseEvent(Component.java:6635) [?:?]
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3342) [?:?]
+	at java.awt.Component.processEvent(Component.java:6400) [?:?]
+	at java.awt.Container.processEvent(Container.java:2263) [?:?]
+	at java.awt.Component.dispatchEventImpl(Component.java:5011) [?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2321) [?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4843) [?:?]
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918) [?:?]
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547) [?:?]
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488) [?:?]
+	at java.awt.Container.dispatchEventImpl(Container.java:2307) [?:?]
+	at java.awt.Window.dispatchEventImpl(Window.java:2772) [?:?]
+	at java.awt.Component.dispatchEvent(Component.java:4843) [?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:721) [?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:715) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) [?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95) [?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:745) [?:?]
+	at java.awt.EventQueue$5.run(EventQueue.java:743) [?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) [?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) [?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+2022-03-21 11:18:56,827 INFO o.a.j.p.h.p.ProxyControl: Valid alias found for :root_ca:
+2022-03-21 11:18:56,828 INFO o.a.j.p.h.p.ProxyControl: Valid alias found for :intermediate_ca:
+2022-03-21 11:18:56,857 INFO o.a.j.p.h.p.Daemon: Creating Daemon Socket on port: 8888
+2022-03-21 11:18:56,863 INFO o.a.j.p.h.p.Daemon: Test Script Recorder up and running!
+2022-03-21 11:20:11,772 INFO o.a.j.p.h.p.Proxy: Proxy will remove the headers: If-Modified-Since,If-None-Match,Host
+2022-03-21 11:20:11,776 INFO o.a.j.p.h.p.ProxyControl: [1556]  Creating entry 77u8krfldi.execute-api.us-east-1.amazonaws.com in D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2022-03-21 11:20:16,780 ERROR o.a.j.p.h.p.Proxy: [1556]  Problem with keystore
+java.io.IOException: Command failed, code: 1
+Picked up JAVA_TOOL_OPTIONS: -Djava.vendor="Sun Microsystems Inc."
+keytool error: java.security.cert.CertificateException: No certificate data found
+
+	at org.apache.jorphan.exec.KeyToolUtils.runNativeCommand(KeyToolUtils.java:372) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.keytool(KeyToolUtils.java:439) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.generateSignedCert(KeyToolUtils.java:305) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.generateHostCert(KeyToolUtils.java:281) ~[jorphan.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.ProxyControl.updateKeyStore(ProxyControl.java:1611) ~[ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.getSSLSocketFactory(Proxy.java:344) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.startSSL(Proxy.java:449) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:200) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:20:16,781 WARN o.a.j.p.h.p.Proxy: [1556]  Unable to negotiate SSL transaction, no keystore?
+2022-03-21 11:20:16,781 ERROR o.a.j.p.h.p.Proxy: [1556]  Exception when processing sample
+java.io.IOException: Unable to negotiate SSL transaction, no keystore?
+	at org.apache.jmeter.protocol.http.proxy.Proxy.startSSL(Proxy.java:466) ~[ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:200) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:20:16,784 WARN o.a.j.p.h.p.Proxy: [1556]  Exception while writing error
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method) ~[?:?]
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110) ~[?:?]
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:129) ~[?:?]
+	at java.io.DataOutputStream.writeBytes(DataOutputStream.java:276) ~[?:?]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.writeErrorToClient(Proxy.java:580) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:269) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:20:23,686 INFO o.a.j.p.h.p.ProxyControl: [1558]  Creating entry 77u8krfldi.execute-api.us-east-1.amazonaws.com in D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2022-03-21 11:20:24,636 ERROR o.a.j.p.h.p.Proxy: [1558]  Problem with keystore
+java.io.IOException:   >> Picked up JAVA_TOOL_OPTIONS: -Djava.vendor="Sun Microsystems Inc."
+keytool error: java.lang.Exception: Key pair not generated, alias <77u8krfldi.execute-api.us-east-1.amazonaws.com> already exists <<
+Command failed, code: 1
+'keytool -genkeypair -alias 77u8krfldi.execute-api.us-east-1.amazonaws.com -dname "cn=ip77u8krfldi.execute-api.us-east-1.amazonaws.com, o=JMeter Proxy (TEMPORARY TRUST ONLY)" -keyalg RSA -keystore proxyserver.jks -storepass {redacted} -keypass {redacted} -validity 7 -ext san=ip:77u8krfldi.execute-api.us-east-1.amazonaws.com'
+	at org.apache.jorphan.exec.KeyToolUtils.genkeypair(KeyToolUtils.java:173) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.generateSignedCert(KeyToolUtils.java:290) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.generateHostCert(KeyToolUtils.java:281) ~[jorphan.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.ProxyControl.updateKeyStore(ProxyControl.java:1611) ~[ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.getSSLSocketFactory(Proxy.java:344) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.startSSL(Proxy.java:449) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:200) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:20:24,636 WARN o.a.j.p.h.p.Proxy: [1558]  Unable to negotiate SSL transaction, no keystore?
+2022-03-21 11:20:24,636 ERROR o.a.j.p.h.p.Proxy: [1558]  Exception when processing sample
+java.io.IOException: Unable to negotiate SSL transaction, no keystore?
+	at org.apache.jmeter.protocol.http.proxy.Proxy.startSSL(Proxy.java:466) ~[ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:200) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:20:24,637 WARN o.a.j.p.h.p.Proxy: [1558]  Exception while writing error
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method) ~[?:?]
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110) ~[?:?]
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:129) ~[?:?]
+	at java.io.DataOutputStream.writeBytes(DataOutputStream.java:276) ~[?:?]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.writeErrorToClient(Proxy.java:580) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:269) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:21:03,039 INFO o.a.j.p.h.p.ProxyControl: [25728]  Creating entry 77u8krfldi.execute-api.us-east-1.amazonaws.com in D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2022-03-21 11:21:03,965 ERROR o.a.j.p.h.p.Proxy: [25728]  Problem with keystore
+java.io.IOException:   >> Picked up JAVA_TOOL_OPTIONS: -Djava.vendor="Sun Microsystems Inc."
+keytool error: java.lang.Exception: Key pair not generated, alias <77u8krfldi.execute-api.us-east-1.amazonaws.com> already exists <<
+Command failed, code: 1
+'keytool -genkeypair -alias 77u8krfldi.execute-api.us-east-1.amazonaws.com -dname "cn=ip77u8krfldi.execute-api.us-east-1.amazonaws.com, o=JMeter Proxy (TEMPORARY TRUST ONLY)" -keyalg RSA -keystore proxyserver.jks -storepass {redacted} -keypass {redacted} -validity 7 -ext san=ip:77u8krfldi.execute-api.us-east-1.amazonaws.com'
+	at org.apache.jorphan.exec.KeyToolUtils.genkeypair(KeyToolUtils.java:173) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.generateSignedCert(KeyToolUtils.java:290) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.generateHostCert(KeyToolUtils.java:281) ~[jorphan.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.ProxyControl.updateKeyStore(ProxyControl.java:1611) ~[ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.getSSLSocketFactory(Proxy.java:344) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.startSSL(Proxy.java:449) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:200) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:21:03,966 WARN o.a.j.p.h.p.Proxy: [25728]  Unable to negotiate SSL transaction, no keystore?
+2022-03-21 11:21:03,966 ERROR o.a.j.p.h.p.Proxy: [25728]  Exception when processing sample
+java.io.IOException: Unable to negotiate SSL transaction, no keystore?
+	at org.apache.jmeter.protocol.http.proxy.Proxy.startSSL(Proxy.java:466) ~[ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:200) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:21:03,967 WARN o.a.j.p.h.p.Proxy: [25728]  Exception while writing error
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method) ~[?:?]
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110) ~[?:?]
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:129) ~[?:?]
+	at java.io.DataOutputStream.writeBytes(DataOutputStream.java:276) ~[?:?]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.writeErrorToClient(Proxy.java:580) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:269) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:21:12,124 INFO o.a.j.p.h.p.ProxyControl: [25729]  Creating entry 77u8krfldi.execute-api.us-east-1.amazonaws.com in D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2022-03-21 11:21:13,138 ERROR o.a.j.p.h.p.Proxy: [25729]  Problem with keystore
+java.io.IOException:   >> Picked up JAVA_TOOL_OPTIONS: -Djava.vendor="Sun Microsystems Inc."
+keytool error: java.lang.Exception: Key pair not generated, alias <77u8krfldi.execute-api.us-east-1.amazonaws.com> already exists <<
+Command failed, code: 1
+'keytool -genkeypair -alias 77u8krfldi.execute-api.us-east-1.amazonaws.com -dname "cn=ip77u8krfldi.execute-api.us-east-1.amazonaws.com, o=JMeter Proxy (TEMPORARY TRUST ONLY)" -keyalg RSA -keystore proxyserver.jks -storepass {redacted} -keypass {redacted} -validity 7 -ext san=ip:77u8krfldi.execute-api.us-east-1.amazonaws.com'
+	at org.apache.jorphan.exec.KeyToolUtils.genkeypair(KeyToolUtils.java:173) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.generateSignedCert(KeyToolUtils.java:290) ~[jorphan.jar:5.4.3]
+	at org.apache.jorphan.exec.KeyToolUtils.generateHostCert(KeyToolUtils.java:281) ~[jorphan.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.ProxyControl.updateKeyStore(ProxyControl.java:1611) ~[ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.getSSLSocketFactory(Proxy.java:344) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.startSSL(Proxy.java:449) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:200) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:21:13,139 WARN o.a.j.p.h.p.Proxy: [25729]  Unable to negotiate SSL transaction, no keystore?
+2022-03-21 11:21:13,139 ERROR o.a.j.p.h.p.Proxy: [25729]  Exception when processing sample
+java.io.IOException: Unable to negotiate SSL transaction, no keystore?
+	at org.apache.jmeter.protocol.http.proxy.Proxy.startSSL(Proxy.java:466) ~[ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:200) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:21:13,140 WARN o.a.j.p.h.p.Proxy: [25729]  Exception while writing error
+java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method) ~[?:?]
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:110) ~[?:?]
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:129) ~[?:?]
+	at java.io.DataOutputStream.writeBytes(DataOutputStream.java:276) ~[?:?]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.writeErrorToClient(Proxy.java:580) [ApacheJMeter_http.jar:5.4.3]
+	at org.apache.jmeter.protocol.http.proxy.Proxy.run(Proxy.java:269) [ApacheJMeter_http.jar:5.4.3]
+2022-03-21 11:22:01,154 INFO o.a.j.p.h.p.Daemon: HTTP(S) Test Script Recorder stopped
+2022-03-21 11:41:59,204 INFO o.a.j.p.h.p.ProxyControl: Valid alias found for :root_ca:
+2022-03-21 11:41:59,204 INFO o.a.j.p.h.p.ProxyControl: Valid alias found for :intermediate_ca:
+2022-03-21 11:41:59,231 INFO o.a.j.p.h.p.Daemon: Creating Daemon Socket on port: 8888
+2022-03-21 11:41:59,233 INFO o.a.j.p.h.p.Daemon: Test Script Recorder up and running!
+2022-03-21 11:42:01,838 INFO o.a.j.p.h.p.Proxy: [25859]  KeyStore for SSL loaded OK and put host '77u8krfldi.execute-api.us-east-1.amazonaws.com' in map with key (77u8krfldi.execute-api.us-east-1.amazonaws.com)
+2022-03-21 11:42:01,877 WARN o.a.j.p.h.p.Proxy: [25859]  Problem with SSL certificate for url  for '77u8krfldi.execute-api.us-east-1.amazonaws.com'? Ensure browser is set to accept the JMeter proxy cert: Remote host terminated the handshake
+2022-03-21 11:42:04,709 INFO o.a.j.p.h.p.ProxyControl: Add sample get token-1 into controller get token
+2022-03-21 11:42:08,355 INFO o.a.j.p.h.p.Daemon: HTTP(S) Test Script Recorder stopped
+2022-03-21 11:48:01,893 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 11:48:01,893 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 11:48:01,895 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 11:48:02,005 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 11:48:02,005 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 11:48:02,005 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 11:48:02,006 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 11:48:02,007 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 11:48:02,008 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 11:48:02,046 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 11:48:02,046 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 11:48:08,518 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 11:48:08,518 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 11:48:08,519 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 11:48:08,519 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 11:48:08,520 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 11:55:33,451 INFO o.a.j.p.h.p.ProxyControl: Valid alias found for :root_ca:
+2022-03-21 11:55:33,451 INFO o.a.j.p.h.p.ProxyControl: Valid alias found for :intermediate_ca:
+2022-03-21 11:55:33,479 INFO o.a.j.p.h.p.Daemon: Creating Daemon Socket on port: 8888
+2022-03-21 11:55:33,480 INFO o.a.j.p.h.p.Daemon: Test Script Recorder up and running!
+2022-03-21 11:55:37,441 WARN o.a.j.p.h.p.Proxy: [1044]  Problem with SSL certificate for url  for '77u8krfldi.execute-api.us-east-1.amazonaws.com'? Ensure browser is set to accept the JMeter proxy cert: Remote host terminated the handshake
+2022-03-21 11:55:39,692 INFO o.a.j.p.h.p.ProxyControl: Add sample -2 into controller 
+2022-03-21 11:55:45,265 INFO o.a.j.p.h.p.Daemon: HTTP(S) Test Script Recorder stopped
+2022-03-21 11:57:07,714 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 11:57:07,716 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 11:57:07,717 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 11:57:07,825 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 11:57:07,825 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 11:57:07,825 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 11:57:07,825 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 11:57:07,827 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 11:57:07,827 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 11:57:07,831 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 11:57:07,832 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 11:57:12,913 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 11:57:12,913 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 11:57:12,914 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 11:57:12,914 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 11:57:12,915 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 12:13:45,058 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 12:13:45,058 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 12:13:45,061 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 12:13:45,138 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 12:13:45,138 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 12:13:45,138 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 12:13:45,138 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 12:13:45,140 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 12:13:45,140 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 12:13:45,142 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 12:13:45,145 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:13:51,097 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 12:13:51,097 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 12:13:51,098 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 12:13:51,099 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:13:51,100 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 12:15:39,826 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 12:15:39,827 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 12:15:39,829 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 12:15:39,836 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 12:15:39,838 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 12:15:39,838 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 12:15:39,838 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 12:15:39,840 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 12:15:39,844 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 12:15:39,847 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 12:15:39,848 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:15:45,602 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 12:15:45,603 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 12:15:45,604 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 12:15:45,604 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:15:45,605 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 12:29:52,910 INFO o.a.j.g.a.SearchTreeDialog: Replaced 1 in element:Search API
+2022-03-21 12:29:52,911 INFO o.a.j.g.a.SearchTreeDialog: Replaced 1 in element:-2
+2022-03-21 12:29:52,911 INFO o.a.j.g.a.SearchTreeDialog: Replaced 1 in element:Product API
+2022-03-21 12:31:21,807 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 12:31:21,808 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 12:31:21,809 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 12:31:21,901 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 12:31:21,901 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 12:31:21,901 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 12:31:21,901 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 12:31:21,903 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 12:31:21,903 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 12:31:21,904 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 12:31:21,905 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:31:27,549 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 12:31:27,549 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 12:31:27,550 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 12:31:27,550 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:31:27,551 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 12:34:13,746 INFO o.a.j.s.FileServer: Set new base='D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\Search API'
+2022-03-21 12:35:18,594 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 12:35:18,595 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 12:35:18,598 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 12:35:18,687 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 12:35:18,688 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 12:35:18,688 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 12:35:18,689 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 12:35:18,690 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 12:35:18,691 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 12:35:18,693 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 12:35:18,694 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:35:23,813 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 12:35:23,813 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 12:35:23,814 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 12:35:23,814 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:35:23,815 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 12:38:08,045 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 12:38:08,046 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 12:38:08,047 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 12:38:08,055 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 12:38:08,055 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 12:38:08,055 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 12:38:08,055 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 12:38:08,056 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 12:38:08,057 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 12:38:08,057 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 12:38:08,058 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:38:14,064 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 12:38:14,064 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 12:38:14,065 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 12:38:14,066 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:38:14,066 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 12:40:35,208 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-03-21 12:40:35,208 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-03-21 12:40:35,210 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-03-21 12:40:35,298 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-03-21 12:40:35,298 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-03-21 12:40:35,298 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-03-21 12:40:35,298 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-03-21 12:40:35,299 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-03-21 12:40:35,299 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-03-21 12:40:35,306 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-03-21 12:40:35,306 INFO o.a.j.s.FileServer: Stored: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:40:41,000 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-03-21 12:40:41,000 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-03-21 12:40:41,001 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-03-21 12:40:41,001 INFO o.a.j.s.FileServer: Close: D:/Users/sameer.khan/Desktop/OE Mobile App/Jmeter Scripts/Search API/UserAPI.csv
+2022-03-21 12:40:41,001 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-03-21 12:41:02,689 INFO o.a.j.s.FileServer: Set new base='D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\Search API'

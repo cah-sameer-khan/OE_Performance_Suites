@@ -1,0 +1,778 @@
+{
+	"info": {
+		"_postman_id": "a1662b67-101a-454d-8989-d4267ed56e00",
+		"name": "AT - All modules-PMODSTG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login and Token generation",
+			"item": [
+				{
+					"name": "Login Request API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let smsession = pm.cookies.get('SMSESSION');",
+									"console.log(smsession);",
+									"pm.environment.set('ltpaToken2',pm.cookies.get('LtpaToken2'));",
+									"pm.environment.set('smsession',smsession);",
+									"pm.test(\"Login API Status\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{login-api-host}}/forms/RWO/OEDMZLogin.fcc?smauthreason=0&target={{target}}/eps/mycah&SMENC=ISO-8859-1&PASSWORD={{password}}&smagentname={{smagentname}}&postpreservationdata=&smquerydata=&SMLOCALE=US-EN&REMEMBER=on&USER={{user}}",
+							"host": [
+								"{{login-api-host}}"
+							],
+							"path": [
+								"forms",
+								"RWO",
+								"OEDMZLogin.fcc"
+							],
+							"query": [
+								{
+									"key": "smauthreason",
+									"value": "0"
+								},
+								{
+									"key": "target",
+									"value": "{{target}}/eps/mycah"
+								},
+								{
+									"key": "SMENC",
+									"value": "ISO-8859-1"
+								},
+								{
+									"key": "PASSWORD",
+									"value": "{{password}}"
+								},
+								{
+									"key": "smagentname",
+									"value": "{{smagentname}}"
+								},
+								{
+									"key": "postpreservationdata",
+									"value": ""
+								},
+								{
+									"key": "smquerydata",
+									"value": ""
+								},
+								{
+									"key": "SMLOCALE",
+									"value": "US-EN"
+								},
+								{
+									"key": "REMEMBER",
+									"value": "on"
+								},
+								{
+									"key": "USER",
+									"value": "{{user}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Token Generator API",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let response = pm.response.json();",
+									"let Authorization = response.access_token;",
+									"pm.environment.set('Authorization',Authorization);",
+									"pm.test(\"Token Generator API Status\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "sm-session",
+								"type": "text",
+								"value": "{{smsession}}"
+							},
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": "{{x-api-key}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "WCToken",
+								"type": "text",
+								"value": "{{WCToken}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{token-generator-api-host}}/{{env}}/api/v1/token-generator/application/mobile/generate?user={{user}}",
+							"host": [
+								"{{token-generator-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"api",
+								"v1",
+								"token-generator",
+								"application",
+								"mobile",
+								"generate"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "{{user}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get Orders L1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\n    response: getActivitiesByShipTos(requestActivity: \n        {\n            shipTos: [\"19-112531\"]\n            activityId: \"OE101\"\n            paginationData: {\n                records: 3  \n                pageNumber: 0\n            }\n        }\n    ) {\n        activityBOList {\n            shipTos\n\t        orderId\n\t        orderName\n            createdAt\n            nestedDataAvailable \n            activityId\n        }\n        activityId\n        activityEvents\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://81r3kd4xvj.execute-api.us-east-1.amazonaws.com/{{env}}/activitytracker",
+							"protocol": "https",
+							"host": [
+								"81r3kd4xvj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Orders L2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\n    response: getOperationsByActivities(requestActivity: \n        {\n            orderId: \"38322598\"\n            shipTos: [\"19-112531\"]\n            activityId: \"OE101\"\n            paginationData: {\n                records: 3\n                pageNumber: 0\n            }\n        }\n    ) {\n       \n        operationsBOList {\n            userName\n            shipTos\n            operationType\n            operationName\n            orderProductInfoId\n            quantity\n            newQuantity\n            createdAt\n            nestedDataAvailable\n            productBo {\n                cin\n                amu\n                ndc\n                description\n                uoiCost\n                invoiceCost\n                packageSize\n                form\n                displayContract\n            }\n        }\n        activityEvents\n        activityId\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://81r3kd4xvj.execute-api.us-east-1.amazonaws.com/{{env}}/activitytracker",
+							"protocol": "https",
+							"host": [
+								"81r3kd4xvj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Orders L2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{Authorization}}",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "{{x-api-key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query{\n    response: getOperationsByActivities(requestActivity: \n        {\n            orderId: \"38322597\"\n            shipTos: [\"19-112531\"]\n            activityId: \"OE101\"\n            paginationData: {\n                records: 3\n                pageNumber: 0\n            }\n        }\n    ) {\n       \n        operationsBOList {\n            userName\n            shipTos\n            operationType\n            operationName\n            orderProductInfoId\n            quantity\n            newQuantity\n            createdAt\n            nestedDataAvailable\n            productBo {\n                cin\n                amu\n                ndc\n                description\n                uoiCost\n                invoiceCost\n                packageSize\n                form\n                displayContract\n            }\n        }\n        activityEvents\n        activityId\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "https://81r3kd4xvj.execute-api.us-east-1.amazonaws.com/{{env}}/activitytracker",
+									"protocol": "https",
+									"host": [
+										"81r3kd4xvj",
+										"execute-api",
+										"us-east-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"{{env}}",
+										"activitytracker"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "869"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 May 2022 06:37:17 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "9befc6d9-79d4-4609-a1af-f9756403f3be"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "SDRonHNZoAMFgpQ="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-627dfc9d-1332119175e4055b3c77eea8"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 7e512085ef589162e19cbc409add83ec.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "BOM51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "R6YpDHjIARSBk78sZZO7gzGBriTniNu8lpbOdLRqRcKrCJ_XS2Vrrw=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"response\": {\n            \"operationsBOList\": [\n                {\n                    \"userName\": \"kavan.mobile.r\",\n                    \"shipTos\": [\n                        \"19-112531\"\n                    ],\n                    \"operationType\": \"OE1014\",\n                    \"operationName\": \"ADD_PRODUCT\",\n                    \"orderProductInfoId\": 90,\n                    \"quantity\": 3,\n                    \"newQuantity\": 0,\n                    \"createdAt\": \"2022-03-28T10:45:06.559Z\",\n                    \"nestedDataAvailable\": false,\n                    \"productBo\": {\n                        \"cin\": \"1122237\",\n                        \"amu\": \"AMU1\",\n                        \"ndc\": \"NDC1\",\n                        \"description\": \"Aspinrin\",\n                        \"uoiCost\": \"10\",\n                        \"invoiceCost\": \"11\",\n                        \"packageSize\": \"12\",\n                        \"form\": \"12\",\n                        \"displayContract\": \"1\"\n                    }\n                },\n                {\n                    \"userName\": \"kavan.mobile.r\",\n                    \"shipTos\": [\n                        \"19-112531\"\n                    ],\n                    \"operationType\": \"OE1011\",\n                    \"operationName\": \"CREATE_ORDER\",\n                    \"orderProductInfoId\": -1,\n                    \"quantity\": 0,\n                    \"newQuantity\": 0,\n                    \"createdAt\": \"2022-03-28T10:41:06.559Z\",\n                    \"nestedDataAvailable\": false,\n                    \"productBo\": null\n                }\n            ],\n            \"activityEvents\": true,\n            \"activityId\": \"OE101\",\n            \"paginationDetailsRes\": {\n                \"totalPages\": 1,\n                \"totalElements\": 1,\n                \"isFirst\": true,\n                \"isLast\": true,\n                \"hasNext\": false,\n                \"hasPrev\": false,\n                \"pageItemsCount\": 3\n            }\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Audits",
+			"item": [
+				{
+					"name": "Get Audits L1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\n    response: getActivitiesByShipTos(requestActivity: \n        {\n            shipTos: [\"11-1111\"]\n            activityId: \"OE301\"\n            paginationData: {\n                records: 3\n                pageNumber: 0\n            }                                                                  \n        }\n    ) {\n        activityBOList {\n            timestamp\n            shipTos\n            groupNumber\n            groupName\n            activityId\n            nestedDataAvailable            \n        }\n        activityId\n        activityEvents\n        pagination:paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://81r3kd4xvj.execute-api.us-east-1.amazonaws.com/{{env}}/activitytracker",
+							"protocol": "https",
+							"host": [
+								"81r3kd4xvj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Audits L2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\n    response: getOperationsByActivities(requestActivity: \n        {\n            shipTos: [\"11-1111\"]\n            groupNumber: \"101\"\n            activityId: \"OE301\"\n            paginationData: {\n                records: 2\n                pageNumber: 0\n            }\n        }\n    ) {\n        operationsBOList {\n            userName\n            shipTos\n            operationType\n            operationName\n            auditProductInfoId \n            quantity\n            createdAt\n            onHandQuantity\n            nestedDataAvailable\n            productBo {\n                    cin\n\t                amu\n\t                ndc\n\t                description\n\t                uoiCost\n\t                invoiceCost\n\t                packageSize\n\t                form\n\t                displayContract\n          }\n        }\n        activityEvents\n        activityId\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://81r3kd4xvj.execute-api.us-east-1.amazonaws.com/{{env}}/activitytracker",
+							"protocol": "https",
+							"host": [
+								"81r3kd4xvj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Receiving",
+			"item": [
+				{
+					"name": "Get Receiving L1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\n    response: getActivitiesByShipTos(requestActivity: \n        {\n            shipTos: [\"11-1111\",\"11-1112\"]\n            activityId: \"OE401\"\n            paginationData: {\n                records: 10  \n                pageNumber: 0\n            }\n        }\n    ) {\n        activityBOList {\n            shipTos\n\t        toteNumber\n\t        shipmentNumber\n            createdAt\n            nestedDataAvailable\n            activityId  \n        }\n        activityId\n        activityEvents\n        activityName\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://81r3kd4xvj.execute-api.us-east-1.amazonaws.com/{{env}}/activitytracker",
+							"protocol": "https",
+							"host": [
+								"81r3kd4xvj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Receiving L2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\n    response: getOperationsByActivities(requestActivity: \n        {\n            shipTos: [\"11-1112\"]\n            toteNumber: \"211236\"\n            activityId: \"OE401\"\n            paginationData: {\n                records: 2\n                pageNumber: 0\n            }\n        }\n    ) {\n        operationsBOList {\n            userName\n            invoiceId\n            shipTos\n            operationType\n            operationName\n            receivingProductInfoId \n            quantity\n            receivedQuantity\n            nestedDataAvailable\n            productBo {\n                    cin\n\t                amu\n\t                ndc\n\t                description\n\t                uoiCost\n\t                invoiceCost\n\t                packageSize\n\t                form\n\t                displayContract\n          }\n        }\n        activityEvents\n        activityId\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://81r3kd4xvj.execute-api.us-east-1.amazonaws.com/{{env}}/activitytracker",
+							"protocol": "https",
+							"host": [
+								"81r3kd4xvj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inventory",
+			"item": [
+				{
+					"name": "Get Inventory L1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\n    response: getActivitiesByShipTos(requestActivity: \n        {\n            shipTos: [\"11-1111\"]\n            activityId: \"OE201\"\n            paginationData: {\n                records: 3\n                pageNumber: 0\n            }\n        }\n    ) {\n        activityBOList {\n            shipTos\n\t        inventoryName\n            inventoryId\n            createdAt\n            nestedDataAvailable\n            activityId  \n        }\n        activityId\n        activityEvents\n        activityName\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://81r3kd4xvj.execute-api.us-east-1.amazonaws.com/{{env}}/activitytracker",
+							"protocol": "https",
+							"host": [
+								"81r3kd4xvj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Inventory L2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\n    response: getOperationsByActivities(requestActivity: \n        {\n            shipTos: [\"11-1111\"]\n            inventoryId: 6627951\n            activityId: \"OE201\"\n            paginationData: {\n                records: 10\n                pageNumber: 0\n            }\n        }\n    ) {\n        operationsBOList {\n            userName\n            shipTos\n            operationType\n            locationId\n            locationName\n            operationName\n            createdAt\n            nestedDataAvailable\n        }\n        activityEvents\n        activityId\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://81r3kd4xvj.execute-api.us-east-1.amazonaws.com/{{env}}/activitytracker",
+							"protocol": "https",
+							"host": [
+								"81r3kd4xvj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Inventory L2 v2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query{\n    response: getOperationsByActivities(requestActivity: \n        {\n            shipTos: [\"111-1001\"]\n            inventoryId: 900000\n            activityId: \"OE201\"\n            paginationData: {\n                records: 20\n                pageNumber: 0\n            }\n        }\n    ) {\n        operationsBOList {\n            userName\n            shipTos\n            operationType\n            operationName\n            locationId\n            locationProductInfoId\n            locationName\n            newLocationId\n            newLocationName\n            productId\n            createdAt\n            nestedDataAvailable\n            productBo {\n                    cin\n\t                amu\n\t                ndc\n\t                description\n\t                uoiCost\n\t                invoiceCost\n\t                packageSize\n\t                form\n\t                displayContract\n          }\n        }\n        activityEvents\n        activityId\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/activitytracker",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"activitytracker"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "origin,access-control-request-method,access-control-request-headers,accept-encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 May 2022 14:25:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"response\": {\n            \"operationsBOList\": [\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2015\",\n                    \"operationName\": \"ADD_PRODUCT\",\n                    \"locationId\": 1,\n                    \"locationProductInfoId\": 142,\n                    \"locationName\": \"Loc1\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-02T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": {\n                        \"cin\": \"2122237\",\n                        \"amu\": \"AMU1\",\n                        \"ndc\": \"NDC1\",\n                        \"description\": \"Aspinrin\",\n                        \"uoiCost\": \"10\",\n                        \"invoiceCost\": \"11\",\n                        \"packageSize\": \"12\",\n                        \"form\": \"12\",\n                        \"displayContract\": \"1\"\n                    }\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2018\",\n                    \"operationName\": \"EDIT_PRODUCT\",\n                    \"locationId\": 1,\n                    \"locationProductInfoId\": 143,\n                    \"locationName\": \"Loc1\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-02T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": {\n                        \"cin\": \"2122237\",\n                        \"amu\": \"AMU1\",\n                        \"ndc\": \"NDC1\",\n                        \"description\": \"Aspinrin\",\n                        \"uoiCost\": \"10\",\n                        \"invoiceCost\": \"11\",\n                        \"packageSize\": \"12\",\n                        \"form\": \"12\",\n                        \"displayContract\": \"1\"\n                    }\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2017\",\n                    \"operationName\": \"MOVE_AND_COPY_PRODUCT\",\n                    \"locationId\": 1,\n                    \"locationProductInfoId\": 144,\n                    \"locationName\": \"Loc1\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-02T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": {\n                        \"cin\": \"2122237\",\n                        \"amu\": \"AMU1\",\n                        \"ndc\": \"NDC1\",\n                        \"description\": \"Aspinrin\",\n                        \"uoiCost\": \"10\",\n                        \"invoiceCost\": \"11\",\n                        \"packageSize\": \"12\",\n                        \"form\": \"12\",\n                        \"displayContract\": \"1\"\n                    }\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2012\",\n                    \"operationName\": \"DELETE_INVENTORY\",\n                    \"locationId\": 0,\n                    \"locationProductInfoId\": null,\n                    \"locationName\": \"\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-11T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": null\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2013\",\n                    \"operationName\": \"CREATE_LOCATION\",\n                    \"locationId\": 11,\n                    \"locationProductInfoId\": null,\n                    \"locationName\": \"Loc11\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-01T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": null\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2013\",\n                    \"operationName\": \"CREATE_LOCATION\",\n                    \"locationId\": 1,\n                    \"locationProductInfoId\": null,\n                    \"locationName\": \"Loc1\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-01T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": null\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2011\",\n                    \"operationName\": \"CREATE_INVENTORY\",\n                    \"locationId\": 0,\n                    \"locationProductInfoId\": null,\n                    \"locationName\": \"\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-03-28T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": null\n                }\n            ],\n            \"activityEvents\": true,\n            \"activityId\": \"OE201\",\n            \"paginationDetailsRes\": {\n                \"totalPages\": 1,\n                \"totalElements\": 1,\n                \"isFirst\": true,\n                \"isLast\": true,\n                \"hasNext\": false,\n                \"hasPrev\": false,\n                \"pageItemsCount\": 20\n            }\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Inventory L3",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query{\n    response: getOperationsByActivitiesL3(requestActivity: \n        {\n            inventoryId: 6627951\n            locationId: 1801\n            activityId: \"OE201\"\n            paginationData: {\n                records: 10\n                pageNumber: 0\n            }\n        }\n    ) {\n        operationsBOList {\n            userName\n            operationType\n            operationName\n            locationId\n            locationName\n            newLocationId\n            newLocationName\n            locationProductInfoId\n            createdAt\n            nestedDataAvailable\n            locationProductDetails {\n                quantity\n                newQuantity\n                locationAuditId\n                originalLocationAuditId\n                operationType\n                productBo {\n                    cin\n\t                amu\n\t                ndc\n\t                description\n\t                uoiCost\n\t                invoiceCost\n\t                packageSize\n\t                form\n\t                displayContract\n                }\n            }\n        }\n        activityEvents\n        activityId\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "https://81r3kd4xvj.execute-api.us-east-1.amazonaws.com/{{env}}/activitytracker",
+							"protocol": "https",
+							"host": [
+								"81r3kd4xvj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Inventory L2 v2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "graphql",
+									"graphql": {
+										"query": "query{\n    response: getOperationsByActivities(requestActivity: \n        {\n            shipTos: [\"111-1001\"]\n            inventoryId: 900000\n            activityId: \"OE201\"\n            paginationData: {\n                records: 20\n                pageNumber: 0\n            }\n        }\n    ) {\n        operationsBOList {\n            userName\n            shipTos\n            operationType\n            operationName\n            locationId\n            locationProductInfoId\n            locationName\n            newLocationId\n            newLocationName\n            productId\n            createdAt\n            nestedDataAvailable\n            productBo {\n                    cin\n\t                amu\n\t                ndc\n\t                description\n\t                uoiCost\n\t                invoiceCost\n\t                packageSize\n\t                form\n\t                displayContract\n          }\n        }\n        activityEvents\n        activityId\n        paginationDetailsRes {\n            totalPages\n            totalElements\n            isFirst\n            isLast\n            hasNext\n            hasPrev\n            pageItemsCount\n        }\n    }\n}",
+										"variables": ""
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/activitytracker",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"activitytracker"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "origin,access-control-request-method,access-control-request-headers,accept-encoding"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 May 2022 14:25:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"response\": {\n            \"operationsBOList\": [\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2015\",\n                    \"operationName\": \"ADD_PRODUCT\",\n                    \"locationId\": 1,\n                    \"locationProductInfoId\": 142,\n                    \"locationName\": \"Loc1\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-02T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": {\n                        \"cin\": \"2122237\",\n                        \"amu\": \"AMU1\",\n                        \"ndc\": \"NDC1\",\n                        \"description\": \"Aspinrin\",\n                        \"uoiCost\": \"10\",\n                        \"invoiceCost\": \"11\",\n                        \"packageSize\": \"12\",\n                        \"form\": \"12\",\n                        \"displayContract\": \"1\"\n                    }\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2018\",\n                    \"operationName\": \"EDIT_PRODUCT\",\n                    \"locationId\": 1,\n                    \"locationProductInfoId\": 143,\n                    \"locationName\": \"Loc1\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-02T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": {\n                        \"cin\": \"2122237\",\n                        \"amu\": \"AMU1\",\n                        \"ndc\": \"NDC1\",\n                        \"description\": \"Aspinrin\",\n                        \"uoiCost\": \"10\",\n                        \"invoiceCost\": \"11\",\n                        \"packageSize\": \"12\",\n                        \"form\": \"12\",\n                        \"displayContract\": \"1\"\n                    }\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2017\",\n                    \"operationName\": \"MOVE_AND_COPY_PRODUCT\",\n                    \"locationId\": 1,\n                    \"locationProductInfoId\": 144,\n                    \"locationName\": \"Loc1\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-02T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": {\n                        \"cin\": \"2122237\",\n                        \"amu\": \"AMU1\",\n                        \"ndc\": \"NDC1\",\n                        \"description\": \"Aspinrin\",\n                        \"uoiCost\": \"10\",\n                        \"invoiceCost\": \"11\",\n                        \"packageSize\": \"12\",\n                        \"form\": \"12\",\n                        \"displayContract\": \"1\"\n                    }\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2012\",\n                    \"operationName\": \"DELETE_INVENTORY\",\n                    \"locationId\": 0,\n                    \"locationProductInfoId\": null,\n                    \"locationName\": \"\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-11T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": null\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2013\",\n                    \"operationName\": \"CREATE_LOCATION\",\n                    \"locationId\": 11,\n                    \"locationProductInfoId\": null,\n                    \"locationName\": \"Loc11\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-01T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": null\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2013\",\n                    \"operationName\": \"CREATE_LOCATION\",\n                    \"locationId\": 1,\n                    \"locationProductInfoId\": null,\n                    \"locationName\": \"Loc1\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-04-01T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": null\n                },\n                {\n                    \"userName\": \"auto_sanity_ri\",\n                    \"shipTos\": [\n                        \"111-1001\"\n                    ],\n                    \"operationType\": \"OE2011\",\n                    \"operationName\": \"CREATE_INVENTORY\",\n                    \"locationId\": 0,\n                    \"locationProductInfoId\": null,\n                    \"locationName\": \"\",\n                    \"newLocationId\": null,\n                    \"newLocationName\": null,\n                    \"productId\": null,\n                    \"createdAt\": \"2022-03-28T16:11:06.559Z\",\n                    \"nestedDataAvailable\": true,\n                    \"productBo\": null\n                }\n            ],\n            \"activityEvents\": true,\n            \"activityId\": \"OE201\",\n            \"paginationDetailsRes\": {\n                \"totalPages\": 1,\n                \"totalElements\": 1,\n                \"isFirst\": true,\n                \"isLast\": true,\n                \"hasNext\": false,\n                \"hasPrev\": false,\n                \"pageItemsCount\": 20\n            }\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

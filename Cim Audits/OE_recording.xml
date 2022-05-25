@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="uozc5l0x01.execute-api.us-east-1.amazonaws.com:443" rc="" rm="Unable to negotiate SSL transaction, no keystore?" tn="" dt="" de="" by="215" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT uozc5l0x01.execute-api.us-east-1.amazonaws.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+
+<httpSample t="419" it="0" lt="419" ct="111" ts="1652689735247" s="false" lb="cim audit-1" rc="401" rm="Unauthorized" tn="" dt="text" de="" by="542" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Content-Type: application/json
+Content-Length: 26
+Connection: close
+Date: Mon, 16 May 2022 08:28:56 GMT
+x-amzn-RequestId: d5b06a3f-f977-4b8c-8a18-1be06baea384
+Access-Control-Allow-Origin: *
+x-amz-apigw-id: SNazTGONIAMFhSA=
+X-Amzn-Trace-Id: Root=1-62820b48-3b2b5d41549646b21b900a15
+X-Cache: Error from cloudfront
+Via: 1.1 ea5efad48fd2ca3e2050f885ef5ad57c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: EWR53-C2
+X-Amz-Cf-Id: 0tw2BhQYuat_p809V1dLM-my7HtmDTdMWHuCS7UkGPHI8dg1vTNGAw==
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtb2JpbGUiLCJzdWIiOiJQRCIsImF1ZCI6InVzZW9lcDE2IiwidXNyIjoib2VfcGUudXNlcjAxMSIsImlzcyI6IkNhcmRpbmFsIEhlYWx0aCwgSW5jLiIsIldDVG9rZW4iOiI0NjI4MDA2JTJDOXJoOG83cEExc0x1RnVFVlBtJTJGZ0VlS3BJc1MwUlBJNVFaZUZDNGQ2VzY0amgxVzdFdnVScklzTEclMkJFU3ZxdENiVWZUMklMbG8xUlVqZEhPZ0Zld3JPckhqVVRIZ1JkRm9Sd1paenFoMDltN25RMlFKJTJCRDFLdWhzbVklMkZuRHNDJTJCV213MDZEa3lGNlBZWnB3OHRUJTJGS2s0WkZQVFBDUnNqJTJGRnhRdWtFaVFkJTJGMGg4SWprdnF0Tkx6ODBtdll5Z0VpUXlLWGhBR29ZaXpZU0Q4JTJCOVNsQXA0ZyUzRCUzRCIsInNjb3BlcyI6ImJrdGs0N2lubjgsZHpyc2E3NTNyMSxrNDhkaDBvMnJlLGhxbTRrYnBpeTMsZng1dGYyODlybCx6cjB3NDUybjEwLDAzOXBrdDJhY2ssb3Qxa2d4aGVnNSxzd2x3cWE2YWRqLDR5YW52OGcydzgsM3FpdDQ5cnVwZSxzc3hka3gyZG1nLDc3dThrcmZsZGkscmRueXF4eXE2Miw4amxzbW9wenoyLDF0dTl5dHFhaGosNHBuajc2ZnExZyxrZHR1bngwMmFiLDVqa29ndWJxcmssMWkxeTNwYjFoaCx2NTJ5ZXQzYnhiLGI3cHJ0OXFqYmwsOXd5c3Y0dTFtMSx0cm1qMW4ydjI0IiwiZXhwIjoxNjUyMzUzMDExLCJpYXQiOjE2NTIzNTIxMTEsIkx0cGFUb2tlbiI6IjR5REhEZXhla21xcXo4M3pVK3BsTkFQczJWemJIdGsvVlIyZW85bHllNkJheWxoN3c5c1Z4UngvN204ZTFUMWdvNzRackRoeC96dHU2RG84a1I3cFhqQnpzd0lGNGdpbytuZ1BoUSswcGJOS0s0czkya1VjVkNLWlhFQmpIYkhHVit1SU1SbnNHNm9NSWtlbW9mQ0VoQ2ZQbFBnNHlvUyt0SFAxL1djaW9jRk5JdXV2a1FMdUZab1dDaTJiRnQrbURYR3FtcTY4aE5zaWZwd1B5ejY1Z0xBZ09SRXNDRzhoZURXem9WMVcvQnNYc0xYN0dtUUNrMGdMcDAwVnJIeEtUVWJwOUZ4VW45M3VDb29mNTJLRWVEcHZSTmFjOVVxb3Z5NXJXU3pRQ3BKOC9zeExZeTVzQTNrMTNMcTNJeEMwc0p0YkFQcHozdnMva09DTmRsQ1FaMTAyU2xiWXN6NFdiU2Y4MXhqb1JkcG5LM3JlZER1emFXL2J0VTFXdEowZEdvayt2dmtZdDJjVjNMa1lmdWFLUkxuTHBIYWh4cmdiNDg5Zld6d01UZUZISDJPcm1MZG53TEUrYmtlZGFNL3owZE5OcVkvLy80M2ZnK0lyUFFQMjFwa1NUYVZnc1VqZnZWclB6RnE0QmpISTVkcU5yZWl1V3Qzc2ZaV2Fta2FSMDluVVBrYlVnUDIrRDVvTW9adGtRK1VzU1lZVjI1RGVnZ1N1OUR6b2t0Unp0bVMxSWlMcnorNmp3R2NkM2NzazZwRVdZem9xV25sUFV4YnJpZzBWZ0VWZDV6cHJMK1dHYWZWbDJTRHhyZDVKcFpHaVVBcVF0cW9GcU1Oclp6czBOMGozMVcrK012OEwzZHkxRWx4bDVDWUFVTm5SSGxidm5MZW5TT1JFU2lvWXZaL2Z4UjlJSHNHSGMwSVFlNEl4U0dxNlZWMnFRVjY4SE5jdlMvTnZkVmt5Mk5QdlJjNE5QRlFZTnNFUUl1Z1R5QzhLZ3AxKy9rdEJLTnl1L21nTUpNVjNHbG44NDdWZEp1VWZWd3lDbFBaWEJIbFo2NkJSemoxbFRwbm5iR2RpMHl5Tk0wVGhoNGNKbXc0aUJmaVQiLCJzZXNzaW9uIjoiajFBZWFRb3g5MTR4QkdjZ1FKajVQWU4zL0F3RFVJOUZkS3JXTUlQU0lXcUNiU25jQ2VpaUlvL2pWMEc3SDE0UXIwd3N0U2d4YzJNdldObzNTYkcyQ04rRFdxSUh1YnBoTDV1MjZPSHp6Q21EUDFSZWgvREdhWXA5OXlYZW5EZlhmN3hsajc0MlcyVGpCc2NxWUkvbnpOcHlHN0twWTAyL0FzL3ltaEtFWXp5STZqYnJ0RHhISFZjTlNFZUFsVWMvM2lLS2M3VlEwYlpxUVA2TW5iVUpReDN0RzNHR3I5N05rTjcyOGlqOG02eEk0YSsyZXBJcG5GWVFEekc4VUJRVlRHUld6dkgrclR4RXM5czl2OVRpeEw5S1VlT2l3VXBFVk9PckYxUVRraGJDSFZ2QTRpc05RY3ZkWTVSbEE1bW5qSGhidDdpMXB0SFdNdkhDVVdpR1dtQXVodU9hQlJ3a1lBZGpNa2NWcGhSVFZEbTV6NGk0TENBKzNzY3VCNldkTDZxS3ozTkh0MGt2ZWhIQXFQcE01Rjlmd2JvMThlTU5xQnRvY25YdzBtRFRONXZLNUFnMnltL3JjNjR0Y1RMeUlYQXBITFRuaU5wNGlXT205MXJRcGR2SWw5NW9YRUJNVGZxTERwUFRxb2NFQXBaM3g4L2MwaDBDZ2J2SUltOVJuNFhmalFrSU5wM2VpbFltZ24rMzF2d2JGME1sWitibWdDWnNQQk9ObWd6TGdHSDFUQlBEN3paZHEvcnFmcVJnMFNVV1hJR1FtNm9iWmZSRjZGcjFwcmhaOW15Z3JDbzE1eUY5ZHljUVR2aVUyMm5adzYrdnpUR0RQQWtFalFGeWREZUUraHVKZjdDRnpaUDNuSk9wbGc5U1dSYXZJbVNSdSsxMjIyVWxWZWNoWDY0Y3Rlc3Rwand1TnplU0gzT3FUaGZkOEtTUmdPZ2dLYVdaNy9TbW0xZmVLS09MTWc2MkV5TXBsc25WWlBobE5LdXc4RVo0aDFwTGJOMlJRY1hyT0NKZnlxSUtmZXVTMUk1bzk5VGtqUnRvTDNjU0xONGxJU0dOMy9uL0E2d3J3T0JSZExYSGY4aEhjTmxiNHVreE1rYVFQRTNLZFc3UjR0clk4aXk5aWdqNmp4cUVFcVhHbVlSUzJjTHBwN0FJdHB0NlNNbDhXNThzVmIvU0J0MGtsekUwSUV1d083WFdvOGpMRHVldEJFV1ZXSnFiZFpPVTBYTWl6QUdCNVFYSjBVaDhaMTlQQTloeUM2M2lGMWVuZjNIRHg1SHFaQ3Nkdkk5VnRKSEFheFF6d0pQZ1MyNk0yNkFuVkpVcWlVTmZxOXVoK1dEUTFvbHExZnFYMWpTaUhuZDUyei9SNWkydzJFV2VXd2N2bXlKOWhwSThlMkpnQlh4Q1hobDNlUVRtOE9LcVRQcTlNR3JURzhVVUdRRnFsL2I0d1F5K3BhcDJwejV0UHh6YlVzdS8yNDg3dWJPZlFpazd5aHFEWFVWNWxSRndZb0luWEFzdkJnWWdBdkdNb0RqWnNlVkl2OUh6Qk14SkFZUjc4WlB0U1NUVldZbTFzR2JyQVcyY0I2NDdpYzFDd3l0K0tLK3lacGlrRTR2cDIwTlhBTG9NNTRKaENuSmJPa2xOUzgwWWUxa0Q4RGcyeVdsdGdQcE1pSjFwenNUdlk4KzN6RFJXV3EyM2ZWRmMifQ.l0z-bdcs4Hry29ir90Os3UXhlmkrTTDjpbRJcNkIvJskBp5juJFG1skz8F9R26dKy8Sod08EmyKOD5MJ8-714w
+x-api-key: xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO
+Postman-Token: 7ec50c5a-1a30-4dda-81d1-da563eae4252
+user-id: oe_pe.user011
+Host: uozc5l0x01.execute-api.us-east-1.amazonaws.com
+Content-Type: application/json
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+Accept: application/json
+User-Agent: PostmanRuntime/7.29.0
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;Unauthorized&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://uozc5l0x01.execute-api.us-east-1.amazonaws.com/oe_pmodstg/api/v1/audits/dc/26/account/387331/details</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="b7prt9qjbl.execute-api.us-east-1.amazonaws.com:443" rc="" rm="Unable to negotiate SSL transaction, no keystore?" tn="" dt="" de="" by="215" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT b7prt9qjbl.execute-api.us-east-1.amazonaws.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="b7prt9qjbl.execute-api.us-east-1.amazonaws.com:443" rc="" rm="Unable to negotiate SSL transaction, no keystore?" tn="" dt="" de="" by="215" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT b7prt9qjbl.execute-api.us-east-1.amazonaws.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+
+<httpSample t="346" it="0" lt="345" ct="76" ts="1652689891475" s="false" lb="service req-2" rc="401" rm="Unauthorized" tn="" dt="text" de="" by="542" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String">HTTP/1.1 401 Unauthorized
+Content-Type: application/json
+Content-Length: 26
+Connection: close
+Date: Mon, 16 May 2022 08:31:32 GMT
+x-amzn-RequestId: 3eebafc1-2609-4235-87ee-1f86cf62b019
+Access-Control-Allow-Origin: *
+x-amz-apigw-id: SNbLtFuioAMFm_A=
+X-Amzn-Trace-Id: Root=1-62820be4-5d9ff049746e276951886a2f
+X-Cache: Error from cloudfront
+Via: 1.1 3dd77c5199bed8cf64af9bc1af1f0d84.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: EWR53-C2
+X-Amz-Cf-Id: H2g4G88t5NW4twNYh-2RcIelwzSzRMUDFVwhMKY7CRXyCU7wByYoYQ==
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtb2JpbGUiLCJzdWIiOiJQRCIsImF1ZCI6InVzZW9lcDE2IiwidXNyIjoib2VfcGUudXNlcjAxMSIsImlzcyI6IkNhcmRpbmFsIEhlYWx0aCwgSW5jLiIsIldDVG9rZW4iOiI0NjI4MDA2JTJDOXJoOG83cEExc0x1RnVFVlBtJTJGZ0VlS3BJc1MwUlBJNVFaZUZDNGQ2VzY0amgxVzdFdnVScklzTEclMkJFU3ZxdENiVWZUMklMbG8xUlVqZEhPZ0Zld3JPckhqVVRIZ1JkRm9Sd1paenFoMDltN25RMlFKJTJCRDFLdWhzbVklMkZuRHNDJTJCV213MDZEa3lGNlBZWnB3OHRUJTJGS2s0WkZQVFBDUnNqJTJGRnhRdWtFaVFkJTJGMGg4SWprdnF0Tkx6ODBtdll5Z0VpUXlLWGhBR29ZaXpZU0Q4JTJCOVNsQXA0ZyUzRCUzRCIsInNjb3BlcyI6ImJrdGs0N2lubjgsZHpyc2E3NTNyMSxrNDhkaDBvMnJlLGhxbTRrYnBpeTMsZng1dGYyODlybCx6cjB3NDUybjEwLDAzOXBrdDJhY2ssb3Qxa2d4aGVnNSxzd2x3cWE2YWRqLDR5YW52OGcydzgsM3FpdDQ5cnVwZSxzc3hka3gyZG1nLDc3dThrcmZsZGkscmRueXF4eXE2Miw4amxzbW9wenoyLDF0dTl5dHFhaGosNHBuajc2ZnExZyxrZHR1bngwMmFiLDVqa29ndWJxcmssMWkxeTNwYjFoaCx2NTJ5ZXQzYnhiLGI3cHJ0OXFqYmwsOXd5c3Y0dTFtMSx0cm1qMW4ydjI0IiwiZXhwIjoxNjUyMzUzMDExLCJpYXQiOjE2NTIzNTIxMTEsIkx0cGFUb2tlbiI6IjR5REhEZXhla21xcXo4M3pVK3BsTkFQczJWemJIdGsvVlIyZW85bHllNkJheWxoN3c5c1Z4UngvN204ZTFUMWdvNzRackRoeC96dHU2RG84a1I3cFhqQnpzd0lGNGdpbytuZ1BoUSswcGJOS0s0czkya1VjVkNLWlhFQmpIYkhHVit1SU1SbnNHNm9NSWtlbW9mQ0VoQ2ZQbFBnNHlvUyt0SFAxL1djaW9jRk5JdXV2a1FMdUZab1dDaTJiRnQrbURYR3FtcTY4aE5zaWZwd1B5ejY1Z0xBZ09SRXNDRzhoZURXem9WMVcvQnNYc0xYN0dtUUNrMGdMcDAwVnJIeEtUVWJwOUZ4VW45M3VDb29mNTJLRWVEcHZSTmFjOVVxb3Z5NXJXU3pRQ3BKOC9zeExZeTVzQTNrMTNMcTNJeEMwc0p0YkFQcHozdnMva09DTmRsQ1FaMTAyU2xiWXN6NFdiU2Y4MXhqb1JkcG5LM3JlZER1emFXL2J0VTFXdEowZEdvayt2dmtZdDJjVjNMa1lmdWFLUkxuTHBIYWh4cmdiNDg5Zld6d01UZUZISDJPcm1MZG53TEUrYmtlZGFNL3owZE5OcVkvLy80M2ZnK0lyUFFQMjFwa1NUYVZnc1VqZnZWclB6RnE0QmpISTVkcU5yZWl1V3Qzc2ZaV2Fta2FSMDluVVBrYlVnUDIrRDVvTW9adGtRK1VzU1lZVjI1RGVnZ1N1OUR6b2t0Unp0bVMxSWlMcnorNmp3R2NkM2NzazZwRVdZem9xV25sUFV4YnJpZzBWZ0VWZDV6cHJMK1dHYWZWbDJTRHhyZDVKcFpHaVVBcVF0cW9GcU1Oclp6czBOMGozMVcrK012OEwzZHkxRWx4bDVDWUFVTm5SSGxidm5MZW5TT1JFU2lvWXZaL2Z4UjlJSHNHSGMwSVFlNEl4U0dxNlZWMnFRVjY4SE5jdlMvTnZkVmt5Mk5QdlJjNE5QRlFZTnNFUUl1Z1R5QzhLZ3AxKy9rdEJLTnl1L21nTUpNVjNHbG44NDdWZEp1VWZWd3lDbFBaWEJIbFo2NkJSemoxbFRwbm5iR2RpMHl5Tk0wVGhoNGNKbXc0aUJmaVQiLCJzZXNzaW9uIjoiajFBZWFRb3g5MTR4QkdjZ1FKajVQWU4zL0F3RFVJOUZkS3JXTUlQU0lXcUNiU25jQ2VpaUlvL2pWMEc3SDE0UXIwd3N0U2d4YzJNdldObzNTYkcyQ04rRFdxSUh1YnBoTDV1MjZPSHp6Q21EUDFSZWgvREdhWXA5OXlYZW5EZlhmN3hsajc0MlcyVGpCc2NxWUkvbnpOcHlHN0twWTAyL0FzL3ltaEtFWXp5STZqYnJ0RHhISFZjTlNFZUFsVWMvM2lLS2M3VlEwYlpxUVA2TW5iVUpReDN0RzNHR3I5N05rTjcyOGlqOG02eEk0YSsyZXBJcG5GWVFEekc4VUJRVlRHUld6dkgrclR4RXM5czl2OVRpeEw5S1VlT2l3VXBFVk9PckYxUVRraGJDSFZ2QTRpc05RY3ZkWTVSbEE1bW5qSGhidDdpMXB0SFdNdkhDVVdpR1dtQXVodU9hQlJ3a1lBZGpNa2NWcGhSVFZEbTV6NGk0TENBKzNzY3VCNldkTDZxS3ozTkh0MGt2ZWhIQXFQcE01Rjlmd2JvMThlTU5xQnRvY25YdzBtRFRONXZLNUFnMnltL3JjNjR0Y1RMeUlYQXBITFRuaU5wNGlXT205MXJRcGR2SWw5NW9YRUJNVGZxTERwUFRxb2NFQXBaM3g4L2MwaDBDZ2J2SUltOVJuNFhmalFrSU5wM2VpbFltZ24rMzF2d2JGME1sWitibWdDWnNQQk9ObWd6TGdHSDFUQlBEN3paZHEvcnFmcVJnMFNVV1hJR1FtNm9iWmZSRjZGcjFwcmhaOW15Z3JDbzE1eUY5ZHljUVR2aVUyMm5adzYrdnpUR0RQQWtFalFGeWREZUUraHVKZjdDRnpaUDNuSk9wbGc5U1dSYXZJbVNSdSsxMjIyVWxWZWNoWDY0Y3Rlc3Rwand1TnplU0gzT3FUaGZkOEtTUmdPZ2dLYVdaNy9TbW0xZmVLS09MTWc2MkV5TXBsc25WWlBobE5LdXc4RVo0aDFwTGJOMlJRY1hyT0NKZnlxSUtmZXVTMUk1bzk5VGtqUnRvTDNjU0xONGxJU0dOMy9uL0E2d3J3T0JSZExYSGY4aEhjTmxiNHVreE1rYVFQRTNLZFc3UjR0clk4aXk5aWdqNmp4cUVFcVhHbVlSUzJjTHBwN0FJdHB0NlNNbDhXNThzVmIvU0J0MGtsekUwSUV1d083WFdvOGpMRHVldEJFV1ZXSnFiZFpPVTBYTWl6QUdCNVFYSjBVaDhaMTlQQTloeUM2M2lGMWVuZjNIRHg1SHFaQ3Nkdkk5VnRKSEFheFF6d0pQZ1MyNk0yNkFuVkpVcWlVTmZxOXVoK1dEUTFvbHExZnFYMWpTaUhuZDUyei9SNWkydzJFV2VXd2N2bXlKOWhwSThlMkpnQlh4Q1hobDNlUVRtOE9LcVRQcTlNR3JURzhVVUdRRnFsL2I0d1F5K3BhcDJwejV0UHh6YlVzdS8yNDg3dWJPZlFpazd5aHFEWFVWNWxSRndZb0luWEFzdkJnWWdBdkdNb0RqWnNlVkl2OUh6Qk14SkFZUjc4WlB0U1NUVldZbTFzR2JyQVcyY0I2NDdpYzFDd3l0K0tLK3lacGlrRTR2cDIwTlhBTG9NNTRKaENuSmJPa2xOUzgwWWUxa0Q4RGcyeVdsdGdQcE1pSjFwenNUdlk4KzN6RFJXV3EyM2ZWRmMifQ.l0z-bdcs4Hry29ir90Os3UXhlmkrTTDjpbRJcNkIvJskBp5juJFG1skz8F9R26dKy8Sod08EmyKOD5MJ8-714w
+x-api-key: xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO
+Postman-Token: b07b3cca-faf5-4e6e-9504-bc108a344680
+Host: b7prt9qjbl.execute-api.us-east-1.amazonaws.com
+Content-Type: application/json
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+User-Agent: PostmanRuntime/7.29.0
+Accept: */*
+Content-Length: 561
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;:&quot;Unauthorized&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;accountName&quot;: &quot;N HUDSON TEST&quot;,&#xd;
+    &quot;commentText&quot;: &quot;test&quot;,&#xd;
+    &quot;containerLineNumber&quot;: &quot;&quot;,&#xd;
+    &quot;containerNumber&quot;: &quot;&quot;,&#xd;
+    &quot;customerContactEmail&quot;: &quot;abc.xyz@cardinalhealth.com&quot;,&#xd;
+    &quot;customerContactExtension&quot;: &quot;&quot;,&#xd;
+    &quot;customerContactName&quot;: &quot;Automation Web Services Acute Test&quot;,&#xd;
+    &quot;customerContactPhone&quot;: &quot;4087866393&quot;,&#xd;
+    &quot;invoiceNumber&quot;: &quot;8959829&quot;,&#xd;
+    &quot;product&quot;: &quot;3537792&quot;,&#xd;
+    &quot;productDescription&quot;: &quot;DIGESTIVE ADVANTAGE IBS 32&quot;,&#xd;
+    &quot;quantity&quot;: 1,&#xd;
+    &quot;reason&quot;: &quot;7&quot;,&#xd;
+    &quot;serviceRequestUserName&quot;: &quot;test&quot;,&#xd;
+    &quot;userId&quot;: &quot;oe_pe.user011&quot;&#xd;
+}</queryString>
+  <java.net.URL>https://b7prt9qjbl.execute-api.us-east-1.amazonaws.com/oe_pmodstg/pd/ecom/shiptos/8-104259/v1/servicerequests</java.net.URL>
+</httpSample>
+
+</testResults>

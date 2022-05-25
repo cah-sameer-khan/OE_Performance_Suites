@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Cart Sync API" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="host" elementType="Argument">
+            <stringProp name="Argument.name">host</stringProp>
+            <stringProp name="Argument.value">orderexpresspmodstg.cardinalhealth.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="scheme" elementType="Argument">
+            <stringProp name="Argument.name">scheme</stringProp>
+            <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Environment" elementType="Argument">
+            <stringProp name="Argument.name">Environment</stringProp>
+            <stringProp name="Argument.value">oe_pmodstg</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="token-generator-api-host" elementType="Argument">
+            <stringProp name="Argument.name">token-generator-api-host</stringProp>
+            <stringProp name="Argument.value">iri1lvu09j.execute-api.us-east-1.amazonaws.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_Username1" elementType="Argument">
+            <stringProp name="Argument.name">P_Username1</stringProp>
+            <stringProp name="Argument.value">kavan.mobile.r</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="x-api-key" elementType="Argument">
+            <stringProp name="Argument.name">x-api-key</stringProp>
+            <stringProp name="Argument.value">xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ReloginIteration" elementType="Argument">
+            <stringProp name="Argument.name">ReloginIteration</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="IterationNumber" elementType="Argument">
+            <stringProp name="Argument.name">IterationNumber</stringProp>
+            <stringProp name="Argument.value">20</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TotalUser" elementType="Argument">
+            <stringProp name="Argument.name">TotalUser</stringProp>
+            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="CartSync-api-host" elementType="Argument">
+            <stringProp name="Argument.name">CartSync-api-host</stringProp>
+            <stringProp name="Argument.value">19h9veiiub.execute-api.us-east-1.amazonaws.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="LineItemcount" elementType="Argument">
+            <stringProp name="Argument.name">LineItemcount</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Ordercount" elementType="Argument">
+            <stringProp name="Argument.name">Ordercount</stringProp>
+            <stringProp name="Argument.value">4</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">orderexpresspmodstg.cardinalhealth.com</stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol">https</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <stringProp name="filename">CartSync_FullOrder.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">P_distCenter,P_CustNum,P_Cin,P_Cin2</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">true</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Unique USer CSV -Data Set Config" enabled="true">
+        <stringProp name="filename">CartSync_user.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">P_Username,P_Password</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1370726934000</longProp>
+        <longProp name="ThreadGroup.end_time">1370726934000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="C_Counter" enabled="true">
+          <stringProp name="CounterConfig.start">1</stringProp>
+          <stringProp name="CounterConfig.end"></stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">C_Counter</stringProp>
+          <stringProp name="CounterConfig.format">000</stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+        </CounterConfig>
+        <hashTree/>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Relogin Logic" enabled="true">
+          <stringProp name="IfController.condition">${__BeanShell(${__iterationNum}% ${ReloginIteration} ==0)}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="0 - Login Request" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="smauthreason" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">0</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">smauthreason</stringProp>
+                </elementProp>
+                <elementProp name="target" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">https://${host}/eps/mycah?bp=yes/eps/mycah</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">target</stringProp>
+                </elementProp>
+                <elementProp name="SMENC" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">ISO-8859-1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">SMENC</stringProp>
+                </elementProp>
+                <elementProp name="PASSWORD" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${P_Password}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">PASSWORD</stringProp>
+                </elementProp>
+                <elementProp name="smagentname" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">mqfw03tvxPqy26CpvJlRXLvMutCBCiLDBsehyGRfHw0UTDxB7OJhfKqhTBY9nu1umX0rK79RYANFXWXZENACWPv6kX8m0p0p</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">smagentname</stringProp>
+                </elementProp>
+                <elementProp name="postpreservationdata" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">postpreservationdata</stringProp>
+                </elementProp>
+                <elementProp name="smquerydata" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value"></stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">smquerydata</stringProp>
+                </elementProp>
+                <elementProp name="SMLOCALE" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">US-EN</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">SMLOCALE</stringProp>
+                </elementProp>
+                <elementProp name="REMEMBER" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">on</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">REMEMBER</stringProp>
+                </elementProp>
+                <elementProp name="USER" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${__CSVRead(CartSync_user1.csv,${__threadNum})}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">USER</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTPS</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/forms/RWO/OEDMZLogin.fcc?</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">PostmanRuntime/7.29.0</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Cookie</stringProp>
+                  <stringProp name="Header.value">SMSESSION=rrtCW1gvn89mycMlV5PdQBbieeR4D5XcQvr6UAGPqXkFQ0EwQIH/jMvk2sOlpZXaQvY3EJvfKAgW3ALBowMf/dnjuWzk0WX/xwzQUlL/IFAA4vbOGm30/ZRhHhpUCWH1eXvfcxGaYcsyG6GhyFOVIiBtOAfHJts5d67bzpmwMpdIDA+V4mOJNcTP9+XKD+q3KdAZhlnUbzhHufW4zBf4ZswIMj5fpk+5t0SYN4cLfnT/BVHTJ3JFmKjw3Qr4qnQ8Zwk6zwRBaS/ABpATWTidLnnYR3XTjRXc6ZRr9CYu1ru02xdFg/Jwzzzgpp9ybcvgmAckgzdU37sUxBggG9w0QOONutN14sAinwo+jXIBc7l2Vz1JAeyG/pF8Env+6dX7IDuy7LT4ahfZx9ZK/X5ldEHH5HnMOWiadKA0YoT0/YiTTWq7jho0BrQ2cncN/xUFuV3ThTDA1IA03KHLPBKoj5PW+L1Z9Dgt/4Gq0ioDeWRW+6SebRKgJNga4dhchFOiywvQYhTZWnbvtT37I9irTD5O2Qumd4cQ8XWXZVRF/3GmAqtdluV0DgMI4/h45pxi9VTPQZSl6l330D5flOHBoOAR2RnU4abV4RsjFJZ8AE0zLTsxt3mZQ1JtEOFPelmpWxBw79aF82n3fQezDLKbM9W4rfRocJvOHoEpUVlA/Jvy6+gqjyPFLkt2Aa3wRrpZ72kFilBfU4kdeqgae8UmA9olzH576bVmst3O6BV+UltWKxw/1/T3NYM6FZobzClObzqojELGGIQ718JWtygD+MinHiWwe92oAzFjoP9Qq5gva8yUVfqMgkaADn/KFOrYcvQ+Yr9mjNGqikN17EPWT/+/U1g5GFEVqAx/CjJNm4zdvAsY122mg+laMCrZg8I10gz+vQ28dc69SBX151rsFtj1q/j5UV3C7FrMOKjiuUlo1FuxkIOEGSu6OHAQo1qpUXDyWaPdJFKIpicnm3C4d7KYzW3GtvoD/xXlwjr9TgVHWUWVeKUpV/HUnLLOQMW6Gyx4PvArI/nI9eyLicCIIireJMXW8QjXfLo1ab0Ug6ZIrRj3RqEAJo2BqFQjjgeYk5xouyiHLq0XbalnX7ynNPyLKGzfbErAXGfIIr5KfI/lQYztG5lCRb4vfgn1+hA0RCEago3FvwGcxzY8WePtWN6hWDdB/5r6zW4e0rGMCwtH3FrYO+B+JEGz3nY7Il1gXTbJ70xF1yzUVi11+QK8guQQ89EjKMXimt31Pv4hV8c3NaOAOBToToq8OYDvVFM2GO0kIkK537k=; GCLB=CLei45b72L-W_QE; JSESSIONID1=0000g2g8IH9ERULdwor-nxOr5Q8:v0744cdt; LtpaToken2=L65wEnPXCcfA+Ecu+6nJYuQMRwiTox/ntHiF17tE6hGbPGKmLOReFU5lFteN+ebnMVx4Gr543G+rU8DlAziWJdMZRUp31uu+QVotI0rIbUlB03nxWc1D61lE3gIvcDyaDcPdI8MTh/po2ZfylN3dtW6JefjuvEdq6WDP7mg2MXZM0TJ0W0onsPz8vWP/Gu2x93UbytwCz7zaMIzb1NWzrJn6x+GERxtGK98hhpMArgSU9D7uJB5w/EhGeQdw9YyHM2mRs0yY+9nOt6Q+ajzWPcYSD1aSp9p67Bzbe8rSNPvMUX5n/uzuUbZACD86juyGMfA6Wl3HJ+FXuGksNzupjK9RFiqBPjw1AxEFR76gmFeTTe1P5z4UHhlgLnXYGGr8c7jCKS8gEb0p8f6UIfpu+gZDEF/lL2tK1k2S/sDivXWrvxWpruO2Oia8GjLHn+hfb3GSkrGDZzvGLwP4o4CrxI9k0vZgWmZjQEDyY1q7X1I6fPbxOOG/SiIqnBEQxW+58W4rtgMxyyv17r+/kNyOC9/QpjjthiNb89v/dbgPIaTkHp6JZCkAEXk4oiCy2k8AXq1GPi1+7iyWWBE7w/cD5DnLOk1DT8KjqQF8eTNy/U3B0KuwMIvqZ8cDyRpVs8kxLqtCOwaMx2p2KQ4J3mZ2eM6UOL7e6Q+o1LZj4NjRr597hScdlAkXbjEMj4MS5B/VeekVDd6Fqn3gM/wcigAS2ZeVr1fkkiyVTkjKi+fwwdU2X7adwjuJwR0wtIxN35tnsjMPVWDwiA6/hZyBDIN8OAzZIR7aNU6EyKu1oiIk7USVnm3Rqu74Icq0AUOtR4kXhSNEGLzd5qgFmMpvEbP0Dw==; akavpau_Orderexpressstg_VP_stg=1646637055~id=bfbdd56f18afc28e3285759a1203b220</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Connection</stringProp>
+                  <stringProp name="Header.value">keep-alive</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="C_SM_Session" enabled="true">
+              <stringProp name="BoundaryExtractor.useHeaders">true</stringProp>
+              <stringProp name="BoundaryExtractor.refname">C_SM_Session</stringProp>
+              <stringProp name="BoundaryExtractor.lboundary">SMSESSION=</stringProp>
+              <stringProp name="BoundaryExtractor.rboundary">;</stringProp>
+              <stringProp name="BoundaryExtractor.default">C_SM_Session_nofound</stringProp>
+              <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+              <stringProp name="BoundaryExtractor.match_number">1</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+            </BoundaryExtractor>
+            <hashTree/>
+            <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="C_LtpaToken" enabled="true">
+              <stringProp name="BoundaryExtractor.useHeaders">true</stringProp>
+              <stringProp name="BoundaryExtractor.refname">C_LtpaToken</stringProp>
+              <stringProp name="BoundaryExtractor.lboundary">LtpaToken2=</stringProp>
+              <stringProp name="BoundaryExtractor.rboundary">;</stringProp>
+              <stringProp name="BoundaryExtractor.default">C_LtpaToken_nofound</stringProp>
+              <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+              <stringProp name="BoundaryExtractor.match_number">1</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+            </BoundaryExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="User Login Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-759245160">Invalid username and/or password, please try again</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">User Credential invalid for ${__CSVRead(CartSync_user1.csv,${__threadNum})}</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">6</intProp>
+              <stringProp name="Assertion.scope">all</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResultAction guiclass="ResultActionGui" testclass="ResultAction" testname="Result Status Action Handler" enabled="true">
+              <intProp name="OnError.action">5</intProp>
+            </ResultAction>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="0 - Token Generation" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="user" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">user</stringProp>
+                  <stringProp name="Argument.value">${__CSVRead(CartSync_user1.csv,${__threadNum})}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${token-generator-api-host}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTPS</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/${Environment}/api/v1/token-generator/application/mobile/generate</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">PostmanRuntime/7.29.0</stringProp>
+                </elementProp>
+                <elementProp name="Cookie" elementType="Header">
+                  <stringProp name="Header.name">sm-session</stringProp>
+                  <stringProp name="Header.value">${C_SM_Session}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">x-api-key</stringProp>
+                  <stringProp name="Header.value">xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="C_AccessToken" enabled="true">
+              <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
+              <stringProp name="BoundaryExtractor.refname">C_AccessToken</stringProp>
+              <stringProp name="BoundaryExtractor.lboundary">{&quot;access_token&quot;:&quot;</stringProp>
+              <stringProp name="BoundaryExtractor.rboundary">&quot;</stringProp>
+              <stringProp name="BoundaryExtractor.default">C_AccessToken_nofound</stringProp>
+              <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+              <stringProp name="BoundaryExtractor.match_number">1</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+            </BoundaryExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Token generate Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="620910836">unauthorized</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">unauthorized : Exception_during token generation for ${__CSVRead(CartSync_user1.csv,${__threadNum})}</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">6</intProp>
+              <stringProp name="Assertion.scope">all</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResultAction guiclass="ResultActionGui" testclass="ResultAction" testname="Result Status Action Handler" enabled="true">
+              <intProp name="OnError.action">5</intProp>
+            </ResultAction>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname=" PreProcessor - Create Order" enabled="true">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">int i = 0;
+String p = &quot;&quot; ;
+String LineitemString = &quot;&quot;;
+String CustomLineItem = &quot;&quot;;
+String FinalOrder = &quot;&quot;;
+String CustomOrder = &quot;&quot;;
+String CustomOrderHeader = &quot;&quot;;
+String CustomOrderFooter = &quot;&quot;;
+
+String StaleTag = &quot;&quot;;
+//Array of available Cins
+String[] Itemlist =[&apos;1000074&apos;,&apos;1026525&apos;,&apos;1000199&apos;,&apos;1000207&apos;,&apos;1000710&apos;,&apos;1026582&apos;,&apos;1026426&apos;,&apos;1026251&apos;,&apos;1001064&apos;,&apos;1002047&apos;,&apos;1002054&apos;,&apos;1002351&apos;,&apos;1002914&apos;,&apos;1003565&apos;,&apos;1003581&apos;,&apos;1026434&apos;,&apos;1026772&apos;,&apos;1004191&apos;,&apos;1004217&apos;,&apos;1004225&apos;,&apos;1009372&apos;,&apos;1010040&apos;,&apos;1010073&apos;,&apos;1010149&apos;,&apos;1010727&apos;,&apos;1010750&apos;,&apos;1012897&apos;,&apos;1017102&apos;,&apos;1017110&apos;,&apos;1017276&apos;,&apos;1017326&apos;,&apos;1017854&apos;,&apos;1018381&apos;,&apos;1018639&apos;,&apos;1018704&apos;,&apos;1018951&apos;,&apos;1019124&apos;,&apos;1019157&apos;,&apos;1019355&apos;,&apos;1019629&apos;,&apos;1003680&apos;,&apos;1003896&apos;,&apos;1004191&apos;,&apos;1004217&apos;,&apos;1004225&apos;,&apos;1004274&apos;,&apos;1005909&apos;,&apos;1006105&apos;,&apos;1006352&apos;,&apos;1006402&apos;,&apos;1006972&apos;,&apos;1007780&apos;,&apos;1007947&apos;,&apos;1008127&apos;,&apos;1008721&apos;,&apos;1008754&apos;,&apos;1008838&apos;,&apos;1009281&apos;,&apos;1009323&apos;,&apos;1009349&apos;,&apos;1012137&apos;,&apos;1012178&apos;,&apos;1012186&apos;,&apos;1012194&apos;,&apos;1012277&apos;,&apos;1012335&apos;,&apos;1012400&apos;,&apos;1015387&apos;,&apos;1015783&apos;,&apos;1015858&apos;,&apos;1015965&apos;] ;
+
+	  StaleTag = &quot;true&quot;; 
+	//  StaleTag = &quot;false&quot;;
+//This for loop is for line item
+for( i= 0 ; i&lt; ${LineItemcount} - 1 ; i++) 
+       {
+
+       //Stale prduct info tag 
+    //   if (i % 2 ==1) {StaleTag = &quot;true&quot;; }
+	//  else		  {StaleTag = &quot;false&quot;;}  
+
+      	
+CustomLineItem =  &quot;{ \&quot;orderItemId\&quot;: \&quot;\&quot;, \&quot;cin\&quot;: \&quot;&quot; + Itemlist[i] + &quot;\&quot;,\&quot;longLineSTP\&quot;: \&quot;\&quot;, \&quot;quantity\&quot;: \&quot;1\&quot;, \&quot;lineItemDeleted\&quot;: false, \&quot;lineItemModified\&quot;: true, \&quot;staleProductInfo\&quot;: &quot; + StaleTag  + &quot;}, \r\n&quot; 
+LineitemString = LineitemString + CustomLineItem ;
+
+			}
+			
+
+		// last line will not have comma at end so added seperately
+CustomLineItem =  &quot;{ \&quot;orderItemId\&quot;: \&quot;\&quot;, \&quot;cin\&quot;: \&quot;&quot; + Itemlist[i] + &quot;\&quot;,\&quot;longLineSTP\&quot;: \&quot;\&quot;, \&quot;quantity\&quot;: \&quot;1\&quot;, \&quot;lineItemDeleted\&quot;: false, \&quot;lineItemModified\&quot;: true, \&quot;staleProductInfo\&quot;: &quot; + StaleTag  + &quot;} \r\n&quot; 
+LineitemString = LineitemString + CustomLineItem ;
+
+
+//Order Creation
+for( i=0; i&lt; ${Ordercount} - 1 ; i++)  
+{
+CustomOrderHeader =  &quot;{ \&quot;orderId\&quot;: \&quot;\&quot;,\r\n \&quot;orderModifiedStp\&quot;: \&quot;\&quot;, \r\n  \&quot;orderLineItems\&quot;: [ \r\n&quot; ;
+CustomOrderFooter = &quot;],  \&quot;orderModified\&quot;: true,\&quot;orderDeleted\&quot;: false,\&quot;purchaseOrderNumber\&quot;: \&quot;PET7&quot; +${__threadNum}${C_Counter} + i + &quot;\&quot;, \&quot;purchaseOrderMemo\&quot;: null,\&quot;clientOrderId\&quot;: null},\r\n&quot; ;
+
+CustomOrder = CustomOrderHeader + LineitemString + CustomOrderFooter;
+FinalOrder =  FinalOrder + CustomOrder  ;
+
+CustomOrder = &quot;&quot;;
+CustomOrderHeader = &quot;&quot;;
+CustomOrderFooter = &quot;&quot;;
+}
+
+
+
+//#### Last order starts here
+CustomOrderHeader =  &quot;{ \&quot;orderId\&quot;: \&quot;\&quot;,\r\n \&quot;orderModifiedStp\&quot;: \&quot;\&quot;, \r\n  \&quot;orderLineItems\&quot;: [ \r\n&quot; ;
+CustomOrderFooter = &quot;],  \&quot;orderModified\&quot;: true,\&quot;orderDeleted\&quot;: false,\&quot;purchaseOrderNumber\&quot;: \&quot;PET7&quot; +${__threadNum}${C_Counter} + i + &quot;\&quot;, \&quot;purchaseOrderMemo\&quot;: null,\&quot;clientOrderId\&quot;: null}\r\n&quot; ;
+
+CustomOrder = CustomOrderHeader + LineitemString + CustomOrderFooter;
+FinalOrder =  FinalOrder + CustomOrder  ;
+
+CustomOrder = &quot;&quot;;
+CustomOrderHeader = &quot;&quot;;
+CustomOrderFooter = &quot;&quot;;
+
+
+
+// Saving values to paramter
+
+vars.put(&quot;FinalOrder&quot;,FinalOrder);
+
+</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223PreProcessor>
+        <hashTree/>
+        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="1 - Cart Sync Mobile - Create Order" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1- Cart Sync - Create Order" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+    &quot;cartType&quot;: &quot;1&quot;,&#xd;
+    &quot;costType&quot;: &quot;ACTUAL_PRICE&quot;,&#xd;
+    &quot;catalogId&quot;: &quot;11001&quot;,&#xd;
+    &quot;storeId&quot;: &quot;11100&quot;,&#xd;
+    &quot;userId&quot;: &quot;${__CSVRead(CartSync_user1.csv,${__threadNum})}&quot;,&#xd;
+    &quot;rqlType&quot;: &quot;SC&quot;,&#xd;
+    &quot;timeZone&quot;: &quot;EST&quot;,&#xd;
+    &quot;userAccountPrice&quot;: &quot;ACTUAL_PRICE&quot;,&#xd;
+    &quot;submissionRights&quot;: &quot;Y&quot;,&#xd;
+    &quot;pageName&quot;: &quot;Shopping Cart&quot;,&#xd;
+    &quot;type&quot;: &quot;regular&quot;,&#xd;
+    &quot;role&quot;: &quot;REGULAR_BUYER&quot;,&#xd;
+    &quot;autoSubmit&quot;: &quot;N&quot;,&#xd;
+    &quot;customerNumber&quot;: &quot;${P_CustNum}&quot;,&#xd;
+    &quot;distributionCenter&quot;: &quot;${P_distCenter}&quot;,&#xd;
+    &quot;c2Order&quot;: false,&#xd;
+    &quot;fromSubmitOrder&quot;: false,&#xd;
+    &quot;sourceId&quot;: &quot;MOBILE_APP&quot;,&#xd;
+    &quot;longCartSTP&quot; : &quot;333333333333&quot;,&#xd;
+    &quot;orderList&quot;: [ &#xd;
+    				${FinalOrder} &#xd;
+   		 ]&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${CartSync-api-host}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTPS</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/oe_pmodstg/pd/ecom/v1/cartsync/synccarts</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">PostmanRuntime/7.29.0</stringProp>
+                </elementProp>
+                <elementProp name="Cookie" elementType="Header">
+                  <stringProp name="Header.name">Connection</stringProp>
+                  <stringProp name="Header.value">keep-alive</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">ltpaToken</stringProp>
+                  <stringProp name="Header.value">${C_LtpaToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">UUID</stringProp>
+                  <stringProp name="Header.value">12312</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">${C_AccessToken}</stringProp>
+                </elementProp>
+                <elementProp name="x-api-key" elementType="Header">
+                  <stringProp name="Header.name">x-api-key</stringProp>
+                  <stringProp name="Header.value">${x-api-key}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Create Order : Validation" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-251779975">Successfully fetched orders List</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Order Sync Failed: Response doees not contain Success message 
+for user ${__CSVRead(CartSync_user1.csv,${__threadNum})}
+for iteration  : ${__iterationNum}
+for cin : ${P_Cin}
+for account ${P_CustNum}-${P_distCenter} </stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+              <stringProp name="Assertion.scope">all</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_LastOrderID" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_LastOrderID</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[-1].orderId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_LastOrderID_NotFOund</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_LastOrderLineItemID" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_LastOrderLineItemID</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[-1].orderLineItems[0].orderItemId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_LastOrderLineItemID_notfound</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_LastPO" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_LastPO</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[-1].purchaseOrderNumber</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <ResultAction guiclass="ResultActionGui" testclass="ResultAction" testname="Result Status Action Handler" enabled="true">
+              <intProp name="OnError.action">5</intProp>
+            </ResultAction>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname"></stringProp>
+              <stringProp name="RegexExtractor.regex"></stringProp>
+              <stringProp name="RegexExtractor.template"></stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <stringProp name="RegexExtractor.match_number"></stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_RandomOrderID1" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_RandomOrderID1</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[*].orderId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_LastOrderID_NotFOund</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_RandomOrderID2" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_RandomOrderID2</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[*].orderId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_LastOrderID_NotFOund</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_RandomOrderID3" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_RandomOrderID3</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[*].orderId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_LastOrderID_NotFOund</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_ModifyOrderID" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_ModifyOrderID</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[-3].orderId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_ModifyOrderID_NotFOund</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_ModifyLineItemID" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_ModifyLineItemID</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[-3].orderLineItems[0].orderItemId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_ModifyLineItemID_NotFOund</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_ModifyCin" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_ModifyCin</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[-3].orderLineItems[0].cin</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_ModifyCin_NotFOund</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_DeleteOrderID" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_DeleteOrderID</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[-2].orderId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_DeleteOrderID_NotFOund</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_DeleteLineItemID" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_DeleteLineItemID</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[-2].orderLineItems[1].orderItemId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_DeleteLineItemID_NotFOund</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname=" PreProcessor - Add Lineitem" enabled="true">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">int i = 0;
+String p = &quot;&quot; ;
+String LineitemString = &quot;&quot;;
+String CustomLineItem = &quot;&quot;;
+String FinalOrderAddLine = &quot;&quot;;
+String CustomOrder = &quot;&quot;;
+String CustomOrderHeader = &quot;&quot;;
+String CustomOrderFooter = &quot;&quot;;
+
+String StaleTag = &quot;&quot;;
+//Array of available Cins
+String[] Itemlist = [&apos;1019983&apos;,&apos;1020189&apos;,&apos;1020650&apos;,&apos;1020874&apos;,&apos;1021112&apos;,&apos;1021872&apos;,&apos;1022003&apos;,&apos;1023209&apos;,&apos;1023688&apos;,&apos;1023936&apos;,&apos;1024769&apos;,&apos;1025485&apos;,&apos;1025972&apos;,&apos;1003680&apos;,&apos;1003896&apos;,&apos;1004191&apos;,&apos;1004217&apos;,&apos;1004225&apos;,&apos;1004274&apos;,&apos;1005909&apos;,&apos;1006105&apos;,&apos;1006352&apos;,&apos;1006402&apos;,&apos;1006972&apos;,&apos;1007780&apos;,&apos;1007947&apos;,&apos;1008127&apos;,&apos;1008721&apos;,&apos;1008754&apos;,&apos;1008838&apos;,&apos;1009281&apos;,&apos;1009323&apos;,&apos;1009349&apos;] ;
+
+
+	  StaleTag = &quot;true&quot; ; 
+	//  StaleTag = &quot;false&quot;;
+
+//This for loop is for line item
+for( i= 0 ; i&lt; 4 ; i++) 
+       {
+       //Stale prduct info tag 
+ //      if (i % 2 ==1) {StaleTag = &quot;true&quot;; }
+ //  else		  {StaleTag = &quot;false&quot;;}  
+
+			
+      	
+CustomLineItem =  &quot;{ \&quot;orderItemId\&quot;: \&quot;\&quot;, \&quot;cin\&quot;: \&quot;&quot; + Itemlist[i] + &quot;\&quot;,\&quot;longLineSTP\&quot;: \&quot;\&quot;, \&quot;quantity\&quot;: \&quot;1\&quot;, \&quot;lineItemDeleted\&quot;: false, \&quot;lineItemModified\&quot;: true, \&quot;staleProductInfo\&quot;: &quot; + StaleTag  + &quot;}, \r\n&quot; 
+LineitemString = LineitemString + CustomLineItem ;
+			}
+
+		// last line will not have comma at end so added seperately
+CustomLineItem =  &quot;{ \&quot;orderItemId\&quot;: \&quot;\&quot;, \&quot;cin\&quot;: \&quot;&quot; + Itemlist[i] + &quot;\&quot;,\&quot;longLineSTP\&quot;: \&quot;\&quot;, \&quot;quantity\&quot;: \&quot;1\&quot;, \&quot;lineItemDeleted\&quot;: false, \&quot;lineItemModified\&quot;: true, \&quot;staleProductInfo\&quot;: &quot; + StaleTag  + &quot;} \r\n&quot; 
+LineitemString = LineitemString + CustomLineItem ;
+
+
+//Order Creation
+for( i=1; i&lt; 1 ; i++)  
+{
+CustomOrderHeader =  &quot;{ \&quot;orderId\&quot;: \&quot;&quot; + vars.get(&quot;C_RandomOrderID&quot;+i+&quot;&quot;) + &quot;\&quot;,\r\n \&quot;orderModifiedStp\&quot;: \&quot;\&quot;, \r\n  \&quot;orderLineItems\&quot;: [ \r\n&quot; ;
+CustomOrderFooter = &quot;],  \&quot;orderModified\&quot;: true,\&quot;orderDeleted\&quot;: false,\&quot;purchaseOrderNumber\&quot;: \&quot;\&quot;, \&quot;purchaseOrderMemo\&quot;: null,\&quot;clientOrderId\&quot;: null}, \r\n&quot; ;
+
+CustomOrder = CustomOrderHeader + LineitemString + CustomOrderFooter;
+FinalOrderAddLine =  FinalOrderAddLine + CustomOrder  ;
+
+CustomOrder = &quot;&quot;;
+CustomOrderHeader = &quot;&quot;;
+CustomOrderFooter = &quot;&quot;;
+}
+
+
+
+//#### Last order starts here
+CustomOrderHeader =  &quot;{ \&quot;orderId\&quot;: \&quot;&quot; + vars.get(&quot;C_RandomOrderID&quot;+i+&quot;&quot;) + &quot;\&quot;,\r\n \&quot;orderModifiedStp\&quot;: \&quot;\&quot;, \r\n  \&quot;orderLineItems\&quot;: [ \r\n&quot; ;
+CustomOrderFooter = &quot;],  \&quot;orderModified\&quot;: true,\&quot;orderDeleted\&quot;: false,\&quot;purchaseOrderNumber\&quot;: \&quot;\&quot;, \&quot;purchaseOrderMemo\&quot;: null,\&quot;clientOrderId\&quot;: null}\r\n&quot; ;
+
+CustomOrder = CustomOrderHeader + LineitemString + CustomOrderFooter;
+FinalOrderAddLine =  FinalOrderAddLine + CustomOrder  ;
+
+CustomOrder = &quot;&quot;;
+CustomOrderHeader = &quot;&quot;;
+CustomOrderFooter = &quot;&quot;;
+							 
+
+// Saving final values to paramter
+vars.put(&quot;FinalOrderAddLine&quot;,FinalOrderAddLine);
+
+</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223PreProcessor>
+        <hashTree/>
+        <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="PreProcessor - Modify Lineitem" enabled="true">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">int i = 0;
+String p = &quot;&quot; ;
+String LineitemString = &quot;&quot;;
+String CustomLineItem = &quot;&quot;;
+String FinalOrder_ModifyLine = &quot;&quot;;
+String CustomOrder = &quot;&quot;;
+String CustomOrderHeader = &quot;&quot;;
+String CustomOrderFooter = &quot;&quot;;
+
+String StaleTag = &quot;&quot;;
+//Array of available Cins
+String[] Itemlist = [&apos;1003680&apos;,&apos;1003896&apos;,&apos;1004191&apos;,&apos;1004217&apos;,&apos;1004225&apos;,&apos;1004233&apos;,&apos;1004274&apos;,&apos;1005909&apos;,&apos;1006105&apos;,&apos;1006352&apos;,&apos;1006402&apos;,&apos;1006972&apos;,&apos;1007640&apos;,&apos;1007780&apos;,&apos;1007889&apos;,&apos;1007947&apos;,&apos;1007970&apos;,&apos;1008127&apos;,&apos;1008754&apos;,&apos;1008838&apos;,&apos;1009281&apos;,&apos;1009323&apos;,&apos;1009349&apos;,&apos;1009372&apos;,&apos;1009695&apos;,&apos;1009869&apos;,&apos;1010040&apos;,&apos;1010073&apos;,&apos;1010149&apos;,&apos;1010206&apos;,&apos;1010727&apos;,&apos;1010750&apos;,&apos;1010933&apos;,&apos;1012020&apos;,&apos;1012079&apos;,&apos;1012137&apos;,&apos;1012178&apos;,&apos;1012186&apos;,&apos;1012194&apos;,&apos;1012277&apos;,&apos;1012335&apos;,&apos;1012343&apos;,&apos;1012400&apos;,&apos;1012756&apos;,&apos;1012897&apos;,&apos;1015387&apos;,&apos;1015783&apos;,&apos;1015858&apos;,&apos;1015965&apos;,&apos;1016005&apos;,&apos;1017110&apos;] ;
+
+	  StaleTag = &quot;true&quot;; 
+	//  StaleTag = &quot;false&quot;;
+
+//This for loop is for line item
+for( i= 1 ; i&lt; 1 ; i++) 
+       {
+       //Stale prduct info tag 
+//       if (i % 2 ==1) {StaleTag = &quot;true&quot;; }
+//	  else		  {StaleTag = &quot;false&quot;;}  
+		
+      	
+CustomLineItem =  &quot;{ \&quot;orderItemId\&quot;: \&quot;&quot; + vars.get(&quot;C_ModifyLineItemID&quot;) + &quot;\&quot;, \&quot;cin\&quot;: \&quot;&quot; +  vars.get(&quot;C_ModifyCin&quot;) + &quot;\&quot;,\&quot;longLineSTP\&quot;: \&quot;1648538137281\&quot;, \&quot;quantity\&quot;: \&quot;2\&quot;, \&quot;lineItemDeleted\&quot;: false, \&quot;lineItemModified\&quot;: true, \&quot;staleProductInfo\&quot;: &quot; + StaleTag  + &quot;}, \r\n&quot; 
+LineitemString = LineitemString + CustomLineItem ;
+			}
+
+StaleTag = &quot;true&quot;;
+		// last line will not have comma at end so added seperately
+CustomLineItem =  &quot;{ \&quot;orderItemId\&quot;: \&quot;&quot; + vars.get(&quot;C_ModifyLineItemID&quot;) + &quot;\&quot;, \&quot;cin\&quot;: \&quot;&quot; + vars.get(&quot;C_ModifyCin&quot;) + &quot;\&quot;,\&quot;longLineSTP\&quot;: \&quot;1648538137281\&quot;, \&quot;quantity\&quot;: \&quot;2\&quot;, \&quot;lineItemDeleted\&quot;: false, \&quot;lineItemModified\&quot;: true, \&quot;staleProductInfo\&quot;: &quot; + StaleTag  + &quot;} \r\n&quot; 
+LineitemString = LineitemString + CustomLineItem ;
+
+
+
+//Order Creation
+for( i=1; i&lt; 1 ; i++)  
+{
+CustomOrderHeader =  &quot;{ \&quot;orderId\&quot;: \&quot;&quot; + vars.get(&quot;C_ModifyOrderID&quot;) + &quot;\&quot;,\r\n \&quot;orderModifiedStp\&quot;: \&quot;3333333333333\&quot;, \r\n  \&quot;orderLineItems\&quot;: [ \r\n&quot; ;
+CustomOrderFooter = &quot;],  \&quot;orderModified\&quot;: true,\&quot;orderDeleted\&quot;: false,\&quot;purchaseOrderNumber\&quot;: \&quot;\&quot;, \&quot;purchaseOrderMemo\&quot;: null,\&quot;clientOrderId\&quot;: null}, \r\n&quot; ;
+
+CustomOrder = CustomOrderHeader + LineitemString + CustomOrderFooter;
+FinalOrder_ModifyLine =  FinalOrder_ModifyLine + CustomOrder  ;
+
+CustomOrder = &quot;&quot;;
+CustomOrderHeader = &quot;&quot;;
+CustomOrderFooter = &quot;&quot;;
+}
+
+
+
+//#### Last order starts here
+CustomOrderHeader =  &quot;{ \&quot;orderId\&quot;: \&quot;&quot; + vars.get(&quot;C_ModifyOrderID&quot;) + &quot;\&quot;,\r\n \&quot;orderModifiedStp\&quot;: \&quot;3333333333333\&quot;, \r\n  \&quot;orderLineItems\&quot;: [ \r\n&quot; ;
+CustomOrderFooter = &quot;],  \&quot;orderModified\&quot;: true,\&quot;orderDeleted\&quot;: false,\&quot;purchaseOrderNumber\&quot;: \&quot;\&quot;, \&quot;purchaseOrderMemo\&quot;: null,\&quot;clientOrderId\&quot;: null}\r\n&quot; ;
+
+CustomOrder = CustomOrderHeader + LineitemString + CustomOrderFooter;
+FinalOrder_ModifyLine =  FinalOrder_ModifyLine + CustomOrder  ;
+
+CustomOrder = &quot;&quot;;
+CustomOrderHeader = &quot;&quot;;
+CustomOrderFooter = &quot;&quot;;
+							 
+
+
+// Saving values to paramter
+vars.put(&quot;FinalOrderModifyLine&quot;,FinalOrder_ModifyLine);
+
+</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223PreProcessor>
+        <hashTree/>
+        <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="PreProcessor - Delete Lineitem" enabled="true">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">int i = 0;
+String p = &quot;&quot; ;
+String LineitemString = &quot;&quot;;
+String CustomLineItem = &quot;&quot;;
+String FinalOrderDeleteLine = &quot;&quot;;
+String CustomOrder = &quot;&quot;;
+String CustomOrderHeader = &quot;&quot;;
+String CustomOrderFooter = &quot;&quot;;
+
+String StaleTag = &quot;&quot;;
+//Array of available Cins
+String[] Itemlist = [&apos;1003680&apos;,&apos;1003896&apos;,&apos;1004191&apos;,&apos;1004217&apos;,&apos;1004225&apos;,&apos;1004233&apos;,&apos;1004274&apos;,&apos;1005909&apos;,&apos;1006105&apos;,&apos;1006352&apos;,&apos;1006402&apos;,&apos;1006972&apos;,&apos;1007640&apos;,&apos;1007780&apos;,&apos;1007889&apos;,&apos;1007947&apos;,&apos;1007970&apos;,&apos;1008127&apos;,&apos;1008754&apos;,&apos;1008838&apos;,&apos;1009281&apos;,&apos;1009323&apos;,&apos;1009349&apos;,&apos;1009372&apos;,&apos;1009695&apos;,&apos;1009869&apos;,&apos;1010040&apos;,&apos;1010073&apos;,&apos;1010149&apos;,&apos;1010206&apos;,&apos;1010727&apos;,&apos;1010750&apos;,&apos;1010933&apos;,&apos;1012020&apos;,&apos;1012079&apos;,&apos;1012137&apos;,&apos;1012178&apos;,&apos;1012186&apos;,&apos;1012194&apos;,&apos;1012277&apos;,&apos;1012335&apos;,&apos;1012343&apos;,&apos;1012400&apos;,&apos;1012756&apos;,&apos;1012897&apos;,&apos;1015387&apos;,&apos;1015783&apos;,&apos;1015858&apos;,&apos;1015965&apos;,&apos;1016005&apos;,&apos;1017110&apos;] ;
+
+ 	  StaleTag = &quot;true&quot;; 
+//	  StaleTag = &quot;false&quot;;
+
+//This for loop is for line item
+for( i= 1 ; i&lt; 1 ; i++) 
+       {
+       //Stale prduct info tag 
+ //      if (i % 2 ==1) {StaleTag = &quot;true&quot;; }
+//	  else		  {StaleTag = &quot;false&quot;;}  
+
+			
+      	
+CustomLineItem =  &quot;{ \&quot;orderItemId\&quot;: \&quot;&quot; + vars.get(&quot;C_DeleteLineItemID&quot;) + &quot;\&quot;, \&quot;cin\&quot;: \&quot;\&quot;,\&quot;longLineSTP\&quot;: \&quot;1648538137281\&quot;, \&quot;quantity\&quot;: \&quot;7\&quot;, \&quot;lineItemDeleted\&quot;: true, \&quot;lineItemModified\&quot;: true, \&quot;staleProductInfo\&quot;: &quot; + StaleTag  + &quot;}, \r\n&quot; 
+LineitemString = LineitemString + CustomLineItem ;
+			}
+
+StaleTag = &quot;true&quot;;
+		// last line will not have comma at end so added seperately
+CustomLineItem =  &quot;{ \&quot;orderItemId\&quot;: \&quot;&quot; + vars.get(&quot;C_DeleteLineItemID&quot;) + &quot;\&quot;, \&quot;cin\&quot;: \&quot;\&quot;,\&quot;longLineSTP\&quot;: \&quot;1648538137281\&quot;, \&quot;quantity\&quot;: \&quot;7\&quot;, \&quot;lineItemDeleted\&quot;: true, \&quot;lineItemModified\&quot;: true, \&quot;staleProductInfo\&quot;: &quot; + StaleTag  + &quot;} \r\n&quot; 
+LineitemString = LineitemString + CustomLineItem ;
+
+
+
+//Order Creation
+for( i=1; i&lt; 1 ; i++)  
+{
+CustomOrderHeader =  &quot;{ \&quot;orderId\&quot;: \&quot;&quot; + vars.get(&quot;C_DeleteOrderID&quot;) + &quot;\&quot;,\r\n \&quot;orderModifiedStp\&quot;: \&quot;3333333333333\&quot;, \r\n  \&quot;orderLineItems\&quot;: [ \r\n&quot; ;
+CustomOrderFooter = &quot;],  \&quot;orderModified\&quot;: true,\&quot;orderDeleted\&quot;: false,\&quot;purchaseOrderNumber\&quot;: \&quot;\&quot;, \&quot;purchaseOrderMemo\&quot;: null,\&quot;clientOrderId\&quot;: null}, \r\n&quot; ;
+
+CustomOrder = CustomOrderHeader + LineitemString + CustomOrderFooter;
+FinalOrderDeleteLine =  FinalOrderDeleteLine + CustomOrder  ;
+
+CustomOrder = &quot;&quot;;
+CustomOrderHeader = &quot;&quot;;
+CustomOrderFooter = &quot;&quot;;
+}
+
+
+//#### Last order starts here
+CustomOrderHeader =  &quot;{ \&quot;orderId\&quot;: \&quot;&quot; + vars.get(&quot;C_DeleteOrderID&quot;) + &quot;\&quot;,\r\n \&quot;orderModifiedStp\&quot;: \&quot;3333333333333\&quot;, \r\n  \&quot;orderLineItems\&quot;: [ \r\n&quot; ;
+CustomOrderFooter = &quot;],  \&quot;orderModified\&quot;: true,\&quot;orderDeleted\&quot;: false,\&quot;purchaseOrderNumber\&quot;: \&quot;\&quot;, \&quot;purchaseOrderMemo\&quot;: null,\&quot;clientOrderId\&quot;: null}\r\n&quot; ;
+
+CustomOrder = CustomOrderHeader + LineitemString + CustomOrderFooter;
+FinalOrderDeleteLine =  FinalOrderDeleteLine + CustomOrder  ;
+
+CustomOrder = &quot;&quot;;
+CustomOrderHeader = &quot;&quot;;
+CustomOrderFooter = &quot;&quot;;
+					 
+
+// Saving values to paramter
+vars.put(&quot;FinalOrderDeleteLine&quot;,FinalOrderDeleteLine);
+
+</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223PreProcessor>
+        <hashTree/>
+        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="2 - Cart Sync Mobile - add Line Item" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="2 - Cart Sync - add Line Item" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+    &quot;cartType&quot;: &quot;1&quot;,&#xd;
+    &quot;costType&quot;: &quot;ACTUAL_PRICE&quot;,&#xd;
+    &quot;catalogId&quot;: &quot;11001&quot;,&#xd;
+    &quot;storeId&quot;: &quot;11100&quot;,&#xd;
+    &quot;userId&quot;: &quot;${__CSVRead(CartSync_user1.csv,${__threadNum})}&quot;,&#xd;
+    &quot;rqlType&quot;: &quot;SC&quot;,&#xd;
+    &quot;timeZone&quot;: &quot;EST&quot;,&#xd;
+    &quot;userAccountPrice&quot;: &quot;ACTUAL_PRICE&quot;,&#xd;
+    &quot;submissionRights&quot;: &quot;Y&quot;,&#xd;
+    &quot;pageName&quot;: &quot;Shopping Cart&quot;,&#xd;
+    &quot;type&quot;: &quot;regular&quot;,&#xd;
+    &quot;role&quot;: &quot;REGULAR_BUYER&quot;,&#xd;
+    &quot;autoSubmit&quot;: &quot;N&quot;,&#xd;
+    &quot;customerNumber&quot;: &quot;${P_CustNum}&quot;,&#xd;
+    &quot;distributionCenter&quot;: &quot;${P_distCenter}&quot;,&#xd;
+    &quot;c2Order&quot;: false,&#xd;
+    &quot;fromSubmitOrder&quot;: false,&#xd;
+    &quot;sourceId&quot;: &quot;MOBILE_APP&quot;,&#xd;
+    &quot;longCartSTP&quot; : &quot;333333333333&quot;,&#xd;
+    &quot;orderList&quot;: [&#xd;
+      	   ${FinalOrderAddLine} ,     &#xd;
+      	   ${FinalOrderModifyLine},&#xd;
+      	   ${FinalOrderDeleteLine}  &#xd;
+&#xd;
+      	&#xd;
+    ]&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${CartSync-api-host}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTPS</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/oe_pmodstg/pd/ecom/v1/cartsync/synccarts</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">PostmanRuntime/7.29.0</stringProp>
+                </elementProp>
+                <elementProp name="Cookie" elementType="Header">
+                  <stringProp name="Header.name">Connection</stringProp>
+                  <stringProp name="Header.value">keep-alive</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">ltpaToken</stringProp>
+                  <stringProp name="Header.value">${C_LtpaToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">UUID</stringProp>
+                  <stringProp name="Header.value">12312</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">${C_AccessToken}</stringProp>
+                </elementProp>
+                <elementProp name="x-api-key" elementType="Header">
+                  <stringProp name="Header.name">x-api-key</stringProp>
+                  <stringProp name="Header.value">${x-api-key}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Create line Item : Validation" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-251779975">Successfully fetched orders List</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Order Sync Failed: Response doees not contain Success message 
+for user ${__CSVRead(CartSync_user1.csv,${__threadNum})}
+for iteration  : ${__iterationNum}
+for mix n match 
+for account ${P_CustNum}-${P_distCenter}
+</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+              <stringProp name="Assertion.scope">all</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="C_LastOrderitemID" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">C_LastOrderitemID</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.data.orderList[-1].orderLineItems[1].orderItemId</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+              <stringProp name="JSONPostProcessor.defaultValues">C_LastOrderLineItemID_notfound</stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+            <ResultAction guiclass="ResultActionGui" testclass="ResultAction" testname="Result Status Action Handler" enabled="true">
+              <intProp name="OnError.action">5</intProp>
+            </ResultAction>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="5 - Cart Sync Mobile - Delete Order" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="5 - Cart Sync - Delete Order" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+    &quot;cartType&quot;: &quot;1&quot;,&#xd;
+    &quot;costType&quot;: &quot;ACTUAL_PRICE&quot;,&#xd;
+    &quot;catalogId&quot;: &quot;11001&quot;,&#xd;
+    &quot;storeId&quot;: &quot;11100&quot;,&#xd;
+    &quot;userId&quot;: &quot;${__CSVRead(CartSync_user1.csv,${__threadNum})}&quot;,&#xd;
+    &quot;rqlType&quot;: &quot;SC&quot;,&#xd;
+    &quot;timeZone&quot;: &quot;EST&quot;,&#xd;
+    &quot;userAccountPrice&quot;: &quot;ACTUAL_PRICE&quot;,&#xd;
+    &quot;submissionRights&quot;: &quot;Y&quot;,&#xd;
+    &quot;pageName&quot;: &quot;Shopping Cart&quot;,&#xd;
+    &quot;type&quot;: &quot;regular&quot;,&#xd;
+    &quot;role&quot;: &quot;REGULAR_BUYER&quot;,&#xd;
+    &quot;autoSubmit&quot;: &quot;N&quot;,&#xd;
+    &quot;customerNumber&quot;: &quot;${P_CustNum}&quot;,&#xd;
+    &quot;distributionCenter&quot;: &quot;${P_distCenter}&quot;,&#xd;
+    &quot;c2Order&quot;: false,&#xd;
+    &quot;fromSubmitOrder&quot;: false,&#xd;
+    &quot;sourceId&quot;: &quot;MOBILE_APP&quot;,&#xd;
+    &quot;longCartSTP&quot; : &quot;333333333333&quot;,&#xd;
+    &quot;orderList&quot;: [&#xd;
+        {&#xd;
+            &quot;orderId&quot;: &quot;${C_LastOrderID}&quot;,&#xd;
+            &quot;orderModifiedStp&quot;: &quot;&quot;,&#xd;
+            &quot;orderLineItems&quot;: [&#xd;
+                {&#xd;
+                    &quot;orderItemId&quot;: &quot;&quot;,&#xd;
+                    &quot;cin&quot;: &quot;&quot;,&#xd;
+                    &quot;longLineSTP&quot;: &quot;&quot;,&#xd;
+                    &quot;quantity&quot;: &quot;&quot;,&#xd;
+                    &quot;lineItemDeleted&quot;: false,&#xd;
+                    &quot;lineItemModified&quot;: true,&#xd;
+                    &quot;staleProductInfo&quot;: false&#xd;
+                }&#xd;
+            ],&#xd;
+            &quot;orderModified&quot;: true,&#xd;
+            &quot;orderDeleted&quot;: true,&#xd;
+            &quot;purchaseOrderNumber&quot;: &quot;&quot;,&#xd;
+            &quot;purchaseOrderMemo&quot;: &quot;&quot;,&#xd;
+            &quot;clientOrderId&quot;: &quot;&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;orderId&quot;: &quot;${C_RandomOrderID1}&quot;,&#xd;
+            &quot;orderModifiedStp&quot;: &quot;&quot;,&#xd;
+            &quot;orderLineItems&quot;: [&#xd;
+                {&#xd;
+                    &quot;orderItemId&quot;: &quot;&quot;,&#xd;
+                    &quot;cin&quot;: &quot;&quot;,&#xd;
+                    &quot;longLineSTP&quot;: &quot;&quot;,&#xd;
+                    &quot;quantity&quot;: &quot;&quot;,&#xd;
+                    &quot;lineItemDeleted&quot;: false,&#xd;
+                    &quot;lineItemModified&quot;: true,&#xd;
+                    &quot;staleProductInfo&quot;: false&#xd;
+                }&#xd;
+            ],&#xd;
+            &quot;orderModified&quot;: true,&#xd;
+            &quot;orderDeleted&quot;: true,&#xd;
+            &quot;purchaseOrderNumber&quot;: &quot;&quot;,&#xd;
+            &quot;purchaseOrderMemo&quot;: &quot;&quot;,&#xd;
+            &quot;clientOrderId&quot;: &quot;&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;orderId&quot;: &quot;${C_RandomOrderID2}&quot;,&#xd;
+            &quot;orderModifiedStp&quot;: &quot;&quot;,&#xd;
+            &quot;orderLineItems&quot;: [&#xd;
+                {&#xd;
+                    &quot;orderItemId&quot;: &quot;&quot;,&#xd;
+                    &quot;cin&quot;: &quot;&quot;,&#xd;
+                    &quot;longLineSTP&quot;: &quot;&quot;,&#xd;
+                    &quot;quantity&quot;: &quot;&quot;,&#xd;
+                    &quot;lineItemDeleted&quot;: false,&#xd;
+                    &quot;lineItemModified&quot;: true,&#xd;
+                    &quot;staleProductInfo&quot;: false&#xd;
+                }&#xd;
+            ],&#xd;
+            &quot;orderModified&quot;: true,&#xd;
+            &quot;orderDeleted&quot;: true,&#xd;
+            &quot;purchaseOrderNumber&quot;: &quot;&quot;,&#xd;
+            &quot;purchaseOrderMemo&quot;: &quot;&quot;,&#xd;
+            &quot;clientOrderId&quot;: &quot;&quot;&#xd;
+        }&#xd;
+    ]&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${CartSync-api-host}</stringProp>
+            <stringProp name="HTTPSampler.port">443</stringProp>
+            <stringProp name="HTTPSampler.protocol">HTTPS</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/oe_pmodstg/pd/ecom/v1/cartsync/synccarts</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Accept-Encoding" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="User-Agent" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">PostmanRuntime/7.29.0</stringProp>
+                </elementProp>
+                <elementProp name="Cookie" elementType="Header">
+                  <stringProp name="Header.name">Connection</stringProp>
+                  <stringProp name="Header.value">keep-alive</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">ltpaToken</stringProp>
+                  <stringProp name="Header.value">${C_LtpaToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">UUID</stringProp>
+                  <stringProp name="Header.value">12312</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">${C_AccessToken}</stringProp>
+                </elementProp>
+                <elementProp name="x-api-key" elementType="Header">
+                  <stringProp name="Header.name">x-api-key</stringProp>
+                  <stringProp name="Header.value">${x-api-key}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Create delete Order : Validation" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-251779975">Successfully fetched orders List</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Order Sync Failed: Response doees not contain Success message 
+for user ${__CSVRead(CartSync_user1.csv,${__threadNum})}
+for iteration  : ${__iterationNum}
+for cin : ${P_Cin}
+for account ${P_CustNum}-${P_distCenter}
+for Order : ${C_LastOrderID}</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+              <stringProp name="Assertion.scope">all</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+            <ResultAction guiclass="ResultActionGui" testclass="ResultAction" testname="Result Status Action Handler" enabled="true">
+              <intProp name="OnError.action">5</intProp>
+            </ResultAction>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Log_Output_Data" enabled="true">
+          <stringProp name="cacheKey">true</stringProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="parameters"></stringProp>
+          <stringProp name="script">def string2 = &quot;Create orders for user  ${__CSVRead(CartSync_user1.csv,${__threadNum})}  ,iteration : ${__iterationNum} ,account  ${P_distCenter}-${P_CustNum}  &quot; ; 
+
+log.info(string2);</stringProp>
+          <stringProp name="scriptLanguage">groovy</stringProp>
+        </JSR223Sampler>
+        <hashTree/>
+      </hashTree>
+      <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+        <stringProp name="ConstantTimer.delay">10000</stringProp>
+      </ConstantTimer>
+      <hashTree/>
+      <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+        <stringProp name="ConstantTimer.delay">30000</stringProp>
+        <stringProp name="RandomTimer.range">10000</stringProp>
+      </UniformRandomTimer>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>false</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>false</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>true</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

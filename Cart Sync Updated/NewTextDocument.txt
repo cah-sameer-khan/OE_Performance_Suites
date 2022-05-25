@@ -1,0 +1,6 @@
+Create orders
+for user ${__CSVRead(CartSync_user1.csv,${__threadNum})}
+for iteration  : ${__iterationNum}
+for cin : ${P_Cin}
+for account ${P_CustNum}-${P_distCenter} 
+

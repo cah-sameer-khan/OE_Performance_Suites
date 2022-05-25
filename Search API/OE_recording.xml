@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="eihb7qwns0.execute-api.us-east-1.amazonaws.com:443" rc="" rm="Unable to negotiate SSL transaction, no keystore?" tn="" dt="" de="" by="215" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT eihb7qwns0.execute-api.us-east-1.amazonaws.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="eihb7qwns0.execute-api.us-east-1.amazonaws.com:443" rc="" rm="Unable to negotiate SSL transaction, no keystore?" tn="" dt="" de="" by="215" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT eihb7qwns0.execute-api.us-east-1.amazonaws.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="eihb7qwns0.execute-api.us-east-1.amazonaws.com:443" rc="" rm="Unable to negotiate SSL transaction, no keystore?" tn="" dt="" de="" by="215" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT eihb7qwns0.execute-api.us-east-1.amazonaws.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+
+<httpSample t="1030" it="0" lt="1029" ct="114" ts="1647847500917" s="false" lb="-1" rc="500" rm="Internal Server Error" tn="" dt="text" de="" by="518" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String">HTTP/1.1 500 Internal Server Error
+Content-Type: application/json
+Content-Length: 36
+Connection: close
+Date: Mon, 21 Mar 2022 07:25:03 GMT
+x-amzn-RequestId: 0f0a3d12-743d-4b8c-86fe-c1033750f476
+x-amzn-ErrorType: InternalServerErrorException
+x-amz-apigw-id: PUs8QERBoAMFWKQ=
+X-Cache: Error from cloudfront
+Via: 1.1 96b6c9282feceea8aa00c25902322bb6.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: EWR53-C1
+X-Amz-Cf-Id: Nti8BrGlTdjkZwJOcC140MFffIBSNlgpzL5mWrNkIk4kn8-Rzmc4iA==
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtb2JpbGUiLCJzdWIiOiJQRCIsImF1ZCI6ImF1dHJpczAyIiwidXNyIjoiYXV0b19zYW5pdHlfcmkiLCJpc3MiOiJDYXJkaW5hbCBIZWFsdGgsIEluYy4iLCJXQ1Rva2VuIjoiMzgwNjAyNSUyQ3pabE5vQng5czNLZVZSRTk0WkJZRXJkV3ZKQ09FR0hWM2JXUEFaJTJGOEtYTFpRZjNXTGZET2NheWF1VlI5bjk2Z2FGVUFNTHZLRjBDQnVsUjNORm53V2pHMGxiJTJCaVl0eWdoQmZBTUFIZG9Zb3E3Ym5SY0JIJTJCYSUyRmdYdUxmdWRSQUJ5czQxeDlvam8xbUM0YUpnemtQMGZaUmxkUTlidkRRTWdqTU1FVFBPZFA0ViUyQiUyQiUyQjF6eW9kdDVUS2wwelI4JTJGSjYlMkJHTFo0JTJCaDcxNHJJZnpvWGYwUE9IdyUzRCUzRCIsInNjb3BlcyI6ImJrdGs0N2lubjgsZHpyc2E3NTNyMSxrNDhkaDBvMnJlLGhxbTRrYnBpeTMsZng1dGYyODlybCx6cjB3NDUybjEwLDAzOXBrdDJhY2ssb3Qxa2d4aGVnNSxzd2x3cWE2YWRqLDR5YW52OGcydzgsM3FpdDQ5cnVwZSxzc3hka3gyZG1nLDc3dThrcmZsZGkscmRueXF4eXE2Miw4amxzbW9wenoyLDF0dTl5dHFhaGosNHBuajc2ZnExZyxrZHR1bngwMmFiLDVqa29ndWJxcmssMWkxeTNwYjFoaCx2NTJ5ZXQzYnhiLGI3cHJ0OXFqYmwsOXd5c3Y0dTFtMSx0cm1qMW4ydjI0IiwiZXhwIjoxNjQ3ODQ4MDkzLCJpYXQiOjE2NDc4NDcxOTMsIkx0cGFUb2tlbiI6IlA2T3BTR0ZGd09FLzRwZ0ZDSDdMaHUzUGpidUMxMDZTV3RMck94R0VNekNJSWoyTWpWWDVlNHUxbXk2MHZQanIyb2xJMDdPVC9xbVVuUFJ3VGZYTThoTDdJVEVCbTZ3ejh3aHYrTnIzTDJqcnlRNmF2bjg4SEcxazBPRU9ZOWJ4dUZPMDM3bzlkSVlrL1U4Yk0wSzVESE9yU1NFYmJJeVpaTXNwUUI4SHB4ZlFOZ1ZhcERBNWhnQWhGMGJ1c2xrdnltMk0xYmFtYmVxU0swN0d0OUlDY0JQOE1hZnZ6M2ZTZlNzeHJHSHkrSHRTWXU0V3didFQvRE0xUkxTSFQ0THZFUW9SbWd5Wk5KbGNRa0oyZU1pOUV4VkhGaFRSMjRobFI5VXZXV0FnM0krMEhidCtXRzFJdHk4YkFCNEE0emZrbzc3UUhTbFJVSGVwRGtrY1VvdFJ3dHNZWjVUUC83WUJtQ1Fab2VBL1BRSzRtb3lxMy9TNjlIOERrdHNOc08xU1l5bXNCdlAvVGdnTjVFelg3cEVaNzF2TE1BV2dPS2YzR0xpdUFodEZydm5YVnVic2dFbHZ1R3htYlhhTHF6ZlZTdU9aRC9zMmJ2VDVnWUNmc2dMenJkVnBnRVlnY3BrTXBkUEd5YUF3blBWV2pwTUdiNDhCbXAwTHlESEVNMjhPZDhybkQ0cFpVWHZOcWxod0FYRW0vZGdSYXd1TFVLU1JLMnZyUU9yU0ZnWmY5bkxuRHBrTFpaNlBpRFZzU0tTb0FGNW1oU1lwb2hzOVpUeDl6T1BHQTc2ZkFxMG9kbWhSZE1NSGZPUmpITEx3ZitPV09ZajI0VjFxWkJnL2RUTi9sMXRZV0gvN1FJVFRITC93RkY0U2RGTnhFKzhCK0pHUFlNRys0RnpJeDkvWVhVNE5QNGtqSG1yMGs4cHlWMEErRHJnbVBadWc5aitxRENCdXQwYXMvZldqaUlMaC9VYWZTT0JJU1BtSStYM2oyK3N6WHpyUkFnMUdUenhLQ1ZVUW53ajh0Z3FVMzdKc3lyUXlIaStkbUl1UWVYbkhuODdmcWpxUkE4YmhTaUVKajV0WU0wdTYyaTZlcCtIblg5a3pkY3ZaYVl2YS9RQjVFRC9WeUdEQ2dnPT0iLCJzZXNzaW9uIjoiNEh2KzZVSU9EZzBGVURYMXpBSFNsQ242VU40RFFsWTBlSENwdUhQNjV2RG1pS3NISllhbFlLSjkzU2Y2YzdwcE1GNjQ3OXc5Zm5NK3hjRTAwVG15WTVYODdKbEdUQjlHZy92d0tvM2hYUFcvU3hDUXJFNlA1eElMUnBqSVV2eWYzSm54bS9CL1VoUDJ1Z3NIY0VmbWZTV2p2K2U4T2QwYW9PTWpUQ1M4RGQzZW0zdUpyTkFmQmNHYUMxL0Z6dDg3S1BQWUNQOEdDeFJ2akxPaEJZMVZJTDVWbi9idVVGYVRwejN0S3lvb1FCUStQK05XNzVYWU1reDNQT0hzZHZOOUk4ekV5bUVhdWdBTnJ2bElkZ0pVMkFCRHovYTBJQVZHcWttcXBYWnZnUjEzQXpIRTBEaFhHUUpxN1o0Y2ZKZVdvYUlQN21KVm5ZR3drVG5LblJvRWs3VlNiZHBLMnFXMUxMNlE3UW43NW0rdC95cmQzeUtWWllLODMreStiUjlZVXE3V25YZzg5MmEyaHJYdkJJRHFzZ3ltc0xUNzh4eEJianBCdFVUQU1oQm9ra3p6SGhidFh2SjZ2V2NZNzdHaHVWU2hZOEw4QzVBbzlBU1B4MjY3aTYrWjZvS1BWQzNwenlyRmJPUXRSVWg2YWxXQ1hPUWdkVkkvdDRWNnJvcndjMGsvZ3VZL3UvbnRucFZ2WmcyUnhLOW1EWkUyazVCMkhrYUUwUG1ENUJ6R2I5eHNHRFJTa2xKSXJmbWhqeXFPOEZqQVVZNGN5TzZiT281Z3NWWTFxR3Q5ODlRbkpoRUpxRkhJYjZnTUwweUZ0QWlNUUQwc05TMGpncWFKZ3p4SGtEckV2V3ZaMGxKS1JzYVVjaC85UzB6VzJXdTVDSmxSUDUrSU9DbENMSXQ0WEVJdjErSy8zZlhOVjcyNjBSQTFBb1h4Vi9rYTE1MHczWXFPK3NsT3FtVzFFKzgyZjBlMWZyWTJXQ0JKWWo2RXBTTnM1TnJ1ajZvQ2dLS0NHZStKeWYrKyt3bElpRlZGeVQySXdKWmpoRnFpakxwMVVpazEycFZhOGFMRWNIQm05M3YvNVRXVWxTcVVSMnlHM3hkTGpkL2VjWVJWWmdtdnc3c2JGS3htcTlxaGJxdTlnck13d0VTem5BL09sMDUyaFlLN1N2VnNUZERaRFJKa3A1bUtXZ2thZWNCeVBTM2srNk1Yc0VhQUxlU20vTFNnMSs1MWlZTTBLaGgvOGxIUko5cnNsbEtmdDhoc2VJTC82UmxxSmJ1dThEVnRTbUZ0Z0VDVDNBMC92ZkxNOVJ4aHAyRCs2WjFuQWdOVDY5cVZXRWpFcFNXWGIyOWkwb21aWVlWNFJHNjB3UjBCNDAvOEIxNWZNRlZYUjI3eXp4TGlVcHB5TW5OanJPRVluSUFUay9VaThoaHZyUTJkYTVrOFpTcm16K1dNQ3VKZnpGYVlPa202WnR3UnExQkdLSTg2d24wZ0dRTWpwakNBK2lWb1owczhzTStPYmI1U2ZSdTNoYjkvMit4MVpLOWoyL0ZieHd2SklCZmNSS1ZlU3NsYng4U3dUQ1d4cTZDTzVwdzVhcmQ2Rk9VeVlXNWtjMWpxcnozazMwa1Q0VUFCazlOcUJNYTZ3dGNwQkRScHNieU14VkZyaXVQQ3RhSERFWXlvVjR5S0RONmJvbllhRWNiOEplRUkifQ.nGGo8ozfJsCsHhV6d7ZIGQ48a-OB4WPCjU-gvq7Jl0_MFgeBpltPVwSGr_gkJGrR47d09-1BRPsvgKfTqMWSuw
+x-api-key: xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO
+Postman-Token: e81caa48-7b21-466d-86f0-a8952ef3c149
+Host: eihb7qwns0.execute-api.us-east-1.amazonaws.com
+Content-Type: application/json
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+User-Agent: PostmanRuntime/7.29.0
+Accept: */*
+Content-Length: 283
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;: &quot;Internal server error&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;searchProfile&quot;: &quot;CAH_findRIProductsBySearchTerm&quot;,&#xd;
+    &quot;pageSize&quot;: 100,&#xd;
+    &quot;storeId&quot;: &quot;11100&quot;,&#xd;
+    &quot;filters&quot;: [&#xd;
+        {&#xd;
+            &quot;id&quot;: &quot;eligibility_387331_26%3A%22true%22&quot;&#xd;
+        }&#xd;
+    ],&#xd;
+    &quot;searchTerm&quot;: &quot;tyl&quot;,&#xd;
+    &quot;sortOrder&quot;: &quot;asc&quot;,&#xd;
+    &quot;pageNumber&quot;: 1&#xd;
+}</queryString>
+  <java.net.URL>https://eihb7qwns0.execute-api.us-east-1.amazonaws.com/oe_pmodstg/pd/ecom/shiptos/8-104259/v1/productsearch</java.net.URL>
+</httpSample>
+
+</testResults>

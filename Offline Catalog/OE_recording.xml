@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1037" it="0" lt="1036" ct="122" ts="1650864632114" s="false" lb="Details-1" rc="500" rm="Internal Server Error" tn="" dt="text" de="" by="518" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String">HTTP/1.1 500 Internal Server Error
+Content-Type: application/json
+Content-Length: 36
+Connection: close
+Date: Mon, 25 Apr 2022 05:30:33 GMT
+x-amzn-RequestId: 2c772aa5-9ee8-41ef-9175-77435c8ae427
+x-amzn-ErrorType: InternalServerErrorException
+x-amz-apigw-id: RHy-8FlYIAMFpew=
+X-Cache: Error from cloudfront
+Via: 1.1 8aaf07807b640d113c47df1d50eca064.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD89-P2
+X-Amz-Cf-Id: r28FS8-2hZsz7szRAkqlDD2UCr6YUyXQaAaQxygqSjxdhRzyYKDDWw==
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtb2JpbGUiLCJzdWIiOiJQRCIsImF1ZCI6InVzZW9lcDIyIiwidXNyIjoib2VfcGUudXNlcjAxOCIsImlzcyI6IkNhcmRpbmFsIEhlYWx0aCwgSW5jLiIsIldDVG9rZW4iOiI0NjI2MDA2JTJDcTIwT0RoYjlzQXFNYzZBSlh3TXlxS0dJUFBnQ0E4S2l2c2VDRmpEU1BON1VTT3pqJTJCS0tlcWRndXdCQ2tNVUU4RXMxWEVQRVclMkZtMHlidElUbDJ5SnJzR1lwOEdZZkw2YXVmRFNka04yRkxkMUsxY212NlJxYSUyRk53MGdmdTRpN3VWWGI5YVBiVENJTlVTbSUyRnNXaWZFR2JtUXlhSlhiaTk5JTJGVSUyRlZYZEpNY2hoM0pYZXNROXclMkZ5QWI0c2dvWEQwME5Fbm93Nmx3d1B1YklucGhtT2xsaVBRJTNEJTNEIiwic2NvcGVzIjoiYmt0azQ3aW5uOCxkenJzYTc1M3IxLGs0OGRoMG8ycmUsaHFtNGticGl5MyxmeDV0ZjI4OXJsLHpyMHc0NTJuMTAsMDM5cGt0MmFjayxvdDFrZ3hoZWc1LHN3bHdxYTZhZGosNHlhbnY4ZzJ3OCwzcWl0NDlydXBlLHNzeGRreDJkbWcsNzd1OGtyZmxkaSxyZG55cXh5cTYyLDhqbHNtb3B6ejIsMXR1OXl0cWFoaiw0cG5qNzZmcTFnLGtkdHVueDAyYWIsNWprb2d1YnFyaywxaTF5M3BiMWhoLHY1MnlldDNieGIsYjdwcnQ5cWpibCw5d3lzdjR1MW0xLHRybWoxbjJ2MjQiLCJleHAiOjE2NDk3NjE2NTIsImlhdCI6MTY0OTc2MDc1MiwiTHRwYVRva2VuIjoiQWZuZ0d6ZHR1Zk0yQ3Z3NjlsbTZTZXIvK29QVlVYbkZKYVN2UGo1V3FnOXIvdk5RWU1aTXRCeFE2NlUvb2JLTGxQVjZuaHpobkZSR3FWT09UMmZFT0FtOGRGRU10Q2lNZXJkbWV4SUFmTWh2eWRJbWlobGd3M0JpSEM2WER5ekVqNWZlWWFDZUNzditOdXJ2VTlEa0kvYytEZVVwNWhNaGhJYWFDaTh5RHNPejQvSWhEa09JcUhISk1JODJvc0Q4Q0tYK3dlVjR1LzhkVGlWck84S1JLSHFRZnlrcWtySG5xR2VsYmVieEwzSSszWExtYks3c2RQK3REdkNub0d2K01MZTNoT05JSGxydUFTQkdkaFpBZ2x2dC9aNktpaklPeVUvNGRKVEV2OVloODJXc3hEZDZUN3VrKy9ac3FUTVJSNWJRSCtVRUVlU216RVVyRWRMemx4bVFhUmozQk9tRXYxSEg3VERXWXp6U0t6UjR3eGVLNXRVTHMxeFg1TlFNQ0N3Y2hXN2J0YTllNjdSQWlJTjNET3Z0U2hoVU96QkxIWi93ZnhuWDVickxyNFNVOUNVMm1SRkpPVEFrYUE2b3dlOFRnbi9pRllvcFk5SFdDVmJEYnBneFVaazIzQk5hRnZoM0EvMTR3SVlMNXhxZWNhb3FTdDc4QWlBaG1kMnhjemltL3NmSkxVMGFGeXBoQkVjSEV1dC9oYmlmeGd4WnVKSFg1NjE5L1RjQi9rRi9ybE5XbU94bll6V0JhSUR0aGpyYkQzNmR1S2FyQmRYVk90cmpJdUZaWTBHaExhQThoa2FxblJobDNaMjNqZzU5dHV2U21rVlVVTm85VVpxdVQ1V0ZUZnFpNUdtelkxeGJPQmFhdmx4a0RaU1NibnBDZTNJZUY1N2F1aDMzcExtd0ZOV0c3Q3Jrdjcxa2xxOFA3M1RSMnFYUGpLbkRYb3Y5alVCcmRlL05zYlYzaXljSGFZOXZNQy9KcUx5VWxmTkJHTm9KT3k1d0NtczVIeU13TW9YTWhlREE0YjdDREJtU2ZHWUNscWp3UjlzVEFDRXBYZkhLckJzRzMrSUZzdDNqQm9OeWQ1elZuK2V6TGZOQURueWUzYm5VVmZIanNYYzhGRDYvQkE9PSIsInNlc3Npb24iOiJscGVWK3lJZ2ozUGMvS00xQjRZRXEyeXBPWnBkMG1KQSt6bHkxU25OdW9ZREx6UWhHVmptMTBLQlZNcG5xMGYyOGlSYzZzMDRRaWozYnRCSWdCR05wOWZjSkVtbnJPa3FDR3N6NldtWG9mZENsdVBGcjVNREgwVTBTMCszbzAwQkM2aURUOTdXalh3cUlsS08zcHFrZmdZQXFzWGsyR0lUbExvTnFGdmhDem9qY0k1b25KYXpLK2RheCs2VVBMRkpHeGY1Mjh0RGNaZGY4YVY4YVR6N09tcEEwRHowWDM3ci9UZ3ZIRjhNUWNBUmFFT3c5Mnl0eUk2RXVVM0dSeUoxSDhoTXhBWURZQ3F4MFVpcHhDUG9uRmFFYUVVYjVTRlZEb2pqK0I2dG5QNk9IZWdvZEt3bDFPY29zUVNPYnYyWEJ2aEtCZ3c2TUMxMS9qZ1l1T055TUNSZTVOQXFrNHZ2Wkp6T2xsSGduVzIxQ2xIWXhQcDVzU1FqMzV0NURMeEFaVDBBL3NVRzJOVExVcGtxRXdsY0RZVUlEeTNONkZ5TXlwRktGMjRRa1hBamRoRC8ya2xhV0M0cEMyNGNYcFovRHdZa1FvZFU1Vlo3WHJTQXdzQkVrMjVUQll5RzJ6YWlqRXZTaW1heE52ZGRINEhyWUlNTWJPQ1VxTzJBWUVUVGhTSDhVcUZpTnlCc0NTY21VVlpLaHpMSXVIemRyQjJ3VmVqL3RDbWwrSlRZRkQzd3BuT1FMWHd2eWUvM1NSQ0JMdTNGVzVjSWw5WUZ6RENTcUJmbi9EdytCQkVYQ29SNldETzhmb1VqYnREOXdmdTMxUGsxRE03NmFyek8rNURpWHdOWXMvbzhteFlWaFNibmhYdThOOFRZQnRDYUI3bFdKQUNiYWd1dFgrNlNxc3lzcTF3OERZZk9lT21NeWtlWVAxM1pSUk9lSUNZZ25ieFVSNW9EcE1Cb1QzZWE3UTd0UENOQ3dOdVNXQ2dud0pHMkdkeDloU3lnSm1UcDA4b09HdTl2R2xaUDJ5d0ZTMTAxYmNNNXBWdTNhcGhDV2o0ZlhXRzZJcituY2FJNzR0U2hUQ0NucjR1MVpHUTlnMENudm5uMW1WOFAzdkd1eDR5TDhJMHZkYnRCWUw1LzAwbnRKSUF3dEZaOVlXaW9HWWI2RmlpUnI3dm93SDdJakpkUUZhd2xIeTlCNS9EbG5tQVJoWm5EVUxOa2dZSVI0K2NrMXp0T1ZBZHYvNVorenVoZWdHWitsRVZqWUtiMmwyTlVQZU1HV01lWk4xSWtmcVl2OWJGazM2eEtQQTBFd3pLNzhKR3VSNkowWnZ1Q2dwVjRhNEcxVVdTSzFTb09uL2hTZUVVSEl3dU94VFFMSmkrcDYraG94R3BVTVpqMU1aNjRDalNoaGxnQWw1M3RUcjBXcmo2dzNwVW0vclFmc2kvckRDNlh2cnlmdnVwc2dhK2ZnN0xscW1iYTUxVGtRTE45Sm1PbzhqemRCTm1UQmtyNS92WlpWcGhHaXlsT0F0aXlvVTRobHNDUHZGaWdmS3ZiUmJUV2h3bm9PSUFlSTRISUxlbWVYTVlOdGNQd0hzK212SnlCbWViTGhsSHh6UlVYbnFYVWFYNElVcWNmQ1c0L2tSQ1VSMHRETFpJOEx3ajBmem5oS3p2RkY3SXJiYlBlUzd2eDFkZk1LM1prcE1NaSJ9.oUQ2gS1Em5ykc-limuCN84Mjg43aUrL8SLgP652yEQ1AoQ5jiJc8TlbunMoN2yhyOPzraRSdmOOekKv_qhCkjg
+x-api-key: xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO
+Postman-Token: 6cea22c3-91c6-4590-ab3e-f7d9676797b6
+Host: 9zi4ppqte9.execute-api.us-east-1.amazonaws.com
+Content-Type: application/json
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+User-Agent: PostmanRuntime/7.29.0
+Accept: */*
+Content-Length: 107
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;message&quot;: &quot;Internal server error&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;userId&quot;: &quot;oe_pe.user018&quot;,&#xd;
+    &quot;pageSize&quot;: 241,&#xd;
+    &quot;shipTo&quot;: &quot;10-302132&quot;,&#xd;
+    &quot;delimeter&quot;: &quot;&quot;&#xd;
+}</queryString>
+  <java.net.URL>https://9zi4ppqte9.execute-api.us-east-1.amazonaws.com/oe_pmodstg/offlinecatalog/mobile/v1/offlinecatalog/details</java.net.URL>
+</httpSample>
+<httpSample t="915" it="0" lt="915" ct="22" ts="1650864645290" s="true" lb="Cart-2" rc="200" rm="OK" tn="" dt="text" de="" by="558" sc="1" ec="0" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 53
+Connection: close
+Date: Mon, 25 Apr 2022 05:30:46 GMT
+x-amzn-RequestId: 38075409-811f-4a3b-92f6-5332fa0145dd
+Access-Control-Allow-Origin: *
+x-amz-apigw-id: RHzA-Fv6IAMFwYQ=
+X-Amzn-Trace-Id: Root=1-62663206-681ec4677a7f47f14b3750e1
+X-Cache: Miss from cloudfront
+Via: 1.1 7a887c7cb9fe4a7abca02d85e8b196e8.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD89-P2
+X-Amz-Cf-Id: Uiy3zlyWyi-kPzyFLYG-TbvqRf9qtJPcVpIWbjjGPpf6_lHjZmF7qQ==
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtb2JpbGUiLCJzdWIiOiJQRCIsImF1ZCI6InVzZW9lcDIyIiwidXNyIjoib2VfcGUudXNlcjAxOCIsImlzcyI6IkNhcmRpbmFsIEhlYWx0aCwgSW5jLiIsIldDVG9rZW4iOiI0NjI2MDA2JTJDcTIwT0RoYjlzQXFNYzZBSlh3TXlxS0dJUFBnQ0E4S2l2c2VDRmpEU1BON1VTT3pqJTJCS0tlcWRndXdCQ2tNVUU4RXMxWEVQRVclMkZtMHlidElUbDJ5SnJzR1lwOEdZZkw2YXVmRFNka04yRkxkMUsxY212NlJxYSUyRk53MGdmdTRpN3VWWGI5YVBiVENJTlVTbSUyRnNXaWZFR2JtUXlhSlhiaTk5JTJGVSUyRlZYZEpNY2hoM0pYZXNROXclMkZ5QWI0c2dvWEQwME5Fbm93Nmx3d1B1YklucGhtT2xsaVBRJTNEJTNEIiwic2NvcGVzIjoiYmt0azQ3aW5uOCxkenJzYTc1M3IxLGs0OGRoMG8ycmUsaHFtNGticGl5MyxmeDV0ZjI4OXJsLHpyMHc0NTJuMTAsMDM5cGt0MmFjayxvdDFrZ3hoZWc1LHN3bHdxYTZhZGosNHlhbnY4ZzJ3OCwzcWl0NDlydXBlLHNzeGRreDJkbWcsNzd1OGtyZmxkaSxyZG55cXh5cTYyLDhqbHNtb3B6ejIsMXR1OXl0cWFoaiw0cG5qNzZmcTFnLGtkdHVueDAyYWIsNWprb2d1YnFyaywxaTF5M3BiMWhoLHY1MnlldDNieGIsYjdwcnQ5cWpibCw5d3lzdjR1MW0xLHRybWoxbjJ2MjQiLCJleHAiOjE2NDk3NjE2NTIsImlhdCI6MTY0OTc2MDc1MiwiTHRwYVRva2VuIjoiQWZuZ0d6ZHR1Zk0yQ3Z3NjlsbTZTZXIvK29QVlVYbkZKYVN2UGo1V3FnOXIvdk5RWU1aTXRCeFE2NlUvb2JLTGxQVjZuaHpobkZSR3FWT09UMmZFT0FtOGRGRU10Q2lNZXJkbWV4SUFmTWh2eWRJbWlobGd3M0JpSEM2WER5ekVqNWZlWWFDZUNzditOdXJ2VTlEa0kvYytEZVVwNWhNaGhJYWFDaTh5RHNPejQvSWhEa09JcUhISk1JODJvc0Q4Q0tYK3dlVjR1LzhkVGlWck84S1JLSHFRZnlrcWtySG5xR2VsYmVieEwzSSszWExtYks3c2RQK3REdkNub0d2K01MZTNoT05JSGxydUFTQkdkaFpBZ2x2dC9aNktpaklPeVUvNGRKVEV2OVloODJXc3hEZDZUN3VrKy9ac3FUTVJSNWJRSCtVRUVlU216RVVyRWRMemx4bVFhUmozQk9tRXYxSEg3VERXWXp6U0t6UjR3eGVLNXRVTHMxeFg1TlFNQ0N3Y2hXN2J0YTllNjdSQWlJTjNET3Z0U2hoVU96QkxIWi93ZnhuWDVickxyNFNVOUNVMm1SRkpPVEFrYUE2b3dlOFRnbi9pRllvcFk5SFdDVmJEYnBneFVaazIzQk5hRnZoM0EvMTR3SVlMNXhxZWNhb3FTdDc4QWlBaG1kMnhjemltL3NmSkxVMGFGeXBoQkVjSEV1dC9oYmlmeGd4WnVKSFg1NjE5L1RjQi9rRi9ybE5XbU94bll6V0JhSUR0aGpyYkQzNmR1S2FyQmRYVk90cmpJdUZaWTBHaExhQThoa2FxblJobDNaMjNqZzU5dHV2U21rVlVVTm85VVpxdVQ1V0ZUZnFpNUdtelkxeGJPQmFhdmx4a0RaU1NibnBDZTNJZUY1N2F1aDMzcExtd0ZOV0c3Q3Jrdjcxa2xxOFA3M1RSMnFYUGpLbkRYb3Y5alVCcmRlL05zYlYzaXljSGFZOXZNQy9KcUx5VWxmTkJHTm9KT3k1d0NtczVIeU13TW9YTWhlREE0YjdDREJtU2ZHWUNscWp3UjlzVEFDRXBYZkhLckJzRzMrSUZzdDNqQm9OeWQ1elZuK2V6TGZOQURueWUzYm5VVmZIanNYYzhGRDYvQkE9PSIsInNlc3Npb24iOiJscGVWK3lJZ2ozUGMvS00xQjRZRXEyeXBPWnBkMG1KQSt6bHkxU25OdW9ZREx6UWhHVmptMTBLQlZNcG5xMGYyOGlSYzZzMDRRaWozYnRCSWdCR05wOWZjSkVtbnJPa3FDR3N6NldtWG9mZENsdVBGcjVNREgwVTBTMCszbzAwQkM2aURUOTdXalh3cUlsS08zcHFrZmdZQXFzWGsyR0lUbExvTnFGdmhDem9qY0k1b25KYXpLK2RheCs2VVBMRkpHeGY1Mjh0RGNaZGY4YVY4YVR6N09tcEEwRHowWDM3ci9UZ3ZIRjhNUWNBUmFFT3c5Mnl0eUk2RXVVM0dSeUoxSDhoTXhBWURZQ3F4MFVpcHhDUG9uRmFFYUVVYjVTRlZEb2pqK0I2dG5QNk9IZWdvZEt3bDFPY29zUVNPYnYyWEJ2aEtCZ3c2TUMxMS9qZ1l1T055TUNSZTVOQXFrNHZ2Wkp6T2xsSGduVzIxQ2xIWXhQcDVzU1FqMzV0NURMeEFaVDBBL3NVRzJOVExVcGtxRXdsY0RZVUlEeTNONkZ5TXlwRktGMjRRa1hBamRoRC8ya2xhV0M0cEMyNGNYcFovRHdZa1FvZFU1Vlo3WHJTQXdzQkVrMjVUQll5RzJ6YWlqRXZTaW1heE52ZGRINEhyWUlNTWJPQ1VxTzJBWUVUVGhTSDhVcUZpTnlCc0NTY21VVlpLaHpMSXVIemRyQjJ3VmVqL3RDbWwrSlRZRkQzd3BuT1FMWHd2eWUvM1NSQ0JMdTNGVzVjSWw5WUZ6RENTcUJmbi9EdytCQkVYQ29SNldETzhmb1VqYnREOXdmdTMxUGsxRE03NmFyek8rNURpWHdOWXMvbzhteFlWaFNibmhYdThOOFRZQnRDYUI3bFdKQUNiYWd1dFgrNlNxc3lzcTF3OERZZk9lT21NeWtlWVAxM1pSUk9lSUNZZ25ieFVSNW9EcE1Cb1QzZWE3UTd0UENOQ3dOdVNXQ2dud0pHMkdkeDloU3lnSm1UcDA4b09HdTl2R2xaUDJ5d0ZTMTAxYmNNNXBWdTNhcGhDV2o0ZlhXRzZJcituY2FJNzR0U2hUQ0NucjR1MVpHUTlnMENudm5uMW1WOFAzdkd1eDR5TDhJMHZkYnRCWUw1LzAwbnRKSUF3dEZaOVlXaW9HWWI2RmlpUnI3dm93SDdJakpkUUZhd2xIeTlCNS9EbG5tQVJoWm5EVUxOa2dZSVI0K2NrMXp0T1ZBZHYvNVorenVoZWdHWitsRVZqWUtiMmwyTlVQZU1HV01lWk4xSWtmcVl2OWJGazM2eEtQQTBFd3pLNzhKR3VSNkowWnZ1Q2dwVjRhNEcxVVdTSzFTb09uL2hTZUVVSEl3dU94VFFMSmkrcDYraG94R3BVTVpqMU1aNjRDalNoaGxnQWw1M3RUcjBXcmo2dzNwVW0vclFmc2kvckRDNlh2cnlmdnVwc2dhK2ZnN0xscW1iYTUxVGtRTE45Sm1PbzhqemRCTm1UQmtyNS92WlpWcGhHaXlsT0F0aXlvVTRobHNDUHZGaWdmS3ZiUmJUV2h3bm9PSUFlSTRISUxlbWVYTVlOdGNQd0hzK212SnlCbWViTGhsSHh6UlVYbnFYVWFYNElVcWNmQ1c0L2tSQ1VSMHRETFpJOEx3ajBmem5oS3p2RkY3SXJiYlBlUzd2eDFkZk1LM1prcE1NaSJ9.oUQ2gS1Em5ykc-limuCN84Mjg43aUrL8SLgP652yEQ1AoQ5jiJc8TlbunMoN2yhyOPzraRSdmOOekKv_qhCkjg
+x-api-key: xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO
+Postman-Token: 6785d985-dce0-4309-bf19-60c3cb5edce3
+Host: 9zi4ppqte9.execute-api.us-east-1.amazonaws.com
+Content-Type: application/json
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+User-Agent: PostmanRuntime/7.29.0
+Accept: */*
+Content-Length: 107
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;itemList&quot;:[],&quot;shipTo&quot;:&quot;10-302132&quot;,&quot;delimeter&quot;:&quot;-1&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;userId&quot;: &quot;oe_pe.user018&quot;,&#xd;
+    &quot;pageSize&quot;: 241,&#xd;
+    &quot;shipTo&quot;: &quot;10-302132&quot;,&#xd;
+    &quot;delimeter&quot;: &quot;&quot;&#xd;
+}</queryString>
+  <java.net.URL>https://9zi4ppqte9.execute-api.us-east-1.amazonaws.com/oe_pmodstg/offlinecatalog/mobile/v1/offlinecatalog/details</java.net.URL>
+</httpSample>
+<httpSample t="1824" it="0" lt="1823" ct="14" ts="1650864649470" s="true" lb="Cart-3" rc="200" rm="OK" tn="" dt="text" de="" by="1037" sc="1" ec="0" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 531
+Connection: close
+Date: Mon, 25 Apr 2022 05:30:52 GMT
+x-amzn-RequestId: c315a546-064a-4d04-866a-521b2886dad2
+Access-Control-Allow-Origin: *
+x-amz-apigw-id: RHzBoHINIAMF0BA=
+X-Amzn-Trace-Id: Root=1-6266320a-6b28fc2d7ca75fae7e77895c
+X-Cache: Miss from cloudfront
+Via: 1.1 782e548cb0b1b64c63d995fc59568b48.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD89-P2
+X-Amz-Cf-Id: Ryqrh8BkQIVL1iyKMzMw5XwFAw5UKLIfZ80Q_xT68eXPREVQ55btWg==
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtb2JpbGUiLCJzdWIiOiJQRCIsImF1ZCI6InVzZW9lcDIyIiwidXNyIjoib2VfcGUudXNlcjAxOCIsImlzcyI6IkNhcmRpbmFsIEhlYWx0aCwgSW5jLiIsIldDVG9rZW4iOiI0NjI2MDA2JTJDcTIwT0RoYjlzQXFNYzZBSlh3TXlxS0dJUFBnQ0E4S2l2c2VDRmpEU1BON1VTT3pqJTJCS0tlcWRndXdCQ2tNVUU4RXMxWEVQRVclMkZtMHlidElUbDJ5SnJzR1lwOEdZZkw2YXVmRFNka04yRkxkMUsxY212NlJxYSUyRk53MGdmdTRpN3VWWGI5YVBiVENJTlVTbSUyRnNXaWZFR2JtUXlhSlhiaTk5JTJGVSUyRlZYZEpNY2hoM0pYZXNROXclMkZ5QWI0c2dvWEQwME5Fbm93Nmx3d1B1YklucGhtT2xsaVBRJTNEJTNEIiwic2NvcGVzIjoiYmt0azQ3aW5uOCxkenJzYTc1M3IxLGs0OGRoMG8ycmUsaHFtNGticGl5MyxmeDV0ZjI4OXJsLHpyMHc0NTJuMTAsMDM5cGt0MmFjayxvdDFrZ3hoZWc1LHN3bHdxYTZhZGosNHlhbnY4ZzJ3OCwzcWl0NDlydXBlLHNzeGRreDJkbWcsNzd1OGtyZmxkaSxyZG55cXh5cTYyLDhqbHNtb3B6ejIsMXR1OXl0cWFoaiw0cG5qNzZmcTFnLGtkdHVueDAyYWIsNWprb2d1YnFyaywxaTF5M3BiMWhoLHY1MnlldDNieGIsYjdwcnQ5cWpibCw5d3lzdjR1MW0xLHRybWoxbjJ2MjQiLCJleHAiOjE2NDk3NjE2NTIsImlhdCI6MTY0OTc2MDc1MiwiTHRwYVRva2VuIjoiQWZuZ0d6ZHR1Zk0yQ3Z3NjlsbTZTZXIvK29QVlVYbkZKYVN2UGo1V3FnOXIvdk5RWU1aTXRCeFE2NlUvb2JLTGxQVjZuaHpobkZSR3FWT09UMmZFT0FtOGRGRU10Q2lNZXJkbWV4SUFmTWh2eWRJbWlobGd3M0JpSEM2WER5ekVqNWZlWWFDZUNzditOdXJ2VTlEa0kvYytEZVVwNWhNaGhJYWFDaTh5RHNPejQvSWhEa09JcUhISk1JODJvc0Q4Q0tYK3dlVjR1LzhkVGlWck84S1JLSHFRZnlrcWtySG5xR2VsYmVieEwzSSszWExtYks3c2RQK3REdkNub0d2K01MZTNoT05JSGxydUFTQkdkaFpBZ2x2dC9aNktpaklPeVUvNGRKVEV2OVloODJXc3hEZDZUN3VrKy9ac3FUTVJSNWJRSCtVRUVlU216RVVyRWRMemx4bVFhUmozQk9tRXYxSEg3VERXWXp6U0t6UjR3eGVLNXRVTHMxeFg1TlFNQ0N3Y2hXN2J0YTllNjdSQWlJTjNET3Z0U2hoVU96QkxIWi93ZnhuWDVickxyNFNVOUNVMm1SRkpPVEFrYUE2b3dlOFRnbi9pRllvcFk5SFdDVmJEYnBneFVaazIzQk5hRnZoM0EvMTR3SVlMNXhxZWNhb3FTdDc4QWlBaG1kMnhjemltL3NmSkxVMGFGeXBoQkVjSEV1dC9oYmlmeGd4WnVKSFg1NjE5L1RjQi9rRi9ybE5XbU94bll6V0JhSUR0aGpyYkQzNmR1S2FyQmRYVk90cmpJdUZaWTBHaExhQThoa2FxblJobDNaMjNqZzU5dHV2U21rVlVVTm85VVpxdVQ1V0ZUZnFpNUdtelkxeGJPQmFhdmx4a0RaU1NibnBDZTNJZUY1N2F1aDMzcExtd0ZOV0c3Q3Jrdjcxa2xxOFA3M1RSMnFYUGpLbkRYb3Y5alVCcmRlL05zYlYzaXljSGFZOXZNQy9KcUx5VWxmTkJHTm9KT3k1d0NtczVIeU13TW9YTWhlREE0YjdDREJtU2ZHWUNscWp3UjlzVEFDRXBYZkhLckJzRzMrSUZzdDNqQm9OeWQ1elZuK2V6TGZOQURueWUzYm5VVmZIanNYYzhGRDYvQkE9PSIsInNlc3Npb24iOiJscGVWK3lJZ2ozUGMvS00xQjRZRXEyeXBPWnBkMG1KQSt6bHkxU25OdW9ZREx6UWhHVmptMTBLQlZNcG5xMGYyOGlSYzZzMDRRaWozYnRCSWdCR05wOWZjSkVtbnJPa3FDR3N6NldtWG9mZENsdVBGcjVNREgwVTBTMCszbzAwQkM2aURUOTdXalh3cUlsS08zcHFrZmdZQXFzWGsyR0lUbExvTnFGdmhDem9qY0k1b25KYXpLK2RheCs2VVBMRkpHeGY1Mjh0RGNaZGY4YVY4YVR6N09tcEEwRHowWDM3ci9UZ3ZIRjhNUWNBUmFFT3c5Mnl0eUk2RXVVM0dSeUoxSDhoTXhBWURZQ3F4MFVpcHhDUG9uRmFFYUVVYjVTRlZEb2pqK0I2dG5QNk9IZWdvZEt3bDFPY29zUVNPYnYyWEJ2aEtCZ3c2TUMxMS9qZ1l1T055TUNSZTVOQXFrNHZ2Wkp6T2xsSGduVzIxQ2xIWXhQcDVzU1FqMzV0NURMeEFaVDBBL3NVRzJOVExVcGtxRXdsY0RZVUlEeTNONkZ5TXlwRktGMjRRa1hBamRoRC8ya2xhV0M0cEMyNGNYcFovRHdZa1FvZFU1Vlo3WHJTQXdzQkVrMjVUQll5RzJ6YWlqRXZTaW1heE52ZGRINEhyWUlNTWJPQ1VxTzJBWUVUVGhTSDhVcUZpTnlCc0NTY21VVlpLaHpMSXVIemRyQjJ3VmVqL3RDbWwrSlRZRkQzd3BuT1FMWHd2eWUvM1NSQ0JMdTNGVzVjSWw5WUZ6RENTcUJmbi9EdytCQkVYQ29SNldETzhmb1VqYnREOXdmdTMxUGsxRE03NmFyek8rNURpWHdOWXMvbzhteFlWaFNibmhYdThOOFRZQnRDYUI3bFdKQUNiYWd1dFgrNlNxc3lzcTF3OERZZk9lT21NeWtlWVAxM1pSUk9lSUNZZ25ieFVSNW9EcE1Cb1QzZWE3UTd0UENOQ3dOdVNXQ2dud0pHMkdkeDloU3lnSm1UcDA4b09HdTl2R2xaUDJ5d0ZTMTAxYmNNNXBWdTNhcGhDV2o0ZlhXRzZJcituY2FJNzR0U2hUQ0NucjR1MVpHUTlnMENudm5uMW1WOFAzdkd1eDR5TDhJMHZkYnRCWUw1LzAwbnRKSUF3dEZaOVlXaW9HWWI2RmlpUnI3dm93SDdJakpkUUZhd2xIeTlCNS9EbG5tQVJoWm5EVUxOa2dZSVI0K2NrMXp0T1ZBZHYvNVorenVoZWdHWitsRVZqWUtiMmwyTlVQZU1HV01lWk4xSWtmcVl2OWJGazM2eEtQQTBFd3pLNzhKR3VSNkowWnZ1Q2dwVjRhNEcxVVdTSzFTb09uL2hTZUVVSEl3dU94VFFMSmkrcDYraG94R3BVTVpqMU1aNjRDalNoaGxnQWw1M3RUcjBXcmo2dzNwVW0vclFmc2kvckRDNlh2cnlmdnVwc2dhK2ZnN0xscW1iYTUxVGtRTE45Sm1PbzhqemRCTm1UQmtyNS92WlpWcGhHaXlsT0F0aXlvVTRobHNDUHZGaWdmS3ZiUmJUV2h3bm9PSUFlSTRISUxlbWVYTVlOdGNQd0hzK212SnlCbWViTGhsSHh6UlVYbnFYVWFYNElVcWNmQ1c0L2tSQ1VSMHRETFpJOEx3ajBmem5oS3p2RkY3SXJiYlBlUzd2eDFkZk1LM1prcE1NaSJ9.oUQ2gS1Em5ykc-limuCN84Mjg43aUrL8SLgP652yEQ1AoQ5jiJc8TlbunMoN2yhyOPzraRSdmOOekKv_qhCkjg
+x-api-key: xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO
+Postman-Token: 5e4d922f-aca4-4447-bbe7-12d1ecb06166
+Host: 9zi4ppqte9.execute-api.us-east-1.amazonaws.com
+Content-Type: application/json
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+User-Agent: PostmanRuntime/7.29.0
+Accept: */*
+Content-Length: 1065
+</requestHeader>
+  <responseData class="java.lang.String">[{&quot;productNumber&quot;:&quot;5005293&quot;,&quot;dateLastPurchased&quot;:null,&quot;invoiceCost&quot;:&quot;24.59&quot;,&quot;stockStatus&quot;:&quot;1&quot;,&quot;stockStatusAbbreviation&quot;:&quot;STOCKED&quot;,&quot;stockstatusDefinition&quot;:&quot;Stocked&quot;,&quot;uoiCost&quot;:&quot;0.0&quot;,&quot;uoif&quot;:&quot;100.0000&quot;,&quot;isEligible&quot;:&quot;false&quot;,&quot;retailPrice&quot;:&quot;0.00&quot;,&quot;costLastPurchased&quot;:&quot;0.00&quot;},{&quot;productNumber&quot;:&quot;5404678&quot;,&quot;dateLastPurchased&quot;:null,&quot;invoiceCost&quot;:&quot;8.19&quot;,&quot;stockStatus&quot;:&quot;1&quot;,&quot;stockStatusAbbreviation&quot;:&quot;STOCKED&quot;,&quot;stockstatusDefinition&quot;:&quot;Stocked&quot;,&quot;uoiCost&quot;:&quot;0.0&quot;,&quot;uoif&quot;:&quot;12.0000&quot;,&quot;isEligible&quot;:&quot;false&quot;,&quot;retailPrice&quot;:&quot;0.00&quot;,&quot;costLastPurchased&quot;:&quot;0.00&quot;}]</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;shipTo&quot;: &quot;10-302132&quot;,&#xd;
+    &quot;products&quot;: [&#xd;
+        {&#xd;
+            &quot;uoif&quot;: &quot;100.0000&quot;,&#xd;
+            &quot;stockstatusDefinition&quot;: &quot;Manufacturer Out&quot;,&#xd;
+            &quot;uoiCost&quot;: &quot;0.2459&quot;,&#xd;
+            &quot;stockStatus&quot;: &quot;4&quot;,&#xd;
+            &quot;productNumber&quot;: &quot;5005293&quot;,&#xd;
+            &quot;stockStatusAbbreviation&quot;: &quot;MFR OUT&quot;,&#xd;
+            &quot;invoiceCost&quot;: &quot;24.59&quot;,&#xd;
+            &quot;isEligible&quot;: &quot;true&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;uoif&quot;: &quot;12.0000&quot;,&#xd;
+            &quot;stockstatusDefinition&quot;: &quot;Stocked&quot;,&#xd;
+            &quot;uoiCost&quot;: &quot;0.5158&quot;,&#xd;
+            &quot;stockStatus&quot;: &quot;1&quot;,&#xd;
+            &quot;productNumber&quot;: &quot;5404678&quot;,&#xd;
+            &quot;stockStatusAbbreviation&quot;: &quot;STOCKED&quot;,&#xd;
+            &quot;invoiceCost&quot;: &quot;8.19&quot;,&#xd;
+            &quot;isEligible&quot;: &quot;true&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;uoif&quot;: &quot;1.0000&quot;,&#xd;
+            &quot;stockstatusDefinition&quot;: &quot;Stocked&quot;,&#xd;
+            &quot;uoiCost&quot;: &quot;6.75&quot;,&#xd;
+            &quot;stockStatus&quot;: &quot;1&quot;,&#xd;
+            &quot;productNumber&quot;: &quot;1535343&quot;,&#xd;
+            &quot;stockStatusAbbreviation&quot;: &quot;STOCKED&quot;,&#xd;
+            &quot;invoiceCost&quot;: &quot;6.75&quot;,&#xd;
+            &quot;isEligible&quot;: &quot;false&quot;&#xd;
+        }&#xd;
+    ]&#xd;
+}</queryString>
+  <java.net.URL>https://9zi4ppqte9.execute-api.us-east-1.amazonaws.com/oe_pmodstg/offlinecatalog/mobile/v1/offlinecatalog/cartverify</java.net.URL>
+</httpSample>
+
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="aw0yyb1zm2.execute-api.us-east-1.amazonaws.com:443" rc="" rm="Unable to negotiate SSL transaction, no keystore?" tn="" dt="" de="" by="215" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT aw0yyb1zm2.execute-api.us-east-1.amazonaws.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+
+<httpSample t="1213" it="0" lt="1212" ct="118" ts="1651832055051" s="true" lb="AEM-1" rc="200" rm="OK" tn="" dt="text" de="" by="2321" sc="1" ec="0" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1814
+Connection: close
+Date: Fri, 06 May 2022 10:14:17 GMT
+x-amzn-RequestId: 6ec6a040-4c88-484d-b806-066846d422bf
+Access-Control-Allow-Origin: *
+x-amz-apigw-id: Rss20EH1IAMFeBQ=
+X-Amzn-Trace-Id: Root=1-6274f4f8-09a00905351d5e4d2b06b304
+X-Cache: Miss from cloudfront
+Via: 1.1 aa6e16f47d6a0519f52b8dcfca2d841a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD89-P1
+X-Amz-Cf-Id: 7AG6OeDLCava6kRBXDvobWU1jj-Gz8zj3I0tAhJkpKz8xD-rp25FEw==
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtb2JpbGUiLCJzdWIiOiJQRCIsImF1ZCI6InVzZW9lcDE2IiwidXNyIjoib2VfcGUudXNlcjAxMSIsImlzcyI6IkNhcmRpbmFsIEhlYWx0aCwgSW5jLiIsIldDVG9rZW4iOiI0NjI4MDA2JTJDTVhEb0xaaEI3MHdBN2lGYVdCVjJmcFdrbjdnWlZHaUlYUWUxWE4wd2s1SXM2d2VLdkhMcTRuRTN1NVVPejlyUmVYTDVaNUNjZXhoWlBVTEhpTTc4SXlQSG4lMkJPNExHa3lpMVJ2bXhQVDQlMkJQJTJCQkdsa3NzSW45VWZROXlkOXpCMHBITiUyRlNPUVV4RmJ3VXlhVjFQJTJGSUp0c3JmSzJNS2hSU1VxRUtEQVdrWiUyQkV0UyUyQkhTNGpjT1R1SzVJJTJGVWdNNTZ2JTJCSDhIb2NNQlBJOHdrcm51YVpRbG1rQSUzRCUzRCIsInNjb3BlcyI6ImJrdGs0N2lubjgsZHpyc2E3NTNyMSxrNDhkaDBvMnJlLGhxbTRrYnBpeTMsZng1dGYyODlybCx6cjB3NDUybjEwLDAzOXBrdDJhY2ssb3Qxa2d4aGVnNSxzd2x3cWE2YWRqLDR5YW52OGcydzgsM3FpdDQ5cnVwZSxzc3hka3gyZG1nLDc3dThrcmZsZGkscmRueXF4eXE2Miw4amxzbW9wenoyLDF0dTl5dHFhaGosNHBuajc2ZnExZyxrZHR1bngwMmFiLDVqa29ndWJxcmssMWkxeTNwYjFoaCx2NTJ5ZXQzYnhiLGI3cHJ0OXFqYmwsOXd5c3Y0dTFtMSx0cm1qMW4ydjI0IiwiZXhwIjoxNjUxODMyODE0LCJpYXQiOjE2NTE4MzE5MTQsIkx0cGFUb2tlbiI6InRILzNVNnpWdmR6RXJKVkd6b25oRk40UTVVM0hCcStDTFhKSzE2VG9lSjV0b25aRjV0dzI0RXgyS0g4L0IzOXcwVW4rYktzajFzaiswbHNrdlFHTjRpME1NU2t3Y2tqdHpRQm85ckZrbk1CTTNSTzlSejRJa3FHeTlBdlQyT1VqWml4YWN1aG8xUEtFZUJJY0lGTUxLejZFbS9LaURERHdUajYvdWZBT1Y2ZVJRQzFaMTRXcWh5b3hmL3VONnUxNGFnL0NsSVpOak5CeWF0NnRmWFpHZEtqeTZ3bmtkOGlsbk1veVN2cURjQ08zT1pjWXFkcitIZ2tHMk5XSjA4ZFBiZVlBc2Q3RW9HRUJvOTlnSzIyb2I0NkpUd3BISDlqeExzdmZwWTFjbE4vaENFU2FTRGY3YndOK1BveFhBc1VXd3BUNWJwQUc4ZWVQS0dvWkJhdWsvM0w5QXhvTXlaaXpsS3E0Wi93bUovN1REdlpyRHJVSGRVTDBRckVSVFY1N2tLZWpWOEsyZE9IektRVW5aVWFhWTF1TGk0SlVnb2NaUnYwYXZyQzA4TXBXUmJQVmN2aU8vKy93YXUxWDlCdCt4dU8rTm5XZzhRWWhKdXJiOWVkODViM0R1WllRc0EyTkQrdFJpTFI0eXFzRU9nc2ltdk43UzZ6YWVSYXkxUFVnc2hZOHlMZGtLaFZrOVNLRUo5MjdmT0JrUCtTYlN1ajBxM0ZQUkNYVW9zazZXelNjdzRJWFFrK25OMDFXT1RPM3Y2cXVPWjg4MHFrekhPVVNzYWc5dWJ0V3VDcFdVN2ViYVhFMlZCQS9SZlBkSWt6eWZFNVFwZTNzMFVyRzNWdld1cE9OSmhuWVhCQWFXOVdsNUZrUkNzMC83c0NoZ0ZhM2QvSFBIVlh2WElJVjNNUUN4ZEFFWE5oMDIrMEkybEpNaWpQM0s1UUJvbHNZcjltZnJUV3lEektqVXpsc0x2MDJsWXc3cFdMNkswQ0FKdExpaEtyM1hZY3I5aFdKZkUrQnVHMFgzKzhoeEh6VzdnWWk3KzR1WW1SZ0NBbW5QY0ROMUExWjBodWNvUC9IRjFaL1RMTU9PK2tta2pzR3c2UkQzdjA4WTliRXZoOGJzd1B2Qk1zRVlnPT0iLCJzZXNzaW9uIjoiaC95VmFqaHpRcmtmSjRVZUVOZDAxUERlWmxGRm42WWR1cXVhejJsRDF3SnoyQlNoTTRSalJqYzh4aTRVWG1PRUpKSFkzN1dKRlJVT0lucFBsOHRHTXBSbFFuLzhsNGo3V2M4UGpTcFJUcHdUSi84Z3lQQkdYa0FOcGdXZzBBVmF6dFZ4RGN3VCs3dWxMVTNHeWdMelRZb3NOaHpHLzNyS3JjYkZrWlpXRFdUQ0hPM1c0QWxyQWxBeko0ZkU2MGhUcWZQQmJGK3ZrdDQ2aEpUZUdkblBodWpLL3lLTS9kVXlrRlRJdEJiZWlSYWR3NnorUnF3bU5BeHU1a3FFTzFhNjhrcFlIOTZJT2dpVWNaSjhyYVdkeXVTZXhIalowQmNSK0NrVFB3UkdWaHpPRTZ6a2dnTXQ4dHg0bFFCNTUyK1pFVDRuRXQ1RXNkSFdORFFuN0cwcDhuVlBYMHpOSVZPTTlOSDc5U0FGV3FMRGFodVc5ckdYRDlwRU4yTmF2aU1PbWZ4d3d5V2s4dDNyUEh2bE56L21OMTJndG93MUZvd3UrOTdEQXovM2RxWTJxRXlnL2p1dCszSGdxZFJ1VGw3U1FydTFTdG5qRmFKS3h2YURKKzNQdGZEL0dnN0JaVFpoNGJHSVdDWWhpS2hXd2UyZUhKNWhaRzZTTGtnUmlQZ0oyVHN6b0JGSzgxM1pNYkxWUitXaG5zYUhya3MybDMvVVZBNWZkZjhnT2xZUWhxZHgwSzBhbUNrc05leFVtRG5vVm9OdWIzNUllZ2pzRGFEdjlNdjVEOXdZRnZlaVlUQmJGRkpiR0RaK1JxSHJQUXY3QjAzVWFJcE9IdmEwTUViZ1hJLzlRR1NFWDZNVno2R2pwUUo5LzJHUzFpWnFkMXpzRktKSzRQQ1ZOTTBFMjRDOW9Od05TQm56OGZVOWhIaGlUWmFzQk1SUEpacU1tQmFmVmJ1aHFqcWNlMEg3dGVCaURCaGp2RUtzOTdSamt2dnJWZmFxeCttOGN4c09NQWMvQXQ4V2tSZkNTRkNjZUZsNDVHblEvWC84a3hjM1ZEUGwzZXZnZnBCZWtIQjJlR2s2NXpKTmYzb0pBTCtSMkFVY3dmTXI0dGtYZEhwbHo3cmhGZ291N0w0VE9TUWdSZGJSb3I1bzg0RWdRZHZMTDIzTU1yYWRMM1FSdldrMkFGT2JqeFBYZnhjNzQ5WCtvemNTM0RYQ1pXSjBZK2tDZE1QOGdkMzdYTTNFYXM3YXJVRUVsVFZOMnVqa1Z6VCtWQmhDenoxLzFyQ2ljd0pZY3pxRDU1dFd0L3JlSlhTU1hydTZaRjBnMmJnZTNlczlPRnQzaUFCZGJ3SHRvdFFJb1JXRml0UVdyTnZKVmZjZFlnZkNvUFB5RjhJSVkydzdHT3JZcjh6aC9UY1FlTUhsYmI0djBtL1NQcHJoTFZ4QzhjVkNwazVUaUZhN09hSFRNcndBUlVGWGpFT0EyNHI4T3VTclFxVlV2b2FzUDAzbVJMRmdxREY1bGE3QklFL3BWTkZ6Wm50K3BndThDUXJFcktkZzVYblhLUDlFNUY3eFo0QjZKeFFDdS8wcHlpNlJDU2hZU1BETytKcVovNDdnN1JkZFBqK3BnL2Z4dUVxdjBBQTVmLzBCQ3k3Q1pNVDVCNmRETzI2SnkvcjVkaG1FVUhHdE1ncmJiUT09In0.kKeiMirUVzs5L9a2d01tExEZ_I1Lei3F7PCiSFHoQbUaA7_4dUEzZ8aV_T604oKqKLeds5B6EN0GJYdSwdIrjw
+x-api-key: xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO
+Postman-Token: e33338c5-072c-4047-98be-a532cd4a6cda
+Host: aw0yyb1zm2.execute-api.us-east-1.amazonaws.com
+Content-Type: application/json
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+User-Agent: PostmanRuntime/7.29.0
+Accept: */*
+Content-Length: 518
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;record&quot;:[{&quot;contentName&quot;:&quot;GenericLaunch_Reminder_GenericAzopt_M_20210414&quot;,&quot;componentList&quot;:[{&quot;componentName&quot;:&quot;component_featureProduct_0&quot;,&quot;itemList&quot;:[],&quot;eligibilityCheck&quot;:&quot;false&quot;,&quot;showLimitedStock&quot;:&quot;true&quot;,&quot;cin&quot;:&quot;5707765,5707773&quot;,&quot;title&quot;:&quot;Did you miss this SOURCE Generic launch?&quot;,&quot;link&quot;:{&quot;newWindow&quot;:&quot;false&quot;,&quot;onclick&quot;:&quot;searchresult&quot;,&quot;path&quot;:&quot;#&quot;,&quot;text&quot;:&quot;Order Now&quot;,&quot;icid&quot;:&quot;GenericLaunch_Reminder_GenericAzopt_M_CINs&quot;}}]},{&quot;contentName&quot;:&quot;LEADER_First_Placement_M_20210420&quot;,&quot;componentList&quot;:[{&quot;componentName&quot;:&quot;component_shortSecondary&quot;,&quot;itemList&quot;:[{&quot;componentName&quot;:&quot;component_shortSecondary_0&quot;,&quot;eligibilityCheck&quot;:&quot;false&quot;,&quot;showLimitedStock&quot;:&quot;true&quot;,&quot;title&quot;:&quot;LEADER First Placement Program&quot;,&quot;tileType&quot;:&quot;Secondary  Class&quot;,&quot;cin&quot;:&quot;5546312&quot;,&quot;titleBackgroundColor&quot;:&quot;&quot;,&quot;titleTextColor&quot;:&quot;&quot;,&quot;text&quot;:&quot;&amp;lt;p&amp;gt;The LEADER First Placement Program takes the guesswork out of new item management for your front end and capitalizes on timely delivery of the newest products. With First Placement, your pharmacy will receive the newest LEADER products without having to place an order.&amp;lt;/p&amp;gt;\n&quot;,&quot;link&quot;:{&quot;newWindow&quot;:&quot;true&quot;,&quot;onclick&quot;:&quot;trackAEMPromotionLinkClicks&quot;,&quot;path&quot;:&quot;https://orderexpress.cardinalhealth.com/content/dam/oe/docs/Landing%20Pages/leader/0717_Leader_First_Placement.pdf&quot;,&quot;text&quot;:&quot;Learn More&quot;,&quot;icid&quot;:&quot;First_Placement_M_PDF&quot;},&quot;image&quot;:{&quot;fileReference&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/content/dam/oe/images/Mobile/TestImages/leader_products_3x1.jpg&quot;,&quot;imageDimensions&quot;:&quot;600X200&quot;}}]}]},{&quot;contentName&quot;:&quot;GenericLaunch_GenericAlinia_20201208&quot;,&quot;componentList&quot;:[{&quot;componentName&quot;:&quot;component_featureProduct_0&quot;,&quot;itemList&quot;:[],&quot;eligibilityCheck&quot;:&quot;false&quot;,&quot;showLimitedStock&quot;:&quot;true&quot;,&quot;cin&quot;:&quot;1331958&quot;,&quot;title&quot;:&quot;Test_AC_FP&quot;,&quot;link&quot;:{&quot;newWindow&quot;:&quot;false&quot;,&quot;onclick&quot;:&quot;productdetail&quot;,&quot;path&quot;:&quot;#&quot;,&quot;text&quot;:&quot;AC_Link_Title&quot;,&quot;icid&quot;:&quot;&quot;}}]}]}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+  &quot;distributionCenter&quot;:&quot;26&quot;,&#xd;
+  &quot;shipToCustomer&quot;:&quot;387331&quot;,&#xd;
+  &quot;userName&quot;:&quot;oe_pe.user011&quot;,&#xd;
+  &quot;marketingProgramCodes&quot;:&quot;391,307,4,6,10,16,23,49,417,656,998,63,80,120,135,153,261,287,294,408&quot;,&#xd;
+  &quot;memberGroups&quot;: [&#xd;
+      &quot;cn=G-EXT-GA-PHARMACEUTICAL_DISTRIBUTION__ACUTE_CARE__ACUTE_CARE_ORDERING__ADMIN,ou=groups,ou=External,dc=cardinalhealth,dc=com&quot;,&#xd;
+      &quot;cn=G-EXT-GA-PHARMACEUTICAL_DISTRIBUTION__ORDER_EXPRESS_REPORTING__ORDER_EXPRESS_REPORTING__STANDARD,ou=groups,ou=External,dc=cardinalhealth,dc=com&quot;&#xd;
+    ]&#xd;
+}&#xd;
+</queryString>
+  <java.net.URL>https://aw0yyb1zm2.execute-api.us-east-1.amazonaws.com/oe_pmodstg/expMobileDashboard/mobile/v1/aemResponse</java.net.URL>
+</httpSample>
+<httpSample t="1286" it="0" lt="1286" ct="23" ts="1651832093532" s="true" lb="Eligible Product-2" rc="200" rm="OK" tn="" dt="text" de="" by="16240" sc="1" ec="0" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 15732
+Connection: close
+Date: Fri, 06 May 2022 10:14:55 GMT
+x-amzn-RequestId: 4999a6a9-edde-4ab1-a756-84fd92380e13
+Access-Control-Allow-Origin: *
+x-amz-apigw-id: Rss80HYbIAMF0mA=
+X-Amzn-Trace-Id: Root=1-6274f51e-778bdd352e7d9c7c05d65157
+X-Cache: Miss from cloudfront
+Via: 1.1 4ee1745ee3cece0fab563f5a32ba165a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD89-P1
+X-Amz-Cf-Id: 3Sx9XMl7YqPt99mXuJS7n4JS0zkMHEvB_mpovMeiT-nCQxR_wXHwIw==
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtb2JpbGUiLCJzdWIiOiJQRCIsImF1ZCI6InVzZW9lcDE2IiwidXNyIjoib2VfcGUudXNlcjAxMSIsImlzcyI6IkNhcmRpbmFsIEhlYWx0aCwgSW5jLiIsIldDVG9rZW4iOiI0NjI4MDA2JTJDTVhEb0xaaEI3MHdBN2lGYVdCVjJmcFdrbjdnWlZHaUlYUWUxWE4wd2s1SXM2d2VLdkhMcTRuRTN1NVVPejlyUmVYTDVaNUNjZXhoWlBVTEhpTTc4SXlQSG4lMkJPNExHa3lpMVJ2bXhQVDQlMkJQJTJCQkdsa3NzSW45VWZROXlkOXpCMHBITiUyRlNPUVV4RmJ3VXlhVjFQJTJGSUp0c3JmSzJNS2hSU1VxRUtEQVdrWiUyQkV0UyUyQkhTNGpjT1R1SzVJJTJGVWdNNTZ2JTJCSDhIb2NNQlBJOHdrcm51YVpRbG1rQSUzRCUzRCIsInNjb3BlcyI6ImJrdGs0N2lubjgsZHpyc2E3NTNyMSxrNDhkaDBvMnJlLGhxbTRrYnBpeTMsZng1dGYyODlybCx6cjB3NDUybjEwLDAzOXBrdDJhY2ssb3Qxa2d4aGVnNSxzd2x3cWE2YWRqLDR5YW52OGcydzgsM3FpdDQ5cnVwZSxzc3hka3gyZG1nLDc3dThrcmZsZGkscmRueXF4eXE2Miw4amxzbW9wenoyLDF0dTl5dHFhaGosNHBuajc2ZnExZyxrZHR1bngwMmFiLDVqa29ndWJxcmssMWkxeTNwYjFoaCx2NTJ5ZXQzYnhiLGI3cHJ0OXFqYmwsOXd5c3Y0dTFtMSx0cm1qMW4ydjI0IiwiZXhwIjoxNjUxODMyODE0LCJpYXQiOjE2NTE4MzE5MTQsIkx0cGFUb2tlbiI6InRILzNVNnpWdmR6RXJKVkd6b25oRk40UTVVM0hCcStDTFhKSzE2VG9lSjV0b25aRjV0dzI0RXgyS0g4L0IzOXcwVW4rYktzajFzaiswbHNrdlFHTjRpME1NU2t3Y2tqdHpRQm85ckZrbk1CTTNSTzlSejRJa3FHeTlBdlQyT1VqWml4YWN1aG8xUEtFZUJJY0lGTUxLejZFbS9LaURERHdUajYvdWZBT1Y2ZVJRQzFaMTRXcWh5b3hmL3VONnUxNGFnL0NsSVpOak5CeWF0NnRmWFpHZEtqeTZ3bmtkOGlsbk1veVN2cURjQ08zT1pjWXFkcitIZ2tHMk5XSjA4ZFBiZVlBc2Q3RW9HRUJvOTlnSzIyb2I0NkpUd3BISDlqeExzdmZwWTFjbE4vaENFU2FTRGY3YndOK1BveFhBc1VXd3BUNWJwQUc4ZWVQS0dvWkJhdWsvM0w5QXhvTXlaaXpsS3E0Wi93bUovN1REdlpyRHJVSGRVTDBRckVSVFY1N2tLZWpWOEsyZE9IektRVW5aVWFhWTF1TGk0SlVnb2NaUnYwYXZyQzA4TXBXUmJQVmN2aU8vKy93YXUxWDlCdCt4dU8rTm5XZzhRWWhKdXJiOWVkODViM0R1WllRc0EyTkQrdFJpTFI0eXFzRU9nc2ltdk43UzZ6YWVSYXkxUFVnc2hZOHlMZGtLaFZrOVNLRUo5MjdmT0JrUCtTYlN1ajBxM0ZQUkNYVW9zazZXelNjdzRJWFFrK25OMDFXT1RPM3Y2cXVPWjg4MHFrekhPVVNzYWc5dWJ0V3VDcFdVN2ViYVhFMlZCQS9SZlBkSWt6eWZFNVFwZTNzMFVyRzNWdld1cE9OSmhuWVhCQWFXOVdsNUZrUkNzMC83c0NoZ0ZhM2QvSFBIVlh2WElJVjNNUUN4ZEFFWE5oMDIrMEkybEpNaWpQM0s1UUJvbHNZcjltZnJUV3lEektqVXpsc0x2MDJsWXc3cFdMNkswQ0FKdExpaEtyM1hZY3I5aFdKZkUrQnVHMFgzKzhoeEh6VzdnWWk3KzR1WW1SZ0NBbW5QY0ROMUExWjBodWNvUC9IRjFaL1RMTU9PK2tta2pzR3c2UkQzdjA4WTliRXZoOGJzd1B2Qk1zRVlnPT0iLCJzZXNzaW9uIjoiaC95VmFqaHpRcmtmSjRVZUVOZDAxUERlWmxGRm42WWR1cXVhejJsRDF3SnoyQlNoTTRSalJqYzh4aTRVWG1PRUpKSFkzN1dKRlJVT0lucFBsOHRHTXBSbFFuLzhsNGo3V2M4UGpTcFJUcHdUSi84Z3lQQkdYa0FOcGdXZzBBVmF6dFZ4RGN3VCs3dWxMVTNHeWdMelRZb3NOaHpHLzNyS3JjYkZrWlpXRFdUQ0hPM1c0QWxyQWxBeko0ZkU2MGhUcWZQQmJGK3ZrdDQ2aEpUZUdkblBodWpLL3lLTS9kVXlrRlRJdEJiZWlSYWR3NnorUnF3bU5BeHU1a3FFTzFhNjhrcFlIOTZJT2dpVWNaSjhyYVdkeXVTZXhIalowQmNSK0NrVFB3UkdWaHpPRTZ6a2dnTXQ4dHg0bFFCNTUyK1pFVDRuRXQ1RXNkSFdORFFuN0cwcDhuVlBYMHpOSVZPTTlOSDc5U0FGV3FMRGFodVc5ckdYRDlwRU4yTmF2aU1PbWZ4d3d5V2s4dDNyUEh2bE56L21OMTJndG93MUZvd3UrOTdEQXovM2RxWTJxRXlnL2p1dCszSGdxZFJ1VGw3U1FydTFTdG5qRmFKS3h2YURKKzNQdGZEL0dnN0JaVFpoNGJHSVdDWWhpS2hXd2UyZUhKNWhaRzZTTGtnUmlQZ0oyVHN6b0JGSzgxM1pNYkxWUitXaG5zYUhya3MybDMvVVZBNWZkZjhnT2xZUWhxZHgwSzBhbUNrc05leFVtRG5vVm9OdWIzNUllZ2pzRGFEdjlNdjVEOXdZRnZlaVlUQmJGRkpiR0RaK1JxSHJQUXY3QjAzVWFJcE9IdmEwTUViZ1hJLzlRR1NFWDZNVno2R2pwUUo5LzJHUzFpWnFkMXpzRktKSzRQQ1ZOTTBFMjRDOW9Od05TQm56OGZVOWhIaGlUWmFzQk1SUEpacU1tQmFmVmJ1aHFqcWNlMEg3dGVCaURCaGp2RUtzOTdSamt2dnJWZmFxeCttOGN4c09NQWMvQXQ4V2tSZkNTRkNjZUZsNDVHblEvWC84a3hjM1ZEUGwzZXZnZnBCZWtIQjJlR2s2NXpKTmYzb0pBTCtSMkFVY3dmTXI0dGtYZEhwbHo3cmhGZ291N0w0VE9TUWdSZGJSb3I1bzg0RWdRZHZMTDIzTU1yYWRMM1FSdldrMkFGT2JqeFBYZnhjNzQ5WCtvemNTM0RYQ1pXSjBZK2tDZE1QOGdkMzdYTTNFYXM3YXJVRUVsVFZOMnVqa1Z6VCtWQmhDenoxLzFyQ2ljd0pZY3pxRDU1dFd0L3JlSlhTU1hydTZaRjBnMmJnZTNlczlPRnQzaUFCZGJ3SHRvdFFJb1JXRml0UVdyTnZKVmZjZFlnZkNvUFB5RjhJSVkydzdHT3JZcjh6aC9UY1FlTUhsYmI0djBtL1NQcHJoTFZ4QzhjVkNwazVUaUZhN09hSFRNcndBUlVGWGpFT0EyNHI4T3VTclFxVlV2b2FzUDAzbVJMRmdxREY1bGE3QklFL3BWTkZ6Wm50K3BndThDUXJFcktkZzVYblhLUDlFNUY3eFo0QjZKeFFDdS8wcHlpNlJDU2hZU1BETytKcVovNDdnN1JkZFBqK3BnL2Z4dUVxdjBBQTVmLzBCQ3k3Q1pNVDVCNmRETzI2SnkvcjVkaG1FVUhHdE1ncmJiUT09In0.kKeiMirUVzs5L9a2d01tExEZ_I1Lei3F7PCiSFHoQbUaA7_4dUEzZ8aV_T604oKqKLeds5B6EN0GJYdSwdIrjw
+x-api-key: xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO
+Postman-Token: 44698ecf-8892-4963-8df9-f7ca90e7ac03
+Host: aw0yyb1zm2.execute-api.us-east-1.amazonaws.com
+Content-Type: application/json
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+User-Agent: PostmanRuntime/7.29.0
+Accept: */*
+Content-Length: 830
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;contentName&quot;:&quot;dashboard-aem-record-with-two-feature-product-component&quot;,&quot;componentList&quot;:[{&quot;componentName&quot;:&quot;component_featureProduct_0&quot;,&quot;cin&quot;:&quot;1296250,1331958&quot;,&quot;productItemList&quot;:[{&quot;description&quot;:&quot;TYLENOL TB 325MG 100 RS&quot;,&quot;form&quot;:&quot;TABS&quot;,&quot;strength&quot;:&quot;325MG&quot;,&quot;desiIndicator&quot;:&quot;Non-drug and other non-applicable items&quot;,&quot;displayNDC&quot;:&quot;300450-496607&quot;,&quot;genericName&quot;:&quot;ACETAMINOPHEN&quot;,&quot;invoiceCost&quot;:&quot;&quot;,&quot;ndc&quot;:&quot;50580-0496-60&quot;,&quot;netPrice&quot;:&quot;&quot;,&quot;packageQuantity&quot;:&quot;1&quot;,&quot;packageSize&quot;:&quot;100&quot;,&quot;productNumber&quot;:&quot;1296250&quot;,&quot;cin&quot;:&quot;1296250&quot;,&quot;productType&quot;:&quot;HBC&quot;,&quot;retailPrice&quot;:&quot;&quot;,&quot;tradeName&quot;:&quot;TYLENOL&quot;,&quot;unitOfMeasureAbbreviation&quot;:&quot;EA&quot;,&quot;unitOfMeasure&quot;:&quot;&quot;,&quot;uoiCost&quot;:&quot;0.0&quot;,&quot;upc&quot;:&quot;300450-496607&quot;,&quot;uoif&quot;:&quot;100.0000&quot;,&quot;amu&quot;:&quot;&quot;,&quot;strengthDescription&quot;:&quot;AMBIENT RM 68 TO 77F&quot;,&quot;imageUrls&quot;:{&quot;primary&quot;:{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_1_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_1_THMB.jpg&quot;},&quot;others&quot;:[{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_2_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_2_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_3_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_3_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_4_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_4_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_5_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_5_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_6_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_6_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_7_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_7_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_8_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_8_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_9_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_9_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_10_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_10_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_11_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_11_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_12_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_12_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_13_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_13_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_14_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_14_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_15_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_15_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_16_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_16_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_17_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_17_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1296250_18_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1296250_18_THMB.jpg&quot;}]}},{&quot;description&quot;:&quot;TYLENOL ES TB 500MG 100 CPLT&quot;,&quot;form&quot;:&quot;TABS&quot;,&quot;strength&quot;:&quot;500MG&quot;,&quot;desiIndicator&quot;:&quot;Non-drug and other non-applicable items&quot;,&quot;displayNDC&quot;:&quot;300450-449092&quot;,&quot;genericName&quot;:&quot;ACETAMINOPHEN&quot;,&quot;invoiceCost&quot;:&quot;&quot;,&quot;ndc&quot;:&quot;00450-0449-09&quot;,&quot;netPrice&quot;:&quot;&quot;,&quot;packageQuantity&quot;:&quot;1&quot;,&quot;packageSize&quot;:&quot;100&quot;,&quot;productNumber&quot;:&quot;1331958&quot;,&quot;cin&quot;:&quot;1331958&quot;,&quot;productType&quot;:&quot;HBC&quot;,&quot;retailPrice&quot;:&quot;&quot;,&quot;tradeName&quot;:&quot;TYLENOL EXTRA STRENGTH&quot;,&quot;unitOfMeasureAbbreviation&quot;:&quot;EA&quot;,&quot;unitOfMeasure&quot;:&quot;&quot;,&quot;uoiCost&quot;:&quot;0.0&quot;,&quot;upc&quot;:&quot;300450-449092&quot;,&quot;uoif&quot;:&quot;100.0000&quot;,&quot;amu&quot;:&quot;&quot;,&quot;strengthDescription&quot;:&quot;AMBIENT RM 68 TO 77F&quot;,&quot;imageUrls&quot;:{&quot;primary&quot;:{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_1_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_1_THMB.jpg&quot;},&quot;others&quot;:[{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_2_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_2_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_3_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_3_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_4_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_4_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_5_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_5_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_6_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_6_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_7_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_7_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_8_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_8_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_9_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_9_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_10_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_10_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_11_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_11_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_12_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_12_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_13_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_13_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_14_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_14_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_15_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_15_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_16_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_16_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_17_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_17_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_18_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_18_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_19_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_19_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_20_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_20_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_21_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_21_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_22_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_22_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_23_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_23_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_24_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_24_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_25_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_25_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_26_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_26_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_27_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_27_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_28_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_28_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_29_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_29_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_30_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_30_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_31_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_31_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_32_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_32_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_33_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_33_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_34_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_34_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_35_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_35_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_36_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_36_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_37_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_37_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_38_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_38_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_39_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_39_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_40_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_40_THMB.jpg&quot;},{&quot;large&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/large/P1331958_41_DETL.jpg&quot;,&quot;thumb&quot;:&quot;https://orderexpresspmodstg.cardinalhealth.com/eps/PA_PHProduct/PHImages/products/thumbnail/P1331958_41_THMB.jpg&quot;}]}}]}]}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;componentList&quot;: [&#xd;
+        {&#xd;
+            &quot;cin&quot;: &quot;1296250,1331958&quot;,&#xd;
+            &quot;componentName&quot;: &quot;component_featureProduct_0&quot;,&#xd;
+            &quot;eligibilityCheck&quot;: false,&#xd;
+            &quot;image&quot;: {&#xd;
+                &quot;fileReference&quot;: &quot;&quot;,&#xd;
+                &quot;imageDimensions&quot;: &quot;&quot;&#xd;
+            },&#xd;
+            &quot;itemList&quot;: [],&#xd;
+            &quot;link&quot;: {&#xd;
+                &quot;icid&quot;: &quot;&quot;,&#xd;
+                &quot;newWindow&quot;: false,&#xd;
+                &quot;onlcick&quot;: &quot;&quot;,&#xd;
+                &quot;path&quot;: &quot;#&quot;,&#xd;
+                &quot;text&quot;: &quot;View on Search Result&quot;&#xd;
+            },&#xd;
+            &quot;productItemList&quot;: [],&#xd;
+            &quot;showLimitedStock&quot;: false,&#xd;
+            &quot;title&quot;: &quot;Dashboard AEM Record with First Feature Product Component Part A&quot;&#xd;
+        }&#xd;
+    ],&#xd;
+    &quot;contentName&quot;: &quot;dashboard-aem-record-with-two-feature-product-component&quot;,&#xd;
+    &quot;shipTo&quot;: &quot;10-302132&quot;&#xd;
+}</queryString>
+  <java.net.URL>https://aw0yyb1zm2.execute-api.us-east-1.amazonaws.com/oe_pmodstg/expMobileDashboard/mobile/v1/eligibleProducts</java.net.URL>
+</httpSample>
+
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="b7prt9qjbl.execute-api.us-east-1.amazonaws.com:443" rc="" rm="Unable to negotiate SSL transaction, no keystore?" tn="" dt="" de="" by="215" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT b7prt9qjbl.execute-api.us-east-1.amazonaws.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="0" s="false" lb="b7prt9qjbl.execute-api.us-east-1.amazonaws.com:443" rc="" rm="Unable to negotiate SSL transaction, no keystore?" tn="" dt="" de="" by="215" sc="1" ec="1" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">CONNECT b7prt9qjbl.execute-api.us-east-1.amazonaws.com:443 HTTP/1.1&#xd;
+</samplerData>
+</sample>
+
+<httpSample t="719" it="0" lt="719" ct="69" ts="1651832370268" s="true" lb="/oe_pmodstg/pd/ecom/shiptos/10-302132/v1/servicerequests-3" rc="200" rm="OK" tn="" dt="text" de="" by="504" sc="1" ec="0" ng="0" na="0" hn="DESKTOP-O7G7T12">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 0
+Connection: close
+Date: Fri, 06 May 2022 10:19:32 GMT
+x-amzn-RequestId: 6a531840-6845-4e37-813e-cc55f00b4cd5
+Access-Control-Allow-Origin: *
+x-amz-apigw-id: RstoDFpUoAMF54w=
+X-Amzn-Trace-Id: Root=1-6274f633-0914d3bb36bf15b906bb533a
+X-Cache: Miss from cloudfront
+Via: 1.1 1bd7d779bed244375679d82e1821cc3c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD89-P2
+X-Amz-Cf-Id: LJ4N88cUT6jCQd5cAfp7YpQpvz9XCbKAkp82-hEkgjpyUEo0QmTwEw==
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: close
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtb2JpbGUiLCJzdWIiOiJQRCIsImF1ZCI6InVzZW9lcDE2IiwidXNyIjoib2VfcGUudXNlcjAxMSIsImlzcyI6IkNhcmRpbmFsIEhlYWx0aCwgSW5jLiIsIldDVG9rZW4iOiI0NjI4MDA2JTJDTVhEb0xaaEI3MHdBN2lGYVdCVjJmcFdrbjdnWlZHaUlYUWUxWE4wd2s1SXM2d2VLdkhMcTRuRTN1NVVPejlyUmVYTDVaNUNjZXhoWlBVTEhpTTc4SXlQSG4lMkJPNExHa3lpMVJ2bXhQVDQlMkJQJTJCQkdsa3NzSW45VWZROXlkOXpCMHBITiUyRlNPUVV4RmJ3VXlhVjFQJTJGSUp0c3JmSzJNS2hSU1VxRUtEQVdrWiUyQkV0UyUyQkhTNGpjT1R1SzVJJTJGVWdNNTZ2JTJCSDhIb2NNQlBJOHdrcm51YVpRbG1rQSUzRCUzRCIsInNjb3BlcyI6ImJrdGs0N2lubjgsZHpyc2E3NTNyMSxrNDhkaDBvMnJlLGhxbTRrYnBpeTMsZng1dGYyODlybCx6cjB3NDUybjEwLDAzOXBrdDJhY2ssb3Qxa2d4aGVnNSxzd2x3cWE2YWRqLDR5YW52OGcydzgsM3FpdDQ5cnVwZSxzc3hka3gyZG1nLDc3dThrcmZsZGkscmRueXF4eXE2Miw4amxzbW9wenoyLDF0dTl5dHFhaGosNHBuajc2ZnExZyxrZHR1bngwMmFiLDVqa29ndWJxcmssMWkxeTNwYjFoaCx2NTJ5ZXQzYnhiLGI3cHJ0OXFqYmwsOXd5c3Y0dTFtMSx0cm1qMW4ydjI0IiwiZXhwIjoxNjUxODMyODE0LCJpYXQiOjE2NTE4MzE5MTQsIkx0cGFUb2tlbiI6InRILzNVNnpWdmR6RXJKVkd6b25oRk40UTVVM0hCcStDTFhKSzE2VG9lSjV0b25aRjV0dzI0RXgyS0g4L0IzOXcwVW4rYktzajFzaiswbHNrdlFHTjRpME1NU2t3Y2tqdHpRQm85ckZrbk1CTTNSTzlSejRJa3FHeTlBdlQyT1VqWml4YWN1aG8xUEtFZUJJY0lGTUxLejZFbS9LaURERHdUajYvdWZBT1Y2ZVJRQzFaMTRXcWh5b3hmL3VONnUxNGFnL0NsSVpOak5CeWF0NnRmWFpHZEtqeTZ3bmtkOGlsbk1veVN2cURjQ08zT1pjWXFkcitIZ2tHMk5XSjA4ZFBiZVlBc2Q3RW9HRUJvOTlnSzIyb2I0NkpUd3BISDlqeExzdmZwWTFjbE4vaENFU2FTRGY3YndOK1BveFhBc1VXd3BUNWJwQUc4ZWVQS0dvWkJhdWsvM0w5QXhvTXlaaXpsS3E0Wi93bUovN1REdlpyRHJVSGRVTDBRckVSVFY1N2tLZWpWOEsyZE9IektRVW5aVWFhWTF1TGk0SlVnb2NaUnYwYXZyQzA4TXBXUmJQVmN2aU8vKy93YXUxWDlCdCt4dU8rTm5XZzhRWWhKdXJiOWVkODViM0R1WllRc0EyTkQrdFJpTFI0eXFzRU9nc2ltdk43UzZ6YWVSYXkxUFVnc2hZOHlMZGtLaFZrOVNLRUo5MjdmT0JrUCtTYlN1ajBxM0ZQUkNYVW9zazZXelNjdzRJWFFrK25OMDFXT1RPM3Y2cXVPWjg4MHFrekhPVVNzYWc5dWJ0V3VDcFdVN2ViYVhFMlZCQS9SZlBkSWt6eWZFNVFwZTNzMFVyRzNWdld1cE9OSmhuWVhCQWFXOVdsNUZrUkNzMC83c0NoZ0ZhM2QvSFBIVlh2WElJVjNNUUN4ZEFFWE5oMDIrMEkybEpNaWpQM0s1UUJvbHNZcjltZnJUV3lEektqVXpsc0x2MDJsWXc3cFdMNkswQ0FKdExpaEtyM1hZY3I5aFdKZkUrQnVHMFgzKzhoeEh6VzdnWWk3KzR1WW1SZ0NBbW5QY0ROMUExWjBodWNvUC9IRjFaL1RMTU9PK2tta2pzR3c2UkQzdjA4WTliRXZoOGJzd1B2Qk1zRVlnPT0iLCJzZXNzaW9uIjoiaC95VmFqaHpRcmtmSjRVZUVOZDAxUERlWmxGRm42WWR1cXVhejJsRDF3SnoyQlNoTTRSalJqYzh4aTRVWG1PRUpKSFkzN1dKRlJVT0lucFBsOHRHTXBSbFFuLzhsNGo3V2M4UGpTcFJUcHdUSi84Z3lQQkdYa0FOcGdXZzBBVmF6dFZ4RGN3VCs3dWxMVTNHeWdMelRZb3NOaHpHLzNyS3JjYkZrWlpXRFdUQ0hPM1c0QWxyQWxBeko0ZkU2MGhUcWZQQmJGK3ZrdDQ2aEpUZUdkblBodWpLL3lLTS9kVXlrRlRJdEJiZWlSYWR3NnorUnF3bU5BeHU1a3FFTzFhNjhrcFlIOTZJT2dpVWNaSjhyYVdkeXVTZXhIalowQmNSK0NrVFB3UkdWaHpPRTZ6a2dnTXQ4dHg0bFFCNTUyK1pFVDRuRXQ1RXNkSFdORFFuN0cwcDhuVlBYMHpOSVZPTTlOSDc5U0FGV3FMRGFodVc5ckdYRDlwRU4yTmF2aU1PbWZ4d3d5V2s4dDNyUEh2bE56L21OMTJndG93MUZvd3UrOTdEQXovM2RxWTJxRXlnL2p1dCszSGdxZFJ1VGw3U1FydTFTdG5qRmFKS3h2YURKKzNQdGZEL0dnN0JaVFpoNGJHSVdDWWhpS2hXd2UyZUhKNWhaRzZTTGtnUmlQZ0oyVHN6b0JGSzgxM1pNYkxWUitXaG5zYUhya3MybDMvVVZBNWZkZjhnT2xZUWhxZHgwSzBhbUNrc05leFVtRG5vVm9OdWIzNUllZ2pzRGFEdjlNdjVEOXdZRnZlaVlUQmJGRkpiR0RaK1JxSHJQUXY3QjAzVWFJcE9IdmEwTUViZ1hJLzlRR1NFWDZNVno2R2pwUUo5LzJHUzFpWnFkMXpzRktKSzRQQ1ZOTTBFMjRDOW9Od05TQm56OGZVOWhIaGlUWmFzQk1SUEpacU1tQmFmVmJ1aHFqcWNlMEg3dGVCaURCaGp2RUtzOTdSamt2dnJWZmFxeCttOGN4c09NQWMvQXQ4V2tSZkNTRkNjZUZsNDVHblEvWC84a3hjM1ZEUGwzZXZnZnBCZWtIQjJlR2s2NXpKTmYzb0pBTCtSMkFVY3dmTXI0dGtYZEhwbHo3cmhGZ291N0w0VE9TUWdSZGJSb3I1bzg0RWdRZHZMTDIzTU1yYWRMM1FSdldrMkFGT2JqeFBYZnhjNzQ5WCtvemNTM0RYQ1pXSjBZK2tDZE1QOGdkMzdYTTNFYXM3YXJVRUVsVFZOMnVqa1Z6VCtWQmhDenoxLzFyQ2ljd0pZY3pxRDU1dFd0L3JlSlhTU1hydTZaRjBnMmJnZTNlczlPRnQzaUFCZGJ3SHRvdFFJb1JXRml0UVdyTnZKVmZjZFlnZkNvUFB5RjhJSVkydzdHT3JZcjh6aC9UY1FlTUhsYmI0djBtL1NQcHJoTFZ4QzhjVkNwazVUaUZhN09hSFRNcndBUlVGWGpFT0EyNHI4T3VTclFxVlV2b2FzUDAzbVJMRmdxREY1bGE3QklFL3BWTkZ6Wm50K3BndThDUXJFcktkZzVYblhLUDlFNUY3eFo0QjZKeFFDdS8wcHlpNlJDU2hZU1BETytKcVovNDdnN1JkZFBqK3BnL2Z4dUVxdjBBQTVmLzBCQ3k3Q1pNVDVCNmRETzI2SnkvcjVkaG1FVUhHdE1ncmJiUT09In0.kKeiMirUVzs5L9a2d01tExEZ_I1Lei3F7PCiSFHoQbUaA7_4dUEzZ8aV_T604oKqKLeds5B6EN0GJYdSwdIrjw
+x-api-key: xfsUHfuWpg4ziM7hXU1tr2SNr3Rz2vN984VOoVdO
+Postman-Token: 6c93fb66-e4c2-485b-a6f7-312b96a17e40
+Host: b7prt9qjbl.execute-api.us-east-1.amazonaws.com
+Content-Type: application/json
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate, br
+User-Agent: PostmanRuntime/7.29.0
+Accept: */*
+Content-Length: 561
+</requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&#xd;
+    &quot;accountName&quot;: &quot;N HUDSON TEST&quot;,&#xd;
+    &quot;commentText&quot;: &quot;test&quot;,&#xd;
+    &quot;containerLineNumber&quot;: &quot;&quot;,&#xd;
+    &quot;containerNumber&quot;: &quot;&quot;,&#xd;
+    &quot;customerContactEmail&quot;: &quot;abc.xyz@cardinalhealth.com&quot;,&#xd;
+    &quot;customerContactExtension&quot;: &quot;&quot;,&#xd;
+    &quot;customerContactName&quot;: &quot;Automation Web Services Acute Test&quot;,&#xd;
+    &quot;customerContactPhone&quot;: &quot;4087866393&quot;,&#xd;
+    &quot;invoiceNumber&quot;: &quot;8959829&quot;,&#xd;
+    &quot;product&quot;: &quot;3537792&quot;,&#xd;
+    &quot;productDescription&quot;: &quot;DIGESTIVE ADVANTAGE IBS 32&quot;,&#xd;
+    &quot;quantity&quot;: 1,&#xd;
+    &quot;reason&quot;: &quot;7&quot;,&#xd;
+    &quot;serviceRequestUserName&quot;: &quot;test&quot;,&#xd;
+    &quot;userId&quot;: &quot;oe_pe.user011&quot;&#xd;
+}</queryString>
+  <java.net.URL>https://b7prt9qjbl.execute-api.us-east-1.amazonaws.com/oe_pmodstg/pd/ecom/shiptos/10-302132/v1/servicerequests</java.net.URL>
+</httpSample>
+
+</testResults>

@@ -1,0 +1,1216 @@
+{
+	"info": {
+		"_postman_id": "d859cf58-14fb-4cbf-9923-398357a924f2",
+		"name": "OE-Mobile-ActivityTracker-Producer-API PMOD_STG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login Request API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let smsession = pm.cookies.get('SMSESSION');",
+									"pm.environment.set('ltpaToken2',pm.cookies.get('LtpaToken2'));",
+									"pm.environment.set('smsession',smsession);",
+									"pm.test(\"Login API Status\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{login-api-host}}/forms/RWO/OEDMZLogin.fcc?smauthreason=0&target={{target}}/eps/mycah&SMENC=ISO-8859-1&PASSWORD={{password}}&smagentname={{smagentname}}&postpreservationdata=&smquerydata=&SMLOCALE=US-EN&REMEMBER=on&USER={{user}}",
+							"host": [
+								"{{login-api-host}}"
+							],
+							"path": [
+								"forms",
+								"RWO",
+								"OEDMZLogin.fcc"
+							],
+							"query": [
+								{
+									"key": "smauthreason",
+									"value": "0"
+								},
+								{
+									"key": "target",
+									"value": "{{target}}/eps/mycah"
+								},
+								{
+									"key": "SMENC",
+									"value": "ISO-8859-1"
+								},
+								{
+									"key": "PASSWORD",
+									"value": "{{password}}"
+								},
+								{
+									"key": "smagentname",
+									"value": "{{smagentname}}"
+								},
+								{
+									"key": "postpreservationdata",
+									"value": ""
+								},
+								{
+									"key": "smquerydata",
+									"value": ""
+								},
+								{
+									"key": "SMLOCALE",
+									"value": "US-EN"
+								},
+								{
+									"key": "REMEMBER",
+									"value": "on"
+								},
+								{
+									"key": "USER",
+									"value": "{{user}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Token Generator API",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let response = pm.response.json();",
+									"let Authorization = response.access_token;",
+									"pm.environment.set('Authorization',Authorization);",
+									"pm.test(\"Token Generator API Status\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "sm-session",
+								"type": "text",
+								"value": "{{smsession}}"
+							},
+							{
+								"key": "x-api-key",
+								"type": "text",
+								"value": "{{x-api-key}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "WCToken",
+								"type": "text",
+								"value": "{{WCToken}}",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{token-generator-api-host}}/{{env}}/api/v1/token-generator/application/mobile/generate?user={{user}}",
+							"host": [
+								"{{token-generator-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"api",
+								"v1",
+								"token-generator",
+								"application",
+								"mobile",
+								"generate"
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "{{user}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Activity List Orders OE1011",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"19-112531\",\r\n        \"orderId\": \"38322597\",\r\n        \"orderName\": \"Order no 37\",\r\n        \"timestamp\": \"2022-03-28T10:41:06.559Z\",\r\n        \"activityId\": \"OE101\",\r\n        \"operationType\": \"OE1011\"\r\n    },\r\n    {\r\n         \"shipTo\": \"19-112531\",\r\n        \"orderId\": \"38322598\",\r\n        \"orderName\": \"Order no38\",\r\n        \"timestamp\": \"2022-03-28T10:41:06.559Z\",\r\n        \"activityId\": \"OE101\",\r\n        \"operationType\": \"OE1011\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Orders OE1012",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"19-112531\",\r\n        \"orderId\": \"38322597\",\r\n        \"orderName\": \"Order no 37\",\r\n        \"timestamp\": \"2022-03-28T10:41:06.559Z\",\r\n        \"activityId\": \"OE101\",\r\n        \"operationType\": \"OE1012\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Orders OE1013",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "user44",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "useragent44",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "android",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"19-112531\",\r\n        \"orderId\": \"38322598\",\r\n        \"orderName\": \"Order no 67\",\r\n        \"timestamp\": \"2022-03-28T10:41:06.559Z\",\r\n        \"activityId\": \"OE101\",\r\n        \"operationType\": \"OE1013\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Orders OE1014",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"19-112531\",\r\n        \"orderId\": \"38322597\",\r\n        \"productInfo\": {\r\n            \"cin\": \"1122237\",\r\n            \"amu\": \"AMU1\",\r\n            \"ndc\": \"NDC1\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrin\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        },\r\n        \"quantity\": \"3\",\r\n        \"orderName\": \"Order no57\",\r\n        \"timestamp\": \"2022-03-28T10:45:06.559Z\",\r\n        \"activityId\": \"OE101\",\r\n        \"operationType\": \"OE1014\"\r\n    },\r\n    {\r\n        \"shipTo\": \"19-112531\",\r\n        \"orderId\": \"38322598\",\r\n        \"productInfo\": {\r\n            \"cin\": \"1122238\",\r\n            \"amu\": \"AMU2\",\r\n            \"ndc\": \"NDC2\",\r\n            \"uoiCost\": \"12\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrina\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        },\r\n        \"quantity\": \"10\",\r\n        \"orderName\": \"Order no 58\",\r\n        \"timestamp\": \"2022-03-28T10:45:06.559Z\",\r\n        \"activityId\": \"OE101\",\r\n        \"operationType\": \"OE1014\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Orders OE1015",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"19-112531\",\r\n        \"orderId\": \"38322597\",\r\n        \"productInfo\": {\r\n            \"cin\": \"1122237\",\r\n            \"amu\": \"AMU1\",\r\n            \"ndc\": \"NDC1\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrin\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        },\r\n        \"quantity\": \"2\",\r\n        \"orderName\": \"Order no37\",\r\n        \"timestamp\": \"2022-03-28T10:41:06.559Z\",\r\n        \"activityId\": \"OE101\",\r\n        \"operationType\": \"OE1015\"\r\n    },\r\n    {\r\n        \"shipTo\": \"19-112531\",\r\n        \"orderId\": \"38322598\",\r\n        \"productInfo\": {\r\n            \"cin\": \"1122238\",\r\n            \"amu\": \"AMU2\",\r\n            \"ndc\": \"NDC2\",\r\n            \"uoiCost\": \"8\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrina\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        },\r\n        \"quantity\": \"10\",\r\n        \"orderName\": \"Order no38\",\r\n        \"timestamp\": \"2022-03-28T10:41:06.559Z\",\r\n        \"activityId\": \"OE101\",\r\n        \"operationType\": \"OE1015\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Orders OE1016",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"19-112531\",\r\n        \"orderId\": \"38322597\",\r\n        \"productInfo\": {\r\n            \"cin\": \"1122237\",\r\n            \"amu\": \"AMU1\",\r\n            \"ndc\": \"NDC1\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrin\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        },\r\n        \"quantity\": \"10\",\r\n        \"newQuantity\": \"12\",\r\n        \"orderName\": \"Order no37\",\r\n        \"timestamp\": \"2022-03-28T10:45:06.559Z\",\r\n        \"activityId\": \"OE101\",\r\n        \"operationType\": \"OE1016\"\r\n    },\r\n    {\r\n        \"shipTo\": \"19-112531\",\r\n        \"orderId\": \"38322598\",\r\n        \"productInfo\": {\r\n            \"cin\": \"1122238\",\r\n            \"amu\": \"AMU2\",\r\n            \"ndc\": \"NDC2\",\r\n            \"uoiCost\": \"8\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrina\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        },\r\n        \"quantity\": \"15\",\r\n        \"newQuantity\": \"10\",\r\n        \"orderName\": \"Order no38\",\r\n        \"timestamp\": \"2022-03-28T10:45:06.559Z\",\r\n        \"activityId\": \"OE101\",\r\n        \"operationType\": \"OE1016\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inventory",
+			"item": [
+				{
+					"name": "Activity List Inventory CREATE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"shipTo\": \"11-1111\",\r\n    \"inventoryId\": \"6627951\",\r\n    \"inventoryName\": \"Inv 30thMarch\",\r\n    \"timestamp\": \"2022-05-01T10:41:06.559Z\",\r\n    \"activityId\": \"OE201\",\r\n    \"operationType\": \"OE2011\"\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Inventory OE2013",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"11-1111\",\r\n        \"inventoryId\": \"6627951\",\r\n        \"inventoryName\": \"Inv 30thMarch\",\r\n        \"timestamp\": \"2022-05-02T10:41:06.559Z\",\r\n        \"activityId\": \"OE201\",\r\n        \"operationType\": \"OE2013\",\r\n        \"locationId\": \"180001\",\r\n        \"locationName\": \"Test Location\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Inventory OE2015",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"11-1111\",\r\n        \"inventoryId\": \"6627951\",\r\n        \"inventoryName\": \"Inv 30thMarch\",\r\n        \"timestamp\": \"2022-05-03T10:41:06.559Z\",\r\n        \"activityId\": \"OE201\",\r\n        \"operationType\": \"OE2015\",\r\n        \"locationId\": \"1801\",\r\n        \"locationName\": \"Test Location 123\",\r\n        \"productId\": \"211136\",\r\n        \"quantity\": \"10\",\r\n        \"productInfo\": {\r\n            \"cin\": \"2122237\",\r\n            \"amu\": \"AMU1\",\r\n            \"ndc\": \"NDC1\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrin\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Inventory OE2018",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"shipTo\": \"11-1111\",\r\n    \"inventoryId\": \"6627951\",\r\n        \"inventoryName\": \"Inv 30thMarch\",\r\n        \"timestamp\": \"2022-05-04T10:41:06.559Z\",\r\n        \"activityId\": \"OE201\",\r\n        \"operationType\": \"OE2018\",\r\n        \"locationId\": \"1801\",\r\n        \"locationName\": \"Test Location 180001\",\r\n        \"productId\": \"211136\",\r\n        \"quantity\": \"10\",\r\n        \"newQuantity\": \"11\",\r\n        \"productInfo\": {\r\n            \"cin\": \"2122237\",\r\n            \"amu\": \"AMU1\",\r\n            \"ndc\": \"NDC1\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrin\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Inventory OE2017",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"11-1111\",\r\n        \"inventoryId\": \"6627951\",\r\n        \"inventoryName\": \"Inv 30thMarch\",\r\n        \"timestamp\": \"2022-05-05T10:41:06.559Z\",\r\n        \"activityId\": \"OE201\",\r\n        \"operationType\": \"OE2017\",\r\n        \"locationId\": \"1801\",\r\n        \"locationName\": \"Test Location 123\",\r\n        \"productId\": \"211136\",\r\n        \"quantity\": \"10\",\r\n        \"newLocationId\": \"2111\",\r\n        \"newLocationName\": \"Test new Location\",\r\n        \"productInfo\": {\r\n            \"cin\": \"2122237\",\r\n            \"amu\": \"AMU1\",\r\n            \"ndc\": \"NDC1\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrin\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Inventory OE2019",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"11-1111\",\r\n        \"inventoryId\": \"6627951\",\r\n        \"inventoryName\": \"Inv 30thMarch\",\r\n        \"timestamp\": \"2022-05-06T10:41:06.559Z\",\r\n        \"activityId\": \"OE201\",\r\n        \"operationType\": \"OE2019\",\r\n        \"locationId\": \"1801\",\r\n        \"locationName\": \"Test Location 123\",\r\n        \"productId\": \"211136\",\r\n        \"quantity\": \"10\",\r\n        \"newLocationId\": \"2811\",\r\n        \"newLocationName\": \"Test new Location 2811\",\r\n        \"productInfo\": {\r\n            \"cin\": \"2122237\",\r\n            \"amu\": \"AMU1\",\r\n            \"ndc\": \"NDC1\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrin\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Inventory OE2016",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"11-1111\",\r\n        \"inventoryId\": \"6627951\",\r\n        \"inventoryName\": \"Inv 30thMarch\",\r\n        \"timestamp\": \"2022-05-07T10:41:06.559Z\",\r\n        \"activityId\": \"OE201\",\r\n        \"operationType\": \"OE2016\",\r\n        \"locationId\": \"1801\",\r\n        \"locationName\": \"Test Location 123\",\r\n        \"productId\": \"211136\",\r\n        \"quantity\": \"10\",\r\n        \"productInfo\": {\r\n            \"cin\": \"2122237\",\r\n            \"amu\": \"AMU1\",\r\n            \"ndc\": \"NDC1\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"1\",\r\n            \"productType\": \"ProductType1\",\r\n            \"description\": \"Aspinrin\",\r\n            \"packageSize\": \"12\",\r\n            \"form\": \"12\"\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Inventory OE2014",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"11-1111\",\r\n        \"inventoryId\": \"6627951\",\r\n        \"inventoryName\": \"Inv 30thMarch\",\r\n        \"timestamp\": \"2022-05-08T10:41:06.559Z\",\r\n        \"activityId\": \"OE201\",\r\n        \"operationType\": \"OE2014\",\r\n        \"locationId\": \"1801\",\r\n        \"locationName\": \"Test Location\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activity List Inventory DELETE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"shipTo\": \"11-1111\",\r\n    \"inventoryId\": \"6627951\",\r\n    \"inventoryName\": \"Inv 30thMarch\",\r\n    \"timestamp\": \"2022-05-09T10:41:06.559Z\",\r\n    \"activityId\": \"OE201\",\r\n    \"operationType\": \"OE2012\"\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Audit",
+			"item": [
+				{
+					"name": "Audit 3011",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n     \"shipTo\": \"11-1111\",\r\n     \"groupNumber\": \"100\",\r\n     \"groupName\": \"AT_Audit3\",\r\n     \"productInfo\": {\r\n        \"cin\": \"4871638\",\r\n        \"amu\": \"2\",\r\n        \"ndc\": \"12\",\r\n        \"displayContract\": \"Contract1\",\r\n        \"productType\": \"TROJAN LUBRICANTS LQ 3OZ\",\r\n        \"description\": \"Non C2\",\r\n        \"uoiCost\": \"12\",\r\n        \"invoiceCost\": \"11\",\r\n        \"packageSize\": \"11\",\r\n        \"form\": \"FORM1\"\r\n            },      \r\n    \"activityId\": \"OE301\",\r\n    \"operationType\": \"OE3011\",\r\n    \"quantity\": \"20\",\r\n    \"onhandQuantity\": \"10\",\r\n    \"timestamp\": \"2022-03-27T10:41:06.559Z\"\r\n  },\r\n  {\r\n     \"shipTo\": \"11-1111\",\r\n     \"groupNumber\": \"100\",\r\n     \"groupName\": \"AT_Audit3\",\r\n     \"productInfo\": {\r\n        \"cin\": \"5415393\",\r\n        \"amu\": \"3\",\r\n        \"ndc\": \"13\",\r\n        \"displayContract\": \"Contract1\",\r\n        \"productType\": \"TRISENOX SF 2MG/ML 10X6ML\",\r\n        \"description\": \"Non C2\",\r\n        \"uoiCost\": \"13\",\r\n        \"invoiceCost\": \"12\",\r\n        \"packageSize\": \"12\",\r\n        \"form\": \"FORM2\"\r\n            },      \r\n    \"activityId\": \"OE301\",\r\n    \"operationType\": \"OE3011\",\r\n    \"quantity\": \"30\",\r\n    \"onhandQuantity\": \"2\",\r\n    \"timestamp\": \"2022-03-27T10:41:06.559Z\"\r\n  },\r\n  {\r\n     \"shipTo\": \"11-1111\",\r\n     \"groupNumber\": \"100\",\r\n     \"groupName\": \"AT_Audit3\",\r\n     \"productInfo\": {\r\n        \"cin\": \"1144245\",\r\n        \"amu\": \"4\",\r\n        \"ndc\": \"14\",\r\n        \"displayContract\": \"Contract1\",\r\n        \"productType\": \"DIAZEPAM TB 10MG 10X10UD\",\r\n        \"description\": \"C4\",\r\n        \"uoiCost\": \"14\",\r\n        \"invoiceCost\": \"14\",\r\n        \"packageSize\": \"14\",\r\n        \"form\": \"Test form1\"\r\n            },      \r\n    \"activityId\": \"OE301\",\r\n    \"operationType\": \"OE3011\",\r\n    \"quantity\": \"40\",\r\n    \"onhandQuantity\": \"30\",\r\n    \"timestamp\": \"2022-03-27T10:41:06.559Z\"\r\n  },\r\n  {\r\n     \"shipTo\": \"11-1111\",\r\n     \"groupNumber\": \"100\",\r\n     \"groupName\": \"AT_Audit3\",\r\n     \"productInfo\": {\r\n        \"cin\": \"5066758\",\r\n        \"amu\": \"5\",\r\n        \"ndc\": \"11\",\r\n        \"displayContract\": \"Contract1\",\r\n        \"productType\": \"CODEINE SULFATE TB 30MG\",\r\n        \"description\": \"C2\",\r\n        \"uoiCost\": \"12\",\r\n        \"invoiceCost\": \"11\",\r\n        \"packageSize\": \"11\",\r\n        \"form\": \"FORM3\"\r\n            },      \r\n    \"activityId\": \"OE301\",\r\n    \"operationType\": \"OE3011\",\r\n    \"quantity\": \"40\",\r\n    \"onhandQuantity\": \"4\",\r\n    \"timestamp\": \"2022-03-27T10:41:06.559Z\"\r\n  }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Audit 3011_diff_Groupno",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "{{user}}",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "{{$randomUserAgent}}",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "{{platform}}",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n     \"shipTo\": \"11-1111\",\r\n     \"groupNumber\": \"101\",\r\n     \"groupName\": \"AT_Audit 101\",\r\n     \"productInfo\": {\r\n        \"cin\": \"4871638\",\r\n        \"amu\": \"2\",\r\n        \"ndc\": \"12\",\r\n        \"displayContract\": \"Contract1\",\r\n        \"productType\": \"TROJAN LUBRICANTS LQ 3OZ\",\r\n        \"description\": \"Non C2\",\r\n        \"uoiCost\": \"12\",\r\n        \"invoiceCost\": \"11\",\r\n        \"packageSize\": \"11\",\r\n        \"form\": \"FORM1\"\r\n            },      \r\n    \"activityId\": \"OE301\",\r\n    \"operationType\": \"OE3011\",\r\n    \"quantity\": \"20\",\r\n    \"onhandQuantity\": \"10\",\r\n    \"timestamp\": \"2022-03-27T10:41:06.559Z\"\r\n  },\r\n  {\r\n     \"shipTo\": \"11-1111\",\r\n     \"groupNumber\": \"101\",\r\n     \"groupName\": \"AT_Audi 1001\",\r\n     \"productInfo\": {\r\n        \"cin\": \"5415393\",\r\n        \"amu\": \"3\",\r\n        \"ndc\": \"13\",\r\n        \"displayContract\": \"Contract1\",\r\n        \"productType\": \"TRISENOX SF 2MG/ML 10X6ML\",\r\n        \"description\": \"Non C2\",\r\n        \"uoiCost\": \"13\",\r\n        \"invoiceCost\": \"12\",\r\n        \"packageSize\": \"12\",\r\n        \"form\": \"FORM2\"\r\n            },      \r\n    \"activityId\": \"OE301\",\r\n    \"operationType\": \"OE3011\",\r\n    \"quantity\": \"30\",\r\n    \"onhandQuantity\": \"2\",\r\n    \"timestamp\": \"2022-03-27T10:41:06.559Z\"\r\n  },\r\n  {\r\n     \"shipTo\": \"11-1111\",\r\n     \"groupNumber\": \"101\",\r\n     \"groupName\": \"AT_Audit3\",\r\n     \"productInfo\": {\r\n        \"cin\": \"1144245\",\r\n        \"amu\": \"4\",\r\n        \"ndc\": \"14\",\r\n        \"displayContract\": \"Contract1\",\r\n        \"productType\": \"DIAZEPAM TB 10MG 10X10UD\",\r\n        \"description\": \"C4\",\r\n        \"uoiCost\": \"14\",\r\n        \"invoiceCost\": \"14\",\r\n        \"packageSize\": \"14\",\r\n        \"form\": \"Test form1\"\r\n            },      \r\n    \"activityId\": \"OE301\",\r\n    \"operationType\": \"OE3011\",\r\n    \"quantity\": \"40\",\r\n    \"onhandQuantity\": \"30\",\r\n    \"timestamp\": \"2022-03-27T10:41:06.559Z\"\r\n  },\r\n  {\r\n     \"shipTo\": \"11-1111\",\r\n     \"groupNumber\": \"101\",\r\n     \"groupName\": \"AT_Audit3\",\r\n     \"productInfo\": {\r\n        \"cin\": \"5066758\",\r\n        \"amu\": \"5\",\r\n        \"ndc\": \"11\",\r\n        \"displayContract\": \"Contract1\",\r\n        \"productType\": \"CODEINE SULFATE TB 30MG\",\r\n        \"description\": \"C2\",\r\n        \"uoiCost\": \"12\",\r\n        \"invoiceCost\": \"11\",\r\n        \"packageSize\": \"11\",\r\n        \"form\": \"FORM3\"\r\n            },      \r\n    \"activityId\": \"OE301\",\r\n    \"operationType\": \"OE3011\",\r\n    \"quantity\": \"40\",\r\n    \"onhandQuantity\": \"4\",\r\n    \"timestamp\": \"2022-03-27T10:41:06.559Z\"\r\n  }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Receiving",
+			"item": [
+				{
+					"name": "Receiving 4011",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "auto_sanity_ri",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "Chrome Postman",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "Android",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"11-1111\",\r\n        \"productInfo\": {\r\n            \"cin\": \"3211648\",\r\n            \"amu\": \"Test AMU\",\r\n            \"ndc\": \"Test NDC\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"123\",\r\n            \"productType\": \"Non-C2 Test\",\r\n            \"description\": \"Test Desc\",\r\n            \"packageSize\": \"10\",\r\n            \"form\": \"Test Form\"\r\n        },\r\n        \"quantity\": \"10\",\r\n        \"receivedQuantity\": \"7\",\r\n        \"toteNumber\": \"211234\",\r\n        \"shipmentNumber\": \"1113455\",\r\n        \"productScanned\": \"0\",\r\n        \"timestamp\": \"2022-03-28T10:41:06.559Z\",\r\n        \"activityId\": \"OE401\",\r\n        \"operationType\": \"OE4011\"\r\n    },\r\n    {\r\n        \"shipTo\": \"11-1111\",\r\n        \"productInfo\": {\r\n            \"cin\": \"3211249\",\r\n            \"amu\": \"Test AMU\",\r\n            \"ndc\": \"Test NDC\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"123\",\r\n            \"productType\": \"Non-C2\",\r\n            \"description\": \"Test Desc\",\r\n            \"packageSize\": \"10\",\r\n            \"form\": \"Test Form\"\r\n        },\r\n        \"quantity\": \"10\",\r\n        \"receivedQuantity\": \"7\",\r\n        \"toteNumber\": \"211235\",\r\n        \"shipmentNumber\": \"1113455\",\r\n        \"productScanned\": \"0\",\r\n        \"timestamp\": \"2022-03-28T10:41:06.559Z\",\r\n        \"activityId\": \"OE401\",\r\n        \"operationType\": \"OE4011\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Receiving 4011 _diff-shipto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user-name",
+								"value": "auto_sanity_ri",
+								"type": "text"
+							},
+							{
+								"key": "user-agent",
+								"value": "Chrome Postman",
+								"type": "text"
+							},
+							{
+								"key": "platform",
+								"value": "Android",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"shipTo\": \"11-1112\",\r\n        \"productInfo\": {\r\n            \"cin\": \"3211648\",\r\n            \"amu\": \"Test AMU\",\r\n            \"ndc\": \"Test NDC\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"123\",\r\n            \"productType\": \"Non-C2 Test\",\r\n            \"description\": \"Test Desc\",\r\n            \"packageSize\": \"10\",\r\n            \"form\": \"Test Form\"\r\n        },\r\n        \"quantity\": \"10\",\r\n        \"receivedQuantity\": \"7\",\r\n        \"toteNumber\": \"211236\",\r\n        \"shipmentNumber\": \"1113455\",\r\n        \"productScanned\": \"0\",\r\n        \"timestamp\": \"2022-03-28T10:41:06.559Z\",\r\n        \"activityId\": \"OE401\",\r\n        \"operationType\": \"OE4011\"\r\n    },\r\n    {\r\n        \"shipTo\": \"11-1112\",\r\n        \"productInfo\": {\r\n            \"cin\": \"3211249\",\r\n            \"amu\": \"Test AMU\",\r\n            \"ndc\": \"Test NDC\",\r\n            \"uoiCost\": \"10\",\r\n            \"invoiceCost\": \"11\",\r\n            \"displayContract\": \"123\",\r\n            \"productType\": \"Non-C2\",\r\n            \"description\": \"Test Desc\",\r\n            \"packageSize\": \"10\",\r\n            \"form\": \"Test Form\"\r\n        },\r\n        \"quantity\": \"10\",\r\n        \"receivedQuantity\": \"7\",\r\n        \"toteNumber\": \"211237\",\r\n        \"shipmentNumber\": \"1113455\",\r\n        \"productScanned\": \"0\",\r\n        \"timestamp\": \"2022-03-28T10:41:06.559Z\",\r\n        \"activityId\": \"OE401\",\r\n        \"operationType\": \"OE4011\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{experience-activitytracker-producer-api-host}}/{{env}}/activitytracker/producer",
+							"host": [
+								"{{experience-activitytracker-producer-api-host}}"
+							],
+							"path": [
+								"{{env}}",
+								"activitytracker",
+								"producer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

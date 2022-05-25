@@ -1,0 +1,600 @@
+2022-04-25 12:43:44,180 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-04-25 12:43:44,213 INFO o.a.j.JMeter: Loading user properties from: D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\user.properties
+2022-04-25 12:43:44,217 INFO o.a.j.JMeter: Loading system properties from: D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\system.properties
+2022-04-25 12:43:44,225 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2022-04-25 12:43:44,225 INFO o.a.j.JMeter: Version 5.4.3
+2022-04-25 12:43:44,225 INFO o.a.j.JMeter: java.version=11.0.14.1
+2022-04-25 12:43:44,226 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2022-04-25 12:43:44,226 INFO o.a.j.JMeter: os.name=Windows 10
+2022-04-25 12:43:44,226 INFO o.a.j.JMeter: os.arch=amd64
+2022-04-25 12:43:44,226 INFO o.a.j.JMeter: os.version=10.0
+2022-04-25 12:43:44,226 INFO o.a.j.JMeter: file.encoding=Cp1252
+2022-04-25 12:43:44,226 INFO o.a.j.JMeter: java.awt.headless=null
+2022-04-25 12:43:44,227 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-04-25 12:43:44,227 INFO o.a.j.JMeter: Available Processors =4
+2022-04-25 12:43:44,238 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-04-25 12:43:44,238 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-04-25 12:43:44,238 INFO o.a.j.JMeter: JMeterHome=D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3
+2022-04-25 12:43:44,239 INFO o.a.j.JMeter: user.dir  =D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\IAM Bridge
+2022-04-25 12:43:44,240 INFO o.a.j.JMeter: PWD       =D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\IAM Bridge
+2022-04-25 12:43:44,241 INFO o.a.j.JMeter: IP: 10.32.28.136 Name: DESKTOP-O7G7T12 FullName: DESKTOP-O7G7T12.cardinalhealth.net
+2022-04-25 12:43:44,434 INFO o.a.j.JMeter: Setting LAF to: laf:javax.swing.plaf.metal.MetalLookAndFeel
+2022-04-25 12:43:44,618 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2022-04-25 12:43:48,441 WARN o.j.r.PluginManager: Found JAR conflict: D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\jmeter-plugins-cmn-jmeter-0.7.jar and D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\jmeter-plugins-cmn-jmeter-0.6.jar
+2022-04-25 12:43:48,579 INFO o.j.r.JARSourceHTTP: Found cached repo
+2022-04-25 12:43:48,790 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-basic=2.0, blazemeter-debugger=0.6, jpgc-functions=2.1, jpgc-casutg=2.10, jpgc-dummy=0.4, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-perfmon=2.1, jpgc-plugins-manager=1.7, jpgc-tst=2.5, jmeter-core=5.4.3, jmeter-ftp=5.4.3, jmeter-http=5.4.3, jmeter-jdbc=5.4.3, jmeter-jms=5.4.3, jmeter-junit=5.4.3, jmeter-java=5.4.3, jmeter-ldap=5.4.3, jmeter-mail=5.4.3, jmeter-mongodb=5.4.3, jmeter-native=5.4.3, jmeter-tcp=5.4.3, jmeter-components=5.4.3, jpgc-standard=2.0]
+2022-04-25 12:43:48,884 INFO o.a.j.JMeter: Loading file: IAM Bridge APIs.jmx
+2022-04-25 12:43:48,885 INFO o.a.j.s.FileServer: Default base='D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\IAM Bridge'
+2022-04-25 12:43:48,886 INFO o.a.j.s.FileServer: Set new base='D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\IAM Bridge'
+2022-04-25 12:43:49,213 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-04-25 12:43:49,236 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-04-25 12:43:49,238 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-04-25 12:43:49,240 INFO o.a.j.s.SaveService: Loading file: IAM Bridge APIs.jmx
+2022-04-25 12:43:49,552 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2022-04-25 12:43:49,995 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-04-25 12:43:49,995 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-04-25 12:43:49,995 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-04-25 12:43:49,995 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-04-25 12:43:49,996 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2022-04-25 12:43:49,996 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2022-04-25 12:43:50,221 INFO o.j.r.JARSourceHTTP: Cache file is not valid anymore, will drop it: D:\Users\sameer.khan\AppData\Local\Temp\pmgr_cache\66abd198748fe8ae76a99f07391dab47
+2022-04-25 12:43:50,846 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2022-04-25 12:43:50,847 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file D:\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin\proxyserver.jks
+2022-04-25 12:43:50,936 INFO o.a.j.s.FileServer: Set new base='D:\Users\sameer.khan\Desktop\OE Mobile App\Jmeter Scripts\IAM Bridge'
+2022-04-25 12:43:51,865 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2022-04-25 12:43:51,866 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2022-04-25 12:43:51,866 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2022-04-25 12:43:51,866 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2022-04-25 12:43:52,086 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-04-25 12:43:52,338 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-04-25 12:46:06,474 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-04-25 12:46:06,475 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-04-25 12:46:06,475 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-04-25 12:46:06,477 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2022-04-25 12:46:06,477 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2022-04-25 12:46:06,553 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-04-25 12:46:06,637 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-04-25 12:46:06,637 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-04-25 12:46:06,637 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-04-25 12:46:06,638 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-04-25 12:46:06,642 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-04-25 12:46:06,642 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-04-25 12:46:06,647 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-04-25 12:46:07,597 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@53f87d4]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@53f87d4]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script1.run(Script1.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:46:07,613 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-O7G7T12
+2022-04-25 12:46:07,621 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2022-04-25 12:46:07,674 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2022-04-25 12:46:07,677 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2022-04-25 12:46:07,677 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2022-04-25 12:46:07,682 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2022-04-25 12:46:07,683 INFO o.a.j.u.SSLManager: KeyStore created OK
+2022-04-25 12:46:07,683 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2022-04-25 12:46:07,955 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@359a783]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@359a783]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script1.run(Script1.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:46:08,233 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@2283033d]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@2283033d]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script1.run(Script1.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:46:09,611 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@2b53288a]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@2b53288a]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script1.run(Script1.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:46:09,678 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@54230245]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@54230245]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script1.run(Script1.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:46:09,723 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@427871f5]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script1$_run_closure1) values: [Script1$_run_closure1@427871f5]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script1.run(Script1.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:46:09,726 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-04-25 12:46:09,726 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-04-25 12:46:09,728 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-04-25 12:46:09,729 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-04-25 12:47:57,497 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-04-25 12:47:57,498 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-04-25 12:47:57,501 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-04-25 12:47:57,526 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-04-25 12:47:57,526 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-04-25 12:47:57,527 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-04-25 12:47:57,527 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-04-25 12:47:57,530 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-04-25 12:47:57,530 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-04-25 12:47:57,534 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-04-25 12:47:57,563 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@4e01ac62]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@4e01ac62]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script2.run(Script2.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:47:57,993 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@12e44c8f]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@12e44c8f]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script2.run(Script2.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:47:58,309 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@583d2f2d]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@583d2f2d]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script2.run(Script2.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:47:59,788 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@5beb7ad8]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@5beb7ad8]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script2.run(Script2.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:47:59,842 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@72f54877]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@72f54877]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script2.run(Script2.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:47:59,970 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@f74170]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script2$_run_closure1) values: [Script2$_run_closure1@f74170]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script2.run(Script2.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 12:47:59,972 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-04-25 12:47:59,972 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-04-25 12:47:59,973 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-04-25 12:47:59,973 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-04-25 13:07:24,827 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-04-25 13:07:24,828 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-04-25 13:07:24,830 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-04-25 13:07:24,925 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-04-25 13:07:24,925 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-04-25 13:07:24,926 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-04-25 13:07:24,926 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-04-25 13:07:24,928 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-04-25 13:07:24,928 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-04-25 13:07:24,935 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-04-25 13:07:24,960 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@481cd35b]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@481cd35b]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script3.run(Script3.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 13:07:25,268 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@dd0e974]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@dd0e974]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script3.run(Script3.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 13:07:25,657 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@12226a5b]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@12226a5b]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script3.run(Script3.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 13:07:27,268 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@35ab72ed]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@35ab72ed]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script3.run(Script3.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 13:07:27,415 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@fc092e0]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@fc092e0]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script3.run(Script3.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 13:07:27,535 ERROR o.a.j.m.JSR223PreProcessor: Problem in JSR223 script, Replace \x2D with
+javax.script.ScriptException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@608e3172]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:320) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:71) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at javax.script.CompiledScript.eval(CompiledScript.java:89) ~[java.scripting:?]
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:217) ~[ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.modifiers.JSR223PreProcessor.process(JSR223PreProcessor.java:45) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.runPreProcessors(JMeterThread.java:965) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:549) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:489) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:256) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.$() is applicable for argument types: (Script3$_run_closure1) values: [Script3$_run_closure1@608e3172]
+Possible solutions: is(java.lang.Object), any(), get(java.lang.String), any(groovy.lang.Closure), tap(groovy.lang.Closure), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.callGlobal(GroovyScriptEngineImpl.java:404) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.access$100(GroovyScriptEngineImpl.java:90) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl$3.invokeMethod(GroovyScriptEngineImpl.java:303) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:73) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:83) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-3.0.7.jar:3.0.7]
+	at Script3.run(Script3.groovy:1) ~[?:?]
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:317) ~[groovy-jsr223-3.0.7.jar:3.0.7]
+	... 9 more
+2022-04-25 13:07:27,536 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-04-25 13:07:27,536 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-04-25 13:07:27,537 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-04-25 13:07:27,538 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-04-25 13:08:53,547 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-04-25 13:08:53,548 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-04-25 13:08:53,552 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-04-25 13:08:53,569 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-04-25 13:08:53,569 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-04-25 13:08:53,570 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-04-25 13:08:53,570 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-04-25 13:08:53,583 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-04-25 13:08:53,583 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-04-25 13:08:53,585 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-04-25 13:08:54,265 ERROR o.a.j.u.BeanShellInterpreter: Error invoking bsh method: eval	In file: inline evaluation of: ``eyJraWQiOiJpOFZOMkh4b3AzUFNJWEhtVkJYeGdWblFvbTFPRFc3aEUzeEFHVl9yQTFFIiwiYWxnIjoi . . . '' Encountered "eSNECXksDVbp_Pn2uxRGIhG2bSTb8hzOsidjmFkxv8gRonUbypC0loPPkga6DchQVvQAKpOjw3fx9l0lDaZ6KduhH2zmCdE8xzJm" at line 1, column 659.
+
+2022-04-25 13:08:54,266 WARN o.a.j.e.BeanShellPostProcessor: Problem in BeanShell script: org.apache.jorphan.util.JMeterException: Error invoking bsh method: eval	In file: inline evaluation of: ``eyJraWQiOiJpOFZOMkh4b3AzUFNJWEhtVkJYeGdWblFvbTFPRFc3aEUzeEFHVl9yQTFFIiwiYWxnIjoi . . . '' Encountered "eSNECXksDVbp_Pn2uxRGIhG2bSTb8hzOsidjmFkxv8gRonUbypC0loPPkga6DchQVvQAKpOjw3fx9l0lDaZ6KduhH2zmCdE8xzJm" at line 1, column 659.
+
+2022-04-25 13:08:55,907 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-04-25 13:08:55,907 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-04-25 13:08:55,908 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-04-25 13:08:55,908 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-04-25 13:10:03,508 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-04-25 13:10:03,508 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-04-25 13:10:03,509 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-04-25 13:10:03,515 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-04-25 13:10:03,515 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-04-25 13:10:03,515 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-04-25 13:10:03,515 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-04-25 13:10:03,524 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-04-25 13:10:03,524 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-04-25 13:10:03,527 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-04-25 13:10:04,184 ERROR o.a.j.u.BeanShellInterpreter: Error invoking bsh method: eval	Sourced file: inline evaluation of: ``eyJraWQiOiJpOFZOMkh4b3AzUFNJWEhtVkJYeGdWblFvbTFPRFc3aEUzeEFHVl9yQTFFIiwiYWxnIjoi . . . '' : Class or variable not found: eyJraWQiOiJpOFZOMkh4b3AzUFNJWEhtVkJYeGdWblFvbTFPRFc3aEUzeEFHVl9yQTFFIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmtFanowNXNsZ0ZQTy05VVdkcjBnSGdBM2RlLUJRN1BZZXVTQ0g3QTZhWGciLCJpc3MiOiJodHRwczovL215aWRiMmJkZXYuY2FyZGluYWxoZWFsdGguY29tIiwiYXVkIjoiaHR0cHM6Ly9teWlkYjJiZGV2LmNhcmRpbmFsaGVhbHRoLmNvbSIsInN1YiI6ImJyaWRnZTFfdGVzdCIsImlhdCI6MTY1MDg3MjQwNCwiZXhwIjoxNjUwODc2MDA0LCJjaWQiOiIwb2ExNHIyMnpzak8wOHRrSzBoOCIsInVpZCI6IjAwdTE2Y3lvMmY2ZGFIcEluMGg4Iiwic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiXSwiYXV0aF90aW1lIjoxNjUwODcyNDA0fQ.DyKa3Wl6R2ehkoJm3JtFI066w004_gLqiX7PFOiVvy4cUmXpUHVa8keWN50bF54HgXwQo8e1yWIZudCAcvEw2Udhj0QYbD0ryirA6zee_1igF6yTBrvuKU
+2022-04-25 13:10:04,185 WARN o.a.j.e.BeanShellPostProcessor: Problem in BeanShell script: org.apache.jorphan.util.JMeterException: Error invoking bsh method: eval	Sourced file: inline evaluation of: ``eyJraWQiOiJpOFZOMkh4b3AzUFNJWEhtVkJYeGdWblFvbTFPRFc3aEUzeEFHVl9yQTFFIiwiYWxnIjoi . . . '' : Class or variable not found: eyJraWQiOiJpOFZOMkh4b3AzUFNJWEhtVkJYeGdWblFvbTFPRFc3aEUzeEFHVl9yQTFFIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmtFanowNXNsZ0ZQTy05VVdkcjBnSGdBM2RlLUJRN1BZZXVTQ0g3QTZhWGciLCJpc3MiOiJodHRwczovL215aWRiMmJkZXYuY2FyZGluYWxoZWFsdGguY29tIiwiYXVkIjoiaHR0cHM6Ly9teWlkYjJiZGV2LmNhcmRpbmFsaGVhbHRoLmNvbSIsInN1YiI6ImJyaWRnZTFfdGVzdCIsImlhdCI6MTY1MDg3MjQwNCwiZXhwIjoxNjUwODc2MDA0LCJjaWQiOiIwb2ExNHIyMnpzak8wOHRrSzBoOCIsInVpZCI6IjAwdTE2Y3lvMmY2ZGFIcEluMGg4Iiwic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiXSwiYXV0aF90aW1lIjoxNjUwODcyNDA0fQ.DyKa3Wl6R2ehkoJm3JtFI066w004_gLqiX7PFOiVvy4cUmXpUHVa8keWN50bF54HgXwQo8e1yWIZudCAcvEw2Udhj0QYbD0ryirA6zee_1igF6yTBrvuKU
+2022-04-25 13:10:05,025 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-04-25 13:10:05,025 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-04-25 13:10:05,026 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-04-25 13:10:05,027 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2022-04-25 13:12:51,081 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-04-25 13:12:51,082 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-04-25 13:12:51,083 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2022-04-25 13:12:51,163 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2022-04-25 13:12:51,164 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2022-04-25 13:12:51,164 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-04-25 13:12:51,164 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-04-25 13:12:51,166 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-04-25 13:12:51,167 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-04-25 13:12:51,171 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2022-04-25 13:12:52,951 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2022-04-25 13:12:52,951 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2022-04-25 13:12:52,952 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-04-25 13:12:52,952 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
